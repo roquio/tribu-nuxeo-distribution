@@ -5,7 +5,7 @@
 
 	<groupId>opentoutatice-ecm.distribtion</groupId>
 	<artifactId>ottc-collab-nx-distrib</artifactId>
-	<version>3.2.0</version>
+	<version>3.2.2-SNAPSHOT</version>
 	<name>Open toutatice + collab modules nuxeo distribution</name>
 	<packaging>pom</packaging>
 
@@ -327,7 +327,7 @@
 	</dependencies>
 
     <scm>
-        <developerConnection>scm:svn:http://www.osivia.org/repos/osivia-services/nx-distributions/ottc-collab/tags/3.2.0</developerConnection>
+        <developerConnection>scm:svn:http://www.osivia.org/repos/osivia-services/nx-distributions/ottc-collab/trunk</developerConnection>
     </scm>
     
     
