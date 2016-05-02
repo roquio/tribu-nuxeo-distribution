@@ -328,7 +328,7 @@
 	</dependencies>
 
     <scm>
-        <developerConnection>scm:svn:http://www.osivia.org/repos/osivia-services/nx-distribution/ottc-collab/trunk</developerConnection>
+        <developerConnection>scm:svn:http://www.osivia.org/repos/osivia-services/nx-distributions/ottc-collab/trunk</developerConnection>
     </scm>
     
     
