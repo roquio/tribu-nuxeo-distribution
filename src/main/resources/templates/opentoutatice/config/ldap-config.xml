@@ -46,11 +46,13 @@
       <querySizeLimit>500</querySizeLimit>
       <queryTimeLimit>60000</queryTimeLimit>
 
+      <references>
 
-	  <ldapReference field="groups" 
-                         directory="groupLdapDirectory"
-                         forceDnConsistencyCheck="false"  
-                         staticAttributeId="portalPersonProfile"/>
+		  <ldapReference field="groups" 
+	                         directory="groupLdapDirectory"
+	                         forceDnConsistencyCheck="false"  
+	                         staticAttributeId="portalPersonProfile"/>
+      </references>
 
 
     </directory>

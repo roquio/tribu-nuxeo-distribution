@@ -13,15 +13,15 @@
 		<nuxeo.version>6.0-HF21</nuxeo.version>
 		<nuxeodrive.version>6.0-HF08</nuxeodrive.version>
 
-		<opentoutatice.version>3.2.0-RC01</opentoutatice.version>
-		<ottc.es.version>1.2-RC01</ottc.es.version>
-		<ottc.collab.version>3.2.0-RC01</ottc.collab.version>
-		<ottc.filenaming.version>1.2-RC01</ottc.filenaming.version>
+		<opentoutatice.version>3.2.2-RC12</opentoutatice.version>
+		<ottc.es.version>1.2</ottc.es.version>
+		<ottc.collab.version>3.2.1-RC02</ottc.collab.version>
+		<ottc.filenaming.version>1.3-RC01</ottc.filenaming.version>
 		<ottc.wf.version>1.1</ottc.wf.version>
 		<ottc.notif.version>1.2-RC01</ottc.notif.version>
-		<ottc.ui.version>1.0-RC01</ottc.ui.version>
-		<ottc.drive.version>3.2.0-RC01</ottc.drive.version>
-		<ottc.generic-ui.version>3.1.1-RC01</ottc.generic-ui.version>
+		<ottc.ui.version>1.1-RC02</ottc.ui.version>
+		<ottc.drive.version>3.2.0-RC02</ottc.drive.version>
+		<ottc.generic-ui.version>3.1.1-RC03</ottc.generic-ui.version>
 	</properties>
 
 	<build>
@@ -294,6 +294,22 @@
 			<version>${nuxeodrive.version}</version>
 		</dependency>
 
+		<!-- Platform explorer -->
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-apidoc-core</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-apidoc-webengine</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.nuxeo.ecm.webengine</groupId>
+			<artifactId>nuxeo-webengine-ui</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
 
 
 		<!-- Dependencies for imaging -->
@@ -321,6 +337,13 @@
 			<groupId>net.java.dev.mistral</groupId>
 			<artifactId>Operations</artifactId>
 			<version>0.9.5</version>
+		</dependency>
+
+		<!-- HTML conversion -->
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.6.3</version>
 		</dependency>
 
 

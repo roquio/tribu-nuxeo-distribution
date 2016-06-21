@@ -104,6 +104,13 @@
 				</include>
 				<include>org.nuxeo.lib.wss:nuxeo-wss-front:jar:${nuxeodrive.version}
 				</include>
+				<!-- Platform explorer -->
+				<include>org.nuxeo.ecm.platform:nuxeo-apidoc-core:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.platform:nuxeo-apidoc-webengine:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.webengine:nuxeo-webengine-ui:jar:${nuxeo.version}
+				</include>
 			</includes>
 		</dependencySet>
 
@@ -124,6 +131,8 @@
 				<include>com.drewnoakes:metadata-extractor:jar:2.3.1
 				</include>
 				<include>net.java.dev.mistral:Operations:jar:0.9.5
+				</include>
+				<include>org.jsoup:jsoup:jar:1.6.3
 				</include>
 			</includes>
 		</dependencySet>
