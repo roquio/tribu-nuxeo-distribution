@@ -5,23 +5,23 @@
 
 	<groupId>opentoutatice-ecm.distribtion</groupId>
 	<artifactId>ottc-collab-nx-distrib</artifactId>
-	<version>3.2.2-SNAPSHOT</version>
+	<version>3.4.0-SNAPSHOT</version>
 	<name>Open toutatice + collab modules nuxeo distribution</name>
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.0-HF21</nuxeo.version>
+		<nuxeo.version>6.0-HF30</nuxeo.version>
 		<nuxeodrive.version>6.0-HF08</nuxeodrive.version>
 
-		<opentoutatice.version>3.2.2-RC12</opentoutatice.version>
+		<opentoutatice.version>3.4.0-RC01</opentoutatice.version>
 		<ottc.es.version>1.2</ottc.es.version>
-		<ottc.collab.version>3.2.1-RC02</ottc.collab.version>
-		<ottc.filenaming.version>1.3-RC01</ottc.filenaming.version>
-		<ottc.wf.version>1.1</ottc.wf.version>
-		<ottc.notif.version>1.2-RC01</ottc.notif.version>
-		<ottc.ui.version>1.1-RC02</ottc.ui.version>
-		<ottc.drive.version>3.2.0-RC02</ottc.drive.version>
-		<ottc.generic-ui.version>3.1.1-RC03</ottc.generic-ui.version>
+		<ottc.collab.version>3.4.0-RC01</ottc.collab.version>
+		<ottc.filenaming.version>1.3</ottc.filenaming.version>
+		<ottc.wf.version>1.2</ottc.wf.version>
+		<ottc.notif.version>1.2.1</ottc.notif.version>
+		<ottc.ui.version>1.1</ottc.ui.version>
+		<ottc.drive.version>3.4.0-RC01</ottc.drive.version>
+		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
 	</properties>
 
 	<build>
