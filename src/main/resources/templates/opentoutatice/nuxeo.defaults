@@ -1,0 +1,14 @@
+opentoutatice.target=.
+
+# GlobalNamingResources datasource (not visible from webapp)
+nuxeo.db.embeddedDatasources=true
+nuxeo.db.xaMode=false
+nuxeo.db.singleDataSource=
+
+nuxeo.db.min-pool-size=5
+nuxeo.db.max-pool-size=100
+nuxeo.db.blocking-timeout-millis=1000
+nuxeo.db.idle-timeout-minutes=5
+# Used only since 7.10-HF16
+nuxeo.db.validationQuery=SELECT 1
+nuxeo.db.sql-exception-sorter=org.tranql.connector.jdbc.KnownSQLStateExceptionSorter
