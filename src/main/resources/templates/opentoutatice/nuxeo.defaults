@@ -1,4 +1,3 @@
-opentoutatice.target=.
 
 # GlobalNamingResources datasource (not visible from webapp)
 nuxeo.db.embeddedDatasources=true
