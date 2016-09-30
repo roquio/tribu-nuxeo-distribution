@@ -17,6 +17,8 @@
 			<scope>runtime</scope>
 			<includes>
 				<!-- OpenToutatice -->
+				<include>opentoutatice-ecm.platform:opentoutatice-ecm-attached-files:jar:${opentoutatice.version}
+				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-automation:jar:${opentoutatice.version}
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-core:jar:${opentoutatice.version}
@@ -46,6 +48,8 @@
 				<include>opentoutatice-ecm.elasticsearch-customizer:opentoutatice-addon-elasticsearch-customizer-ecm:jar:${ottc.es.custom.version}
 				</include>
 				<include>opentoutatice-ecm.procedures:opentoutatice-addon-procedures-ecm:jar:${ottc.procedure.version}
+				</include>
+				<include>opentoutatice-ecm.checkin:opentoutatice-addon-checkin-ecm:jar:${ottc.checkin.version}
 				</include>
 
 				<!-- Login & SSO -->
