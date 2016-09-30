@@ -43,6 +43,10 @@
 				</include>
 				<include>opentoutatice-ecm.generic-ui-service:opentoutatice-generic-ui-service-ecm:jar:${ottc.generic-ui.version}
 				</include>
+				<include>opentoutatice-ecm.elasticsearch-customizer:opentoutatice-addon-elasticsearch-customizer-ecm:jar:${ottc.es.custom.version}
+				</include>
+				<include>opentoutatice-ecm.procedures:opentoutatice-addon-procedures-ecm:jar:${ottc.procedure.version}
+				</include>
 
 				<!-- Login & SSO -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-login-portal-sso:jar:${nuxeo.version}
