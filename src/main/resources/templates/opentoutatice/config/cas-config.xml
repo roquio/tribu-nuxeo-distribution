@@ -60,8 +60,8 @@
         point="chain">
         <authenticationChain>
             <plugins>
-                <plugin>BASIC_AUTH</plugin>
                 <plugin>CAS2_AUTH</plugin>
+                <plugin>BASIC_AUTH</plugin>
             </plugins>
         </authenticationChain>
     </extension>
@@ -74,6 +74,7 @@
 	  <startURLPattern>
 		<patterns>
 		  <pattern>web/</pattern>
+		  <pattern>restAPI/preview/</pattern>
 		</patterns>
 	  </startURLPattern>
 	 
