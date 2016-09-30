@@ -19,6 +19,9 @@
         <include>ottcwebc:*</include>
         <include>vevent:*</include>
         <include>ttcevt:*</include>
+		<include>pi:*</include>
+		<include>pcd:*</include>
+		<include>nt:*</include>
         <exclude>ecm:binarytext</exclude>
     </fetchFromSource>
 
