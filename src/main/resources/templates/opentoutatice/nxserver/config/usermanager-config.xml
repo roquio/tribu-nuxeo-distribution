@@ -48,6 +48,10 @@
       <defaultGroup>members</defaultGroup>
       <groupSortField>groupname</groupSortField>
       <userSortField>lastName</userSortField>
+      
+      <!-- Override default cache -->
+      <userCacheName>default-ottc-user-cache</userCacheName>
+      
     </userManager>
   </extension>
 

@@ -22,6 +22,8 @@
 		<include>pi:*</include>
 		<include>pcd:*</include>
 		<include>nt:*</include>
+		<include>ottcDft:*</include>
+		<include>ottcChk:*</include>
         <exclude>ecm:binarytext</exclude>
     </fetchFromSource>
 
