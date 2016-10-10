@@ -1,6 +1,14 @@
 opentoutatice.target=.
 
-# GlobalNamingResources datasource (not visible from webapp)
+##----------------------------------------------------------------------------
+## States stack
+##----------------------------------------------------------------------------
+nuxeo.jsf.numberOfViewsInSession=20
+nuxeo.jsf.numberOfLogicalViews=20
+
+##----------------------------------------------------------------------------
+## Datasources
+##----------------------------------------------------------------------------
 nuxeo.db.embeddedDatasources=true
 nuxeo.db.xaMode=false
 nuxeo.db.singleDataSource=
