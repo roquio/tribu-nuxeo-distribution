@@ -51,6 +51,8 @@
 				</include>
 				<include>opentoutatice-ecm.checkin:opentoutatice-addon-checkin-ecm:jar:${ottc.checkin.version}
 				</include>
+				<include>opentoutatice-ecm.monitoring:opentoutatice-monitoring-ecm:jar:${ottc.monitoring.version}
+                </include>
 
 				<!-- Login & SSO -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-login-portal-sso:jar:${nuxeo.version}
@@ -142,6 +144,11 @@
 				</include>
 				<include>org.jsoup:jsoup:jar:1.6.3
 				</include>
+				<!-- Dependencies for Java Melody monitoring -->
+				<include>net.bull.javamelody:javamelody-core:jar:1.62.0
+                </include>
+                <include>org.jrobin:jrobin:jar:1.5.9
+                </include>
 			</includes>
 		</dependencySet>
 	</dependencySets>

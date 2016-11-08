@@ -20,3 +20,21 @@ nuxeo.db.idle-timeout-minutes=5
 # Used only from 7.10-HF16
 nuxeo.db.validationQuery=SELECT 1
 nuxeo.db.sql-exception-sorter=org.tranql.connector.jdbc.KnownSQLStateExceptionSorter
+
+##----------------------------------------------------------------------------
+## Metrics
+##----------------------------------------------------------------------------
+#metrics.csv.enabled=true
+#metrics.csv.period=10
+## This will create a sub directory metrics-TIMESTAMP
+#metrics.csv.dir=/var/log/nuxeo
+
+#metrics.graphite.enabled=true
+#metrics.graphite.host=localhost
+#metrics.graphite.port=2003
+#metrics.graphite.period=10
+
+#metrics.tomcat.enabled=true
+
+
+
