@@ -87,6 +87,15 @@
 				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-audio-jsf:jar:${nuxeo.version}
 				</include>
+				<!-- Video -->
+                <include>org.nuxeo.ecm.platform:nuxeo-platform-video-api:jar:${nuxeo.version}
+                </include>
+                <include>org.nuxeo.ecm.platform:nuxeo-platform-video-core:jar:${nuxeo.version}
+                </include>
+                 <include>org.nuxeo.ecm.platform:nuxeo-platform-video-convert:jar:${nuxeo.version}
+                </include>
+                 <include>org.nuxeo.ecm.platform:nuxeo-platform-video-jsf:jar:${nuxeo.version}
+                </include>
 				<!-- Webengine -->
 				<include>org.nuxeo.ecm.webengine:nuxeo-webengine-blogs:jar:${nuxeo.version}
 				</include>

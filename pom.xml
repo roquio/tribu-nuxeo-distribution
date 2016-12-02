@@ -246,6 +246,28 @@
 			<artifactId>nuxeo-platform-audio-jsf</artifactId>
 			<version>${nuxeo.version}</version>
 		</dependency>
+		
+		<!-- Video -->
+		<dependency>
+            <groupId>org.nuxeo.ecm.platform</groupId>
+            <artifactId>nuxeo-platform-video-api</artifactId>
+            <version>${nuxeo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.nuxeo.ecm.platform</groupId>
+            <artifactId>nuxeo-platform-video-core</artifactId>
+            <version>${nuxeo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.nuxeo.ecm.platform</groupId>
+            <artifactId>nuxeo-platform-video-convert</artifactId>
+            <version>${nuxeo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.nuxeo.ecm.platform</groupId>
+            <artifactId>nuxeo-platform-video-jsf</artifactId>
+            <version>${nuxeo.version}</version>
+        </dependency>
 
 		<!-- Webengine -->
 		<dependency>
