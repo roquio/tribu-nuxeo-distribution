@@ -13,8 +13,7 @@
 			<apiKey>${toutapad.apiKey}</apiKey>
 			<welcomeMessage>${toutapad.welcomeMessage}</welcomeMessage>
 			<synchronizationCron>${toutapad.synchronizationCron}</synchronizationCron>
-			<contributionFormUrl>${toutapad.contributionFormUrl}</contributionFormUrl>
-			<connectedView>${toutapad.connectedView}</connectedView>
+
 		</EtherpadServer>
 
 	</extension>
