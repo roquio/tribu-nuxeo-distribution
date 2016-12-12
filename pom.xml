@@ -25,6 +25,7 @@
 		<ottc.es.custom.version>2.0-RC03</ottc.es.custom.version>
 		<ottc.procedure.version>1.0-RC06</ottc.procedure.version>
 		<ottc.checkin.version>3.4.0-SNAPSHOT</ottc.checkin.version>
+		<ottc.pad.version>3.4.0-SNAPSHOT</ottc.pad.version>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>		
 	</properties>
@@ -194,6 +195,11 @@
 		    <groupId>opentoutatice-ecm.checkin</groupId>
 		    <artifactId>opentoutatice-addon-checkin-ecm</artifactId>
 		    <version>${ottc.checkin.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>opentoutatice-ecm.toutapad</groupId>
+		    <artifactId>opentoutatice-addon-toutapad-ecm</artifactId>
+		    <version>${ottc.pad.version}</version>
 		</dependency>
 
 		<!-- Agenda -->
@@ -393,7 +399,18 @@
 			<version>1.6.3</version>
 		</dependency>
 
-
+		<!-- Pad client -->
+		<dependency>
+			<groupId>org</groupId>
+			<artifactId>etherpad_lite_client</artifactId>
+			<version>1.2.7</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.googlecode.json-simple</groupId>
+    		<artifactId>json-simple</artifactId>
+        	<version>1.1.1</version>
+		</dependency>
+		
 	</dependencies>
 
     <scm>
