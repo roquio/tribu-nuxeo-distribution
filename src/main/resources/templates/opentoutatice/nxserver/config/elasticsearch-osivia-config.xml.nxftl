@@ -24,6 +24,8 @@
 		<include>nt:*</include>
 		<include>ottcDft:*</include>
 		<include>ottcChk:*</include>
+		<include>ttcs:*</include>
+		<include>webc:*</include>
         <exclude>ecm:binarytext</exclude>
     </fetchFromSource>
 
