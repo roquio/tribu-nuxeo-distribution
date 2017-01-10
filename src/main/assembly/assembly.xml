@@ -181,7 +181,6 @@
 			</includes>
 			<!-- Surcharges -->
 			<excludes>
-				<exclude>templates/common-base/nxserver/config/datasources-config.xml.nxftl</exclude>
 				<exclude>templates/common-base/nxserver/config/elasticsearch-config.xml.nxftl</exclude>
 			</excludes>
 		</fileSet>

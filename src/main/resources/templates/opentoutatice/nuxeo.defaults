@@ -19,7 +19,16 @@ nuxeo.db.blocking-timeout-millis=1000
 nuxeo.db.idle-timeout-minutes=5
 # Used only from 7.10-HF16
 nuxeo.db.validationQuery=SELECT 1
-nuxeo.db.sql-exception-sorter=org.tranql.connector.jdbc.KnownSQLStateExceptionSorter
+
+##----------------------------------------------------------------------------
+## Toutatpad
+##----------------------------------------------------------------------------
+toutapad.serverURL=localhost
+toutapad.prefixURL=/p/
+toutapad.apiKey=83f4ed2cd1859cc4988b4e22de148edc29adc86eec048ab0b41b015ef785590a
+toutapad.welcomeMessage=Bievenue sur cette note collaborative !
+toutapad.synchronizationCron=0 16 * * * ?
+
 
 ##----------------------------------------------------------------------------
 ## Metrics
