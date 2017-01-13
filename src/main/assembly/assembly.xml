@@ -27,6 +27,8 @@
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-web:jar:${opentoutatice.version}
 				</include>
+				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-reporting:jar:${opentoutatice.version}
+                </include>
 
 				<!-- Add ons -->				
 				<include>opentoutatice-ecm.elasticsearch:opentoutatice-addon-elasticsearch-ecm:jar:${ottc.es.version}
@@ -54,7 +56,9 @@
 				<include>opentoutatice-ecm.monitoring:opentoutatice-monitoring-ecm:jar:${ottc.monitoring.version}
                 </include>
 				<include>opentoutatice-ecm.toutapad:opentoutatice-addon-toutapad-ecm:jar:${ottc.pad.version}
-                </include>                
+                </include>  
+                <include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
+                </include>              
 
 				<!-- Login & SSO -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-login-portal-sso:jar:${nuxeo.version}

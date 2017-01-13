@@ -26,6 +26,7 @@
 		<ottc.procedure.version>1.0-SNAPSHOT</ottc.procedure.version>
 		<ottc.checkin.version>3.4.0-SNAPSHOT</ottc.checkin.version>
 		<ottc.pad.version>3.4.0-SNAPSHOT</ottc.pad.version>
+		<ottc.news.version>1.0-SNAPSHOT</ottc.news.version>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>		
 	</properties>
@@ -139,6 +140,11 @@
 			<artifactId>opentoutatice-ecm-platform-web</artifactId>
 			<version>${opentoutatice.version}</version>
 		</dependency>
+		<dependency>
+            <groupId>opentoutatice-ecm.platform</groupId>
+            <artifactId>opentoutatice-ecm-platform-reporting</artifactId>
+            <version>${opentoutatice.version}</version>
+        </dependency>
 
 		<!-- Addons -->
 		<dependency>
@@ -201,6 +207,11 @@
 		    <artifactId>opentoutatice-addon-toutapad-ecm</artifactId>
 		    <version>${ottc.pad.version}</version>
 		</dependency>
+		<dependency>
+            <groupId>opentoutatice-ecm.news</groupId>
+            <artifactId>opentoutatice-addon-news-ecm</artifactId>
+            <version>${ottc.news.version}</version>
+        </dependency>
 
 		<!-- Agenda -->
 		<dependency>

@@ -29,6 +29,23 @@ toutapad.apiKey=83f4ed2cd1859cc4988b4e22de148edc29adc86eec048ab0b41b015ef785590a
 toutapad.welcomeMessage=Bievenue sur cette note collaborative !
 toutapad.synchronizationCron=0 16 * * * ?
 
+##----------------------------------------------------------------------------
+## News
+##----------------------------------------------------------------------------
+ottc.news.scan.enabled=false
+ottc.news.scan.cron=0 0/15 20-4 * * *
+## Values in minutes
+ottc.news.scan.daily.boundary=240
+ottc.news.scan.weekly.boundary=720
+ottc.news.scan.error.boundary=120
+
+ottc.news.portal.url=http://<host>/portal/auth/cms/_id/
+
+## For dev or tests
+# If not defined, 5 and 2 by default:
+ottc.news.scan.dev.gap=
+ottc.news.scan.dev.boundary=
+
 
 ##----------------------------------------------------------------------------
 ## Metrics
