@@ -8,8 +8,9 @@
 		point="EtherpadServers">
 
 		<EtherpadServer name="server-1" default="true" enabled="true">
-			<serverURL>${toutapad.serverURL}</serverURL>
+			<serverURL>${toutapad.publicServerURL}</serverURL>
 			<prefixURL>${toutapad.prefixURL}</prefixURL>
+			<serverURL>${toutapad.privateServerURL}</serverURL>
 			<apiKey>${toutapad.apiKey}</apiKey>
 			<welcomeMessage>${toutapad.welcomeMessage}</welcomeMessage>
 			<synchronizationCron>${toutapad.synchronizationCron}</synchronizationCron>
