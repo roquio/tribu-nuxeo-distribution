@@ -41,11 +41,23 @@ ottc.news.scan.error.boundary=120
 
 ottc.news.portal.url=http://<host>/portal/share/
 
-## For dev or tests
-# In minutes:
-ottc.news.scan.dev.gap=2
-ottc.news.scan.dev.filter.subscr=false
-ottc.news.scan.dev.filter.none.period=false
+## Test mode
+ottc.news.mode.test=false
+
+# Filers conditions
+ottc.news.scan.accept.subscr.test=false
+ottc.news.scan.accept.none.period.test=false
+
+# Daily, weekly and none values in minutes
+ottc.news.scan.daily.test.gap=15
+# Must be > 0
+ottc.news.scan.daily.test.boundary=2
+ottc.news.scan.weekly.test.gap=30
+# Must be > 0
+ottc.news.scan.weekly.test.boundary=4
+ottc.news.scan.error.test.gap=1
+# Must be > 0
+ottc.news.scan.error.test.boundary=1
 
 
 ##----------------------------------------------------------------------------
