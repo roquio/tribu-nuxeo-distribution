@@ -531,7 +531,7 @@
     </layout>
   </appender> 
 
-  <category name="org.opentoutatice.ecm.feature">
+  <category name="org.opentoutatice.ecm" additivity="false">
     <priority value="DEBUG" />
     <appender-ref ref="REPORTING" />
   </category> -->
