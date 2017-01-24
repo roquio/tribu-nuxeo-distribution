@@ -14,7 +14,7 @@
 		<nuxeodrive.version>6.0-HF34</nuxeodrive.version>
 		<opentoutatice.version>3.4.0-SNAPSHOT</opentoutatice.version>
 		<ottc.es.version>1.3.1-RC01</ottc.es.version>
-		<ottc.collab.version>3.4.0-RC04</ottc.collab.version>
+		<ottc.collab.version>3.4.0-SNAPSHOT</ottc.collab.version>
 		<ottc.filenaming.version>1.4-RC02</ottc.filenaming.version>
 		<ottc.wf.version>2.0</ottc.wf.version>
 		<ottc.notif.version>1.3-RC01</ottc.notif.version>
@@ -23,7 +23,7 @@
 		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
 
 		<ottc.es.custom.version>2.0-RC03</ottc.es.custom.version>
-		<ottc.procedure.version>1.0-RC07</ottc.procedure.version>
+		<ottc.procedure.version>1.0-SNAPSHOT</ottc.procedure.version>
 		<ottc.checkin.version>3.4.0-RC05</ottc.checkin.version> 
 		<ottc.pad.version>3.4.0-RC03</ottc.pad.version>
 		<ottc.news.version>1.0-SNAPSHOT</ottc.news.version>
