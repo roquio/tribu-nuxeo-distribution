@@ -60,6 +60,13 @@ ottc.news.scan.error.test.gap=1
 # Must be > 0
 ottc.news.scan.error.test.boundary=1
 
+##----------------------------------------------------------------------------
+## Drive Authentication Tokens cache
+##----------------------------------------------------------------------------
+
+ottc.token.cache.ttl=10
+ottc.volatile.drive.token.cache.ttl=1
+
 
 ##----------------------------------------------------------------------------
 ## Metrics
