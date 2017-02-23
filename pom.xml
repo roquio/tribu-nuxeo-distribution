@@ -12,7 +12,7 @@
 	<properties>
 		<nuxeo.version>6.0-HF34</nuxeo.version>
 		<nuxeodrive.version>6.0-HF34</nuxeodrive.version>
-		<opentoutatice.version>3.4.0-SNAPSHOT</opentoutatice.version>
+		<opentoutatice.version>3.4.1</opentoutatice.version>
 		<ottc.es.version>1.3.1-RC01</ottc.es.version>
 		<ottc.collab.version>3.4.0</ottc.collab.version>
 		<ottc.filenaming.version>1.4-RC02</ottc.filenaming.version>
