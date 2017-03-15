@@ -6,7 +6,8 @@
 	<extension target="org.nuxeo.ecm.core.cache.CacheService"
 		point="caches">
 		<cache name="default-ottc-user-cache" class="org.nuxeo.ecm.core.cache.InMemoryCacheImpl">
-			<ttl>1</ttl>
+		    <!-- nuxeo.cache.maxsize: 100 by default-->
+			<ttl>${nuxeo.cache.maxsize}</ttl>
 			<option name="maxSize">${nuxeo.cache.maxsize}</option>
 			<option name="concurrencyLevel">${nuxeo.cache.concurrencylevel}</option>
 		</cache>
