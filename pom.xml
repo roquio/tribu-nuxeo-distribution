@@ -28,7 +28,9 @@
 		<ottc.pad.version>3.4.0-RC03</ottc.pad.version>
 		<ottc.news.version>1.0-RC02</ottc.news.version>
 		
-		<ottc.monitoring.version>2.1</ottc.monitoring.version>		
+		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
+		
+		<nuxeo.reindex.fulltext.version>6.0</nuxeo.reindex.fulltext.version>	
 	</properties>
 
 	<build>
@@ -212,6 +214,12 @@
             <artifactId>opentoutatice-addon-news-ecm</artifactId>
             <version>${ottc.news.version}</version>
         </dependency>
+        
+        <dependency>
+            <groupId>opentoutatice-ecm.monitoring</groupId>
+            <artifactId>opentoutatice-monitoring-ecm</artifactId>
+            <version>${ottc.monitoring.version}</version>
+        </dependency>
 
 		<!-- Agenda -->
 		<dependency>
@@ -330,6 +338,13 @@
 			<artifactId>nuxeo-platform-login-portal-sso</artifactId>
 			<version>${nuxeo.version}</version>
 		</dependency>
+		
+		<!-- Fulltext reindexation (batch) -->
+		<dependency>
+            <groupId>org.nuxeo</groupId>
+            <artifactId>nuxeo-reindex-fulltext</artifactId>
+            <version>${nuxeo.reindex.fulltext.version}</version>
+        </dependency>
 
 		<!-- Nuxeo Drive -->
 		<dependency>
@@ -409,6 +424,18 @@
 			<artifactId>jsoup</artifactId>
 			<version>1.6.3</version>
 		</dependency>
+		
+		<!-- Monitoring -->
+        <dependency>
+            <groupId>net.bull.javamelody</groupId>
+            <artifactId>javamelody-core</artifactId>
+            <version>1.62.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jrobin</groupId>
+            <artifactId>jrobin</artifactId>
+            <version>1.5.9</version>
+        </dependency>
 
 		<!-- Pad client -->
 		<dependency>
