@@ -39,13 +39,13 @@ ottc.metadata.show.nx.bo=true
 ##-----------------------------------------------------------------------------
 ## VCS Fulltext
 ##-----------------------------------------------------------------------------
-nuxeo.vcs.fulltext.disabled=false
-nuxeo.vcs.fulltext.search.disabled=false
+#nuxeo.vcs.fulltext.disabled=false
+#nuxeo.vcs.fulltext.search.disabled=false
 
 ##-----------------------------------------------------------------------------
 ## Thumbnail
 ##-----------------------------------------------------------------------------
-nuxeo.thumbnail.generation.enabled=true
+nuxeo.thumbnail.generation.enabled=false
 
 ##----------------------------------------------------------------------------
 ## News
