@@ -12,10 +12,11 @@
 	<properties>
 		<nuxeo.version>6.0-HF34</nuxeo.version>
 		<nuxeodrive.version>6.0-HF34</nuxeodrive.version>
-		<opentoutatice.version>3.4.3-SNAPSHOT</opentoutatice.version>
+		<opentoutatice.version>3.4.3-RC02</opentoutatice.version>
 		<ottc.es.version>1.3.1-RC01</ottc.es.version>
 		<ottc.collab.version>3.4.0</ottc.collab.version>
 		<ottc.filenaming.version>1.4-RC02</ottc.filenaming.version>
+		<ottc.file.versioning.version>1.0-RC01</ottc.file.versioning.version>
 		<ottc.wf.version>2.0</ottc.wf.version>
 		<ottc.notif.version>1.3-RC01</ottc.notif.version>
 		<ottc.ui.version>2.0</ottc.ui.version>
@@ -24,7 +25,7 @@
 
 		<ottc.es.custom.version>2.0-RC03</ottc.es.custom.version>
 		<ottc.procedure.version>1.0-RC08</ottc.procedure.version>
-		<ottc.checkin.version>3.4.2-SNAPSHOT</ottc.checkin.version> 
+		<ottc.checkin.version>3.4.2-RC01</ottc.checkin.version> 
 		<ottc.pad.version>3.4.0-RC03</ottc.pad.version>
 		<ottc.news.version>1.0-RC02</ottc.news.version>
 		
@@ -159,6 +160,11 @@
 			<artifactId>opentoutatice-addon-file-based-naming-ecm</artifactId>
 			<version>${ottc.filenaming.version}</version>
 		</dependency>
+		<dependency>
+            <groupId>opentoutatice-ecm.file-versioning</groupId>
+            <artifactId>opentoutatice-addon-file-versioning-ecm</artifactId>
+            <version>${ottc.file.versioning.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>opentoutatice-ecm.portal-notifications</groupId>
 			<artifactId>opentoutatice-addon-portal-notifications-ecm</artifactId>
