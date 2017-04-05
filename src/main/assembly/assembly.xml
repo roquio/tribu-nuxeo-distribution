@@ -35,6 +35,8 @@
 				</include>
 				<include>opentoutatice-ecm.file-based-naming:opentoutatice-addon-file-based-naming-ecm:jar:${ottc.filenaming.version}
 				</include>
+				<include>opentoutatice-ecm.file-versioning:opentoutatice-addon-file-versioning-ecm:jar:${ottc.file.versioning.version}
+				</include>
 				<include>opentoutatice-ecm.portal-notifications:opentoutatice-addon-portal-notifications-ecm:jar:${ottc.notif.version}
 				</include>
 				<include>opentoutatice-ecm.ui:opentoutatice-addon-simple-ui-ecm:jar:${ottc.ui.version}
