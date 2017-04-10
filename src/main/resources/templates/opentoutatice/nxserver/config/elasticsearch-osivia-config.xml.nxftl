@@ -27,6 +27,7 @@
         <include>ttcs:*</include>
         <include>webc:*</include>
         <include>file:*</include>
+         <include>ottc:*</include>
         <exclude>ecm:binarytext</exclude>
     </fetchFromSource>
 
