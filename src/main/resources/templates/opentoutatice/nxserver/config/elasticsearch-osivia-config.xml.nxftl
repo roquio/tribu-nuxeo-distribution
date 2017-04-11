@@ -10,6 +10,7 @@
     <fetchFromSource>
         <include>ecm:*</include>
         <include>dc:*</include>
+        <include>common:*</include>
         <include>ttc:*</include>
         <include>wikibook:*</include>
         <include>wikisection:*</include>
@@ -27,7 +28,7 @@
         <include>ttcs:*</include>
         <include>webc:*</include>
         <include>file:*</include>
-         <include>ottc:*</include>
+        <include>ottc:*</include>
         <exclude>ecm:binarytext</exclude>
     </fetchFromSource>
 
