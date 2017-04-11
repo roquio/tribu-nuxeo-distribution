@@ -106,5 +106,6 @@ ottc.portal.drive.sync.enabled=false
 
 #metrics.tomcat.enabled=true
 
-
+# soffice user environments pool size
+ottc.converter.toutaticeAny2pdf.poolSize=10
 
