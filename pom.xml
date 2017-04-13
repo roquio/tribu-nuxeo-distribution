@@ -27,7 +27,7 @@
 		<ottc.procedure.version>1.0</ottc.procedure.version>
 		<ottc.checkin.version>3.4.2</ottc.checkin.version> 
 		<ottc.pad.version>3.4.0</ottc.pad.version>
-		<ottc.news.version>1.0-RC02</ottc.news.version>
+		<ottc.news.version>1.0</ottc.news.version>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
 		
