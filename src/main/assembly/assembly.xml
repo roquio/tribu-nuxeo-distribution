@@ -69,6 +69,10 @@
 				<!-- Fulltext reindexation (batch) -->
                 <include>org.nuxeo:nuxeo-reindex-fulltext:jar:${nuxeo.reindex.fulltext.version}
                 </include>
+                
+                <!-- custom foad -->
+                <include>fr.gouv.education.foad:foad-nuxeo-custom:jar:${foad.custom.nx}
+                </include>
 			</includes>
 		</dependencySet>
 	

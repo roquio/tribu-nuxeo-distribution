@@ -10,16 +10,16 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.0-HF34</nuxeo.version>
-		<nuxeodrive.version>6.0-HF34</nuxeodrive.version>
-		<opentoutatice.version>3.4.3</opentoutatice.version>
+		<nuxeo.version>6.0-HF37</nuxeo.version>
+		<nuxeodrive.version>6.0-HF37</nuxeodrive.version>
+		<opentoutatice.version>3.4-SNAPSHOT</opentoutatice.version>
 		<ottc.es.version>1.3.1</ottc.es.version>
-		<ottc.collab.version>3.4.1</ottc.collab.version>
+		<ottc.collab.version>3.4-SNAPSHOT</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
 		<ottc.file.versioning.version>1.0</ottc.file.versioning.version>
 		<ottc.wf.version>2.0</ottc.wf.version>
 		<ottc.notif.version>1.3</ottc.notif.version>
-		<ottc.ui.version>2.0</ottc.ui.version>
+		<ottc.ui.version>2.1-SNAPSHOT</ottc.ui.version>
 		<ottc.drive.version>4.4</ottc.drive.version>
 		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
 
@@ -28,6 +28,8 @@
 		<ottc.checkin.version>3.4.2</ottc.checkin.version> 
 		<ottc.pad.version>3.4.0</ottc.pad.version>
 		<ottc.news.version>1.0</ottc.news.version>
+		
+		<foad.custom.nx>4.4-SNAPSHOT</foad.custom.nx>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
 		
@@ -226,6 +228,13 @@
             <artifactId>opentoutatice-monitoring-ecm</artifactId>
             <version>${ottc.monitoring.version}</version>
         </dependency>
+        
+        <!-- Custom foad -->
+        <dependency>
+            <groupId>fr.gouv.education.foad</groupId>
+    		<artifactId>foad-nuxeo-custom</artifactId>
+    		<version>${foad.custom.nx}</version>
+        </dependency>
 
 		<!-- Agenda -->
 		<dependency>
@@ -413,11 +422,13 @@
 			<artifactId>jaudiotagger</artifactId>
 			<version>2.0.3</version>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>com.drewnoakes</groupId>
 			<artifactId>metadata-extractor</artifactId>
 			<version>2.3.1</version>
 		</dependency>
+		 -->
 		<dependency>
 			<groupId>net.java.dev.mistral</groupId>
 			<artifactId>Operations</artifactId>
