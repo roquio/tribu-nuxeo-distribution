@@ -422,19 +422,16 @@
 			<artifactId>jaudiotagger</artifactId>
 			<version>2.0.3</version>
 		</dependency>
-		<!-- 
 		<dependency>
 			<groupId>com.drewnoakes</groupId>
 			<artifactId>metadata-extractor</artifactId>
 			<version>2.3.1</version>
 		</dependency>
-		 -->
 		<dependency>
 			<groupId>net.java.dev.mistral</groupId>
 			<artifactId>Operations</artifactId>
 			<version>0.9.5</version>
 		</dependency>
-
 		<!-- HTML conversion -->
 		<dependency>
 			<groupId>org.jsoup</groupId>
