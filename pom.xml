@@ -17,7 +17,7 @@
 		<ottc.collab.version>3.4-SNAPSHOT</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
 		<ottc.file.versioning.version>1.0</ottc.file.versioning.version>
-		<ottc.wf.version>2.0</ottc.wf.version>
+		<ottc.wf.version>2.1-SNAPSHOT</ottc.wf.version>
 		<ottc.notif.version>1.3</ottc.notif.version>
 		<ottc.ui.version>2.1-SNAPSHOT</ottc.ui.version>
 		<ottc.drive.version>4.4</ottc.drive.version>
