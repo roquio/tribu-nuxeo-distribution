@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<component name="fr.toutatice.addons.toutapad.ecm.client.config">
+
+	<require>org.nuxeo.ecm.core.scheduler.SchedulerService</require>
+	<require>fr.toutatice.addons.toutapad.ecm.services.EtherpadClientServiceImpl</require>
+
+	<extension target="fr.toutatice.addons.toutapad.ecm.services.EtherpadClientServiceImpl"
+		point="EtherpadServers">
+
+		<EtherpadServer name="server-1" default="true" enabled="true">
+			<publicServerURL>${toutapad.publicServerURL}</publicServerURL>
+			<prefixURL>${toutapad.prefixURL}</prefixURL>
+			<privateServerURL>${toutapad.privateServerURL}</privateServerURL>
+			<apiKey>${toutapad.apiKey}</apiKey>
+			<welcomeMessage>${toutapad.welcomeMessage}</welcomeMessage>
+			<synchronizationCron>${toutapad.synchronizationCron}</synchronizationCron>
+
+		</EtherpadServer>
+
+	</extension>
+	
+</component>
+
