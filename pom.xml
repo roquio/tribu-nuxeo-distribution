@@ -10,21 +10,21 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.0-HF34</nuxeo.version>
-		<nuxeodrive.version>6.0-HF34</nuxeodrive.version>
-		<opentoutatice.version>3.4.3</opentoutatice.version>
-		<ottc.es.version>1.3.1</ottc.es.version>
-		<ottc.collab.version>3.4.1</ottc.collab.version>
-		<ottc.filenaming.version>1.4</ottc.filenaming.version>
+		<nuxeo.version>6.0-HF37</nuxeo.version>
+		<nuxeodrive.version>6.0-HF37</nuxeodrive.version>
+		<opentoutatice.version>4.6-SNAPSHOT</opentoutatice.version>
+		<ottc.es.version>4.6.0-RC01</ottc.es.version>
+		<ottc.collab.version>4.6-SNAPSHOT</ottc.collab.version>
+		<ottc.filenaming.version>4.6.0-RC01</ottc.filenaming.version>
 		<ottc.file.versioning.version>1.0</ottc.file.versioning.version>
 		<ottc.wf.version>2.0</ottc.wf.version>
-		<ottc.notif.version>1.3</ottc.notif.version>
-		<ottc.ui.version>2.0</ottc.ui.version>
-		<ottc.drive.version>3.5.0</ottc.drive.version>
-		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
+		<ottc.notif.version>4.6.0-RC01</ottc.notif.version>
+		<ottc.ui.version>2.0-SNAPSHOT</ottc.ui.version>
+		<ottc.drive.version>4.6.0-RC01</ottc.drive.version>
+		<ottc.generic-ui.version>4.6.0-RC01</ottc.generic-ui.version>
 
-		<ottc.es.custom.version>2.0</ottc.es.custom.version>
-		<ottc.procedure.version>1.0</ottc.procedure.version>
+		<ottc.es.custom.version>4.6.0-RC01</ottc.es.custom.version>
+		<ottc.procedure.version>4.6-SNAPSHOT</ottc.procedure.version>
 		<ottc.checkin.version>3.4.2</ottc.checkin.version> 
 		<ottc.pad.version>3.4.0</ottc.pad.version>
 		<ottc.news.version>1.0</ottc.news.version>
