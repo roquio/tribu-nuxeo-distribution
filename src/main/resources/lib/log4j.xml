@@ -521,7 +521,7 @@
   
     <!-- Reportin logging -->
 
-  <!-- <appender name="REPORTING" class="org.apache.log4j.FileAppender">
+  <appender name="REPORTING" class="org.apache.log4j.FileAppender">
     <errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
     <param name="File" value="${nuxeo.log.dir}/reporting.log" />
     <param name="Append" value="false" />
@@ -534,7 +534,7 @@
   <category name="org.opentoutatice.ecm" additivity="false">
     <priority value="DEBUG" />
     <appender-ref ref="REPORTING" />
-  </category> -->
+  </category> 
 
   <!-- See org.nuxeo.ecm.platform.ui.web.shield.ErrorPageForwarder and
   org.nuxeo.ecm.platform.web.common.exceptionhandling.service.ExceptionHandlingContrib in
