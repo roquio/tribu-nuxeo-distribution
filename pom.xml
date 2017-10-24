@@ -18,7 +18,7 @@
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
 		<ottc.file.versioning.version>1.0</ottc.file.versioning.version>
 		<ottc.wf.version>2.1.1</ottc.wf.version>
-		<ottc.notif.version>4.4</ottc.notif.version>
+		<ottc.notif.version>4.4-SNAPSHOT</ottc.notif.version>
 		<ottc.ui.version>2.1</ottc.ui.version>
 		<ottc.drive.version>4.4</ottc.drive.version>
 		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
