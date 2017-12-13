@@ -60,7 +60,11 @@
 				<include>opentoutatice-ecm.toutapad:opentoutatice-addon-toutapad-ecm:jar:${ottc.pad.version}
                 </include>  
                 <include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
-                </include>              
+                </include>        
+                <include>opentoutatice-ecm.jwt:opentoutatice-jwt-parent:jar:${ottc.jwt.version}
+                </include>     
+                <include>opentoutatice-ecm.onlyoffice:opentoutatice-onlyoffice-parent:jar:${ottc.onlyoffice.version}
+                </include>
 
 				<!-- Login & SSO -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-login-portal-sso:jar:${nuxeo.version}
@@ -179,6 +183,11 @@
                 </include>
                 <include>com.googlecode.json-simple:json-simple:jar:1.1.1
                 </include>
+                <!--  Dependencides for jwt/onlyoffice -->
+                <include>com.auth0:java-jwt:jar:3.3.0</include>
+                <include>com.fasterxml.jackson.core:jackson-core:2.9.2</include>
+                <include>com.fasterxml.jackson.core:jackson-databind:2.9.2</include>
+                <include>com.fasterxml.jackson.core:jackson-annotations:2.9.2</include>
 			</includes>
 		</dependencySet>
 	</dependencySets>

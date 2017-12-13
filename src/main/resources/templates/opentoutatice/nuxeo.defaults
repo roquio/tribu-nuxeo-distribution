@@ -93,6 +93,35 @@ ottc.news.scan.error.test.boundary=1
 ottc.token.cache.ttl=10
 ottc.volatile.drive.token.cache.ttl=1
 
+
+##----------------------------------------------------------------------------
+## currentlyEditedCache
+##----------------------------------------------------------------------------
+# duration a cache entry is kept, in minute
+ottc.currentlyEditedCache.ttl=5
+# maximum number of entries the cache may contain
+ottc.currentlyEditedCache.maxsize=1000
+
+##----------------------------------------------------------------------------
+## recentlyEditedCache
+##----------------------------------------------------------------------------
+# duration a cache entry is kept, in minute
+ottc.recentlyEditedCache.ttl=5
+# maximum number of entries the cache may contain
+ottc.recentlyEditedCache.maxsize=1000
+
+
+##----------------------------------------------------------------------------
+## onlyoffice token
+##----------------------------------------------------------------------------
+# the algorithm used for the token, must match the onlyoffice configuration services.CoAuthoring.token.outbox.algorithm
+ottc.onlyoffice.token.algorithm.name=HS256
+# the secret key used for the token, must match the onlyoffice configuration services.CoAuthoring.secret.outbox.string
+ottc.onlyoffice.token.algorithm.key=secret
+# the duration of the token before validity expires, in seconds, defaults to 300 if unset
+ottc.onlyoffice.token.algorithm.duration=300
+
+
 ##----------------------------------------------------------------------------
 ## Drive synchronization (Portal informations)
 ##----------------------------------------------------------------------------

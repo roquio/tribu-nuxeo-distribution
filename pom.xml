@@ -28,6 +28,8 @@
 		<ottc.checkin.version>3.4.2</ottc.checkin.version> 
 		<ottc.pad.version>3.4.0</ottc.pad.version>
 		<ottc.news.version>4.4</ottc.news.version>
+		<ottc.jwt.version>1.0.0-SNAPSHOT</ottc.jwt.version>
+		<ottc.onlyoffice.version>1.0.0-SNAPSHOT</ottc.onlyoffice.version>
 		
 		<foad.custom.nx>4.4.2</foad.custom.nx>
 		
@@ -221,6 +223,16 @@
             <groupId>opentoutatice-ecm.news</groupId>
             <artifactId>opentoutatice-addon-news-ecm</artifactId>
             <version>${ottc.news.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>opentoutatice-ecm.jwt</groupId>
+            <artifactId>opentoutatice-jwt-parent</artifactId>
+            <version>${ottc.jwt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>opentoutatice-ecm.onlyoffice</groupId>
+        	<artifactId>opentoutatice-onlyoffice-parent</artifactId>
+            <version>${ottc.onlyoffice.version}</version>
         </dependency>
         
         <dependency>
@@ -461,6 +473,28 @@
 		    <groupId>com.googlecode.json-simple</groupId>
     		<artifactId>json-simple</artifactId>
         	<version>1.1.1</version>
+		</dependency>
+		
+		<!-- JWT lib -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.9.2</version>
 		</dependency>
 		
 	</dependencies>
