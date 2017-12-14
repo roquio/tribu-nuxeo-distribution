@@ -185,9 +185,9 @@
                 </include>
                 <!--  Dependencides for jwt/onlyoffice -->
                 <include>com.auth0:java-jwt:jar:3.3.0</include>
-                <include>com.fasterxml.jackson.core:jackson-core:2.9.2</include>
-                <include>com.fasterxml.jackson.core:jackson-databind:2.9.2</include>
-                <include>com.fasterxml.jackson.core:jackson-annotations:2.9.2</include>
+                <include>com.fasterxml.jackson.core:jackson-core:jar:2.9.2</include>
+                <include>com.fasterxml.jackson.core:jackson-databind:jar:2.9.2</include>
+                <include>com.fasterxml.jackson.core:jackson-annotations:jar:2.9.2</include>
 			</includes>
 		</dependencySet>
 	</dependencySets>
