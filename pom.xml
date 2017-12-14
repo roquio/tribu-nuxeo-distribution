@@ -226,12 +226,12 @@
         </dependency>
         <dependency>
             <groupId>opentoutatice-ecm.jwt</groupId>
-            <artifactId>opentoutatice-jwt-parent</artifactId>
+            <artifactId>opentoutatice-addon-jwt-ecm</artifactId>
             <version>${ottc.jwt.version}</version>
         </dependency>
         <dependency>
             <groupId>opentoutatice-ecm.onlyoffice</groupId>
-        	<artifactId>opentoutatice-onlyoffice-parent</artifactId>
+        	<artifactId>opentoutatice-addon-onlyoffice-ecm</artifactId>
             <version>${ottc.onlyoffice.version}</version>
         </dependency>
         

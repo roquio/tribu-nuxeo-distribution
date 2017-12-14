@@ -61,9 +61,9 @@
                 </include>  
                 <include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
                 </include>        
-                <include>opentoutatice-ecm.jwt:opentoutatice-jwt-parent:jar:${ottc.jwt.version}
+                <include>opentoutatice-ecm.jwt:opentoutatice-addon-jwt-ecm:jar:${ottc.jwt.version}
                 </include>     
-                <include>opentoutatice-ecm.onlyoffice:opentoutatice-onlyoffice-parent:jar:${ottc.onlyoffice.version}
+                <include>opentoutatice-ecm.onlyoffice:opentoutatice-addon-onlyoffice-ecm:jar:${ottc.onlyoffice.version}
                 </include>
 
 				<!-- Login & SSO -->
