@@ -150,6 +150,13 @@
 				</include>
 				<include>org.nuxeo.ecm.webengine:nuxeo-webengine-ui:jar:${nuxeo.version}
 				</include>
+				<!-- Quota -->
+				<include>org.nuxeo.ecm.platform:nuxeo-quota-automation:jar:${nuxeoquota.version}
+				</include>
+				<include>org.nuxeo.ecm.platform:nuxeo-quota-core:jar:${nuxeoquota.version}
+				</include>
+				<include>org.nuxeo.ecm.platform:nuxeo-quota-web:jar:${nuxeoquota.version}
+				</include>
 			</includes>
 		</dependencySet>
 
