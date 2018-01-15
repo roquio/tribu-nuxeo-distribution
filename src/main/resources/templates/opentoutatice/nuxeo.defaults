@@ -123,6 +123,13 @@ ottc.onlyoffice.token.algorithm.duration=300
 
 
 ##----------------------------------------------------------------------------
+## File Versioning
+##----------------------------------------------------------------------------
+# the amount of versions of file documents to keep in the history
+# -1 to disable
+ottc.file.versioning.max.kept=5
+
+##----------------------------------------------------------------------------
 ## Drive synchronization (Portal informations)
 ##----------------------------------------------------------------------------
 
