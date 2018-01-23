@@ -13,7 +13,7 @@
 		<nuxeo.version>6.0-HF37</nuxeo.version>
 		<nuxeodrive.version>6.0-HF37</nuxeodrive.version>
 		
-		<opentoutatice.version>4.4.3-RC1</opentoutatice.version>
+		<opentoutatice.version>4.4-SNAPSHOT</opentoutatice.version>
 		<ottc.es.version>1.3.1</ottc.es.version>
 		<ottc.collab.version>4.4</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
@@ -30,7 +30,7 @@
 		<ottc.pad.version>3.4.0</ottc.pad.version>
 		<ottc.news.version>4.4</ottc.news.version>
 		<ottc.jwt.version>4.4-RC1</ottc.jwt.version>
-		<ottc.onlyoffice.version>4.4-RC2</ottc.onlyoffice.version>
+		<ottc.onlyoffice.version>4.4-RC3</ottc.onlyoffice.version>
 		
 		<foad.custom.nx>4.4.2</foad.custom.nx>
 		

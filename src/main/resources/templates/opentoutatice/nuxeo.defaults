@@ -120,7 +120,8 @@ ottc.onlyoffice.token.algorithm.name=HS256
 ottc.onlyoffice.token.algorithm.key=secret
 # the duration of the token before validity expires, in seconds, defaults to 300 if unset
 ottc.onlyoffice.token.algorithm.duration=300
-
+# reverse proxy path of onlyoffice
+ottc.onlyoffice.proxy.path=/onlyoffice
 
 ##----------------------------------------------------------------------------
 ## File Versioning
