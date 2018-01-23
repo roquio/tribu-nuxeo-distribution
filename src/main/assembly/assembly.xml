@@ -29,6 +29,8 @@
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-reporting:jar:${opentoutatice.version}
                 </include>
+				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-probes:jar:${opentoutatice.version}
+                </include>                
 
 				<!-- Add ons -->				
 				<include>opentoutatice-ecm.elasticsearch:opentoutatice-addon-elasticsearch-ecm:jar:${ottc.es.version}

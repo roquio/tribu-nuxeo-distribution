@@ -149,6 +149,11 @@
 			<version>${opentoutatice.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>opentoutatice-ecm.platform</groupId>
+			<artifactId>opentoutatice-ecm-platform-probes</artifactId>
+			<version>${opentoutatice.version}</version>
+		</dependency>		
+		<dependency>
             <groupId>opentoutatice-ecm.platform</groupId>
             <artifactId>opentoutatice-ecm-platform-reporting</artifactId>
             <version>${opentoutatice.version}</version>
