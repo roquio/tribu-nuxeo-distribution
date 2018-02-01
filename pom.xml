@@ -30,7 +30,7 @@
 		<ottc.pad.version>3.4.0</ottc.pad.version>
 		<ottc.news.version>4.4</ottc.news.version>
 		<ottc.jwt.version>4.4-RC1</ottc.jwt.version>
-		<ottc.onlyoffice.version>4.4-RC3</ottc.onlyoffice.version>
+		<ottc.onlyoffice.version>4.4-SNAPSHOT</ottc.onlyoffice.version>
 		
 		<foad.custom.nx>4.4.2</foad.custom.nx>
 		
