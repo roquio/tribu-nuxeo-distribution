@@ -66,6 +66,7 @@
       <schema>group</schema>
       <idField>groupname</idField>
       <fieldMapping name="groupname">cn</fieldMapping>
+      <fieldMapping name="grouplabel">portalDisplayName</fieldMapping>      
       <fieldMapping name="description">description</fieldMapping>
       <fieldMapping name="members">uniqueMember</fieldMapping>
       <fieldMapping name="subGroups">subGroups</fieldMapping>
