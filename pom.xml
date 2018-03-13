@@ -25,7 +25,7 @@
 		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
 
 		<ottc.es.custom.version>2.0</ottc.es.custom.version>
-		<ottc.procedure.version>1.0</ottc.procedure.version>
+		<ottc.procedure.version>4.4-SNAPSHOT</ottc.procedure.version>
 		<ottc.checkin.version>3.4.2</ottc.checkin.version> 
 		<ottc.pad.version>4.4.12</ottc.pad.version>
 		<ottc.news.version>4.4</ottc.news.version>
