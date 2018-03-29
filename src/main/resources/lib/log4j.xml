@@ -538,7 +538,7 @@
   
   
   <!-- Notification logging -->
-  <category name="org.nuxeo.ecm.platform.ec.notification">
+  <category name="org.nuxeo.ecm.platform.ec.notification"  additivity="false">
     <priority value="DEBUG" />
 	<appender-ref ref="MAIL_LOG" />
   </category>
