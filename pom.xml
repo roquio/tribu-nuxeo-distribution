@@ -13,9 +13,9 @@
 		<nuxeo.version>6.0-HF44</nuxeo.version>
 		<nuxeodrive.version>6.0-HF44</nuxeodrive.version>
 		
-		<opentoutatice.version>4.4.12.3</opentoutatice.version>
+		<opentoutatice.version>4.4.12.5</opentoutatice.version>
 		<ottc.es.version>1.3.1</ottc.es.version>
-		<ottc.collab.version>4.4.12</ottc.collab.version>
+		<ottc.collab.version>4.4.12.5</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.4.12</ottc.file.versioning.version>
 		<ottc.wf.version>4.4.12.2</ottc.wf.version>
