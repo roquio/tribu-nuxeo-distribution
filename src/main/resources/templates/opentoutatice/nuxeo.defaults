@@ -174,3 +174,7 @@ nuxeo.server.http.header.max.size=32768
 
 #metrics.tomcat.enabled=true
 
+##----------------------------------------------------------------------------
+## Upload size limit
+##----------------------------------------------------------------------------
+ottc.widget.filemaxSize=500Mo
