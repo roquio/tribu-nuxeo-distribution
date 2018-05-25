@@ -520,19 +520,19 @@
   -->
   
     <!-- Reporting logging -->
-  <appender name="REPORTING" class="org.apache.log4j.FileAppender">
+  <appender name="REPORTING" class="org.apache.log4j.DailyRollingFileAppender">
     <errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
     <!-- Rollover at midnight every day -->
     <param name="DatePattern" value="'.'yyyy-MM-dd" />    
     <param name="File" value="${nuxeo.log.dir}/reporting.log" />
-    <param name="Append" value="false" />
+    <param name="Append" value="true" />
     <layout class="org.apache.log4j.PatternLayout">
       <param name="ConversionPattern" value="%d{ISO8601} %-5p [%t] [%c] %m%n" />
     </layout>
   </appender> 
 
   <category name="org.opentoutatice.ecm" additivity="false">
-    <priority value="INFO" />
+    <priority value="DEBUG" />
     <appender-ref ref="REPORTING" />
   </category> 
   
@@ -542,12 +542,12 @@
     <priority value="DEBUG" />
 	<appender-ref ref="MAIL_LOG" />
   </category>
-  <appender name="MAIL_LOG" class="org.apache.log4j.FileAppender" additivity="false">
+  <appender name="MAIL_LOG" class="org.apache.log4j.DailyRollingFileAppender" additivity="false">
     <errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
     <param name="File" value="${nuxeo.log.dir}/mail.log" />
 	<!-- Rollover at midnight every day -->
     <param name="DatePattern" value="'.'yyyy-MM-dd" />
-    <param name="Append" value="false" />
+    <param name="Append" value="true" />
     <layout class="org.apache.log4j.PatternLayout">
       <param name="ConversionPattern" value="%d{ISO8601} %-5p [%t] [%c] %m%n" />                  
     </layout>
