@@ -17,7 +17,7 @@
 			<scope>runtime</scope>
 			<includes>
 				<!-- OpenToutatice -->
-				<include>opentoutatice-ecm.platform:opentoutatice-ecm-attached-files:jar:${opentoutatice.version}
+				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-attached-files:jar:${opentoutatice.version}
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-automation:jar:${opentoutatice.version}
 				</include>

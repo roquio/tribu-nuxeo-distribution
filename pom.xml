@@ -10,24 +10,24 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.0-HF37</nuxeo.version>
-		<nuxeodrive.version>6.0-HF37</nuxeodrive.version>
-		<opentoutatice.version>4.6-SNAPSHOT</opentoutatice.version>
-		<ottc.es.version>4.6.0-RC01</ottc.es.version>
-		<ottc.collab.version>4.6-SNAPSHOT</ottc.collab.version>
-		<ottc.filenaming.version>4.6.0-RC01</ottc.filenaming.version>
-		<ottc.file.versioning.version>1.0</ottc.file.versioning.version>
-		<ottc.wf.version>2.0</ottc.wf.version>
-		<ottc.notif.version>4.6.0-RC01</ottc.notif.version>
-		<ottc.ui.version>2.0-SNAPSHOT</ottc.ui.version>
-		<ottc.drive.version>4.6.0-RC01</ottc.drive.version>
-		<ottc.generic-ui.version>4.6.0-RC01</ottc.generic-ui.version>
+		<nuxeo.version>6.0-HF44</nuxeo.version>
+		<nuxeodrive.version>6.0-HF44</nuxeodrive.version>
+		<opentoutatice.version>4.6.5.p2</opentoutatice.version>
+		<ottc.es.version>4.6.2</ottc.es.version>
+		<ottc.collab.version>4.6.7</ottc.collab.version>
+		<ottc.filenaming.version>4.6</ottc.filenaming.version>
+		<ottc.file.versioning.version>4.6</ottc.file.versioning.version>
+		<ottc.wf.version>4.6</ottc.wf.version>
+		<ottc.notif.version>4.6.1</ottc.notif.version>
+		<ottc.ui.version>4.6.1</ottc.ui.version>
+		<ottc.drive.version>4.6.2</ottc.drive.version>
+		<ottc.generic-ui.version>4.6</ottc.generic-ui.version>
 
-		<ottc.es.custom.version>4.6.0-RC01</ottc.es.custom.version>
-		<ottc.procedure.version>4.6-SNAPSHOT</ottc.procedure.version>
-		<ottc.checkin.version>3.4.2</ottc.checkin.version> 
-		<ottc.pad.version>3.4.0</ottc.pad.version>
-		<ottc.news.version>1.0</ottc.news.version>
+		<ottc.es.custom.version>4.6</ottc.es.custom.version>
+		<ottc.procedure.version>4.6.6</ottc.procedure.version>
+		<ottc.checkin.version>4.6.1</ottc.checkin.version> 
+		<ottc.pad.version>4.6</ottc.pad.version>
+		<ottc.news.version>4.6</ottc.news.version>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
 		
@@ -120,7 +120,7 @@
 		<!-- OpenToutatice -->
 		<dependency>
 			<groupId>opentoutatice-ecm.platform</groupId>
-			<artifactId>opentoutatice-ecm-attached-files</artifactId>
+			<artifactId>opentoutatice-ecm-platform-attached-files</artifactId>
 			<version>${opentoutatice.version}</version>
 		</dependency>
 		<dependency>
