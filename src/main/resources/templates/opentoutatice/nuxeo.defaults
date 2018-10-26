@@ -139,9 +139,11 @@ ottc.portal.drive.sync.enabled=false
 ##----------------------------------------------------------------------------
 ## PDF conversion: soffice user environments pool size
 ##----------------------------------------------------------------------------
-ottc.converter.toutaticeAny2pdf.poolSize=10
+ottc.converter.toutaticeAny2pdf.poolSize=5
 # time to wait for the conversion before timeout, in seconds
 ottc.converter.toutaticeAny2pdf.timeoutDuration=60
+# time to wait until new conversion is tryed, in seconds
+ottc.converter.toutaticeAny2pdf.retryTime=1800
 
 ##----------------------------------------------------------------------------
 ## Notifications (mail)
