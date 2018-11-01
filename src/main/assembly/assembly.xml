@@ -209,6 +209,7 @@
 			<excludes>
 				<exclude>lib/log4j.xml</exclude>
 				<exclude>templates/common-base/conf/server.xml.nxftl</exclude>
+				<exclude>templates/common-base/nxserver/config/default-repository-config.xml.nxftl</exclude>				
 			</excludes>
 		</fileSet>
 
