@@ -1,0 +1,5 @@
+nuxeo.template.includes=acrennes
+acrennes-shortname.target=.
+
+#(service shortname)
+nuxeo.shortname.ldap.directory=groupLdapDirectory

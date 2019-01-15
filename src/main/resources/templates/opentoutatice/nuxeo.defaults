@@ -1,111 +1,33 @@
 opentoutatice.target=.
+nuxeo.template.includes=postgresql
 
 ##----------------------------------------------------------------------------
-## States stack
+## Permalink service
+##----------------------------------------------------------------------------
+nuxeo.permalink.service.portal.url=localhost
+nuxeo.permalink.service.param1=portail
+nuxeo.permalink.service.param2=cms
+
+##----------------------------------------------------------------------------
+## JSF States stack
 ##----------------------------------------------------------------------------
 nuxeo.jsf.numberOfViewsInSession=20
 nuxeo.jsf.numberOfLogicalViews=20
 
 ##----------------------------------------------------------------------------
-## Datasources
+## PDF conversion: 
 ##----------------------------------------------------------------------------
-nuxeo.db.embeddedDatasources=true
-nuxeo.db.xaMode=false
-nuxeo.db.singleDataSource=
-
-nuxeo.db.min-pool-size=5
-nuxeo.db.max-pool-size=100
-nuxeo.db.blocking-timeout-millis=1000
-nuxeo.db.idle-timeout-minutes=5
-# Used only from 7.10-HF16
-nuxeo.db.validationQuery=SELECT 1
-
-##----------------------------------------------------------------------------
-## Toutatpad
-##----------------------------------------------------------------------------
-toutapad.publicServerURL=localhost
-toutapad.privateServerURL=localhost
-toutapad.prefixURL=/p/
-toutapad.apiKey=83f4ed2cd1859cc4988b4e22de148edc29adc86eec048ab0b41b015ef785590a
-toutapad.welcomeMessage=Bievenue sur cette note collaborative !
-toutapad.synchronizationCron=0 16 * * * ?
-
-##----------------------------------------------------------------------------
-## Simple UI
-##----------------------------------------------------------------------------
-
-ottc.metadata.show.nx.bo=true
-
-##-----------------------------------------------------------------------------
-## VCS Fulltext
-##-----------------------------------------------------------------------------
-#nuxeo.vcs.fulltext.disabled=false
-#nuxeo.vcs.fulltext.search.disabled=false
-
-##-----------------------------------------------------------------------------
-## Thumbnail
-##-----------------------------------------------------------------------------
-nuxeo.thumbnail.generation.enabled=false
-
-##----------------------------------------------------------------------------
-## News
-##----------------------------------------------------------------------------
-ottc.news.scan.enabled=false
-ottc.news.scan.cron=0 0/15 20-4 * * ?
-## Values in minutes
-ottc.news.scan.daily.boundary=240
-ottc.news.scan.weekly.boundary=720
-ottc.news.scan.error.boundary=120
-
-ottc.news.portal.url=http://<host>/portal/share/
-
-## Test mode
-ottc.news.mode.test=false
-
-# Filers conditions
-ottc.news.scan.accept.subscr.test=false
-ottc.news.scan.accept.none.period.test=false
-
-# Daily, weekly and none values in minutes
-ottc.news.scan.daily.test.gap=15
-# Must be > 0
-ottc.news.scan.daily.test.boundary=2
-ottc.news.scan.weekly.test.gap=30
-# Must be > 0
-ottc.news.scan.weekly.test.boundary=4
-ottc.news.scan.error.test.gap=1
-# Must be > 0
-ottc.news.scan.error.test.boundary=1
-
-##----------------------------------------------------------------------------
-## Drive Authentication Tokens cache
-##----------------------------------------------------------------------------
-
-ottc.token.cache.ttl=10
-ottc.volatile.drive.token.cache.ttl=1
-
-##----------------------------------------------------------------------------
-## Drive synchronization (Portal informations)
-##----------------------------------------------------------------------------
-
-ottc.portal.drive.sync.enabled=false
-
-
-##----------------------------------------------------------------------------
-## Metrics
-##----------------------------------------------------------------------------
-#metrics.csv.enabled=true
-#metrics.csv.period=10
-## This will create a sub directory metrics-TIMESTAMP
-#metrics.csv.dir=/var/log/nuxeo
-
-#metrics.graphite.enabled=true
-#metrics.graphite.host=localhost
-#metrics.graphite.port=2003
-#metrics.graphite.period=10
-
-#metrics.tomcat.enabled=true
-
 # soffice user environments pool size
 ottc.converter.toutaticeAny2pdf.poolSize=10
 
+##========================
+## Fulltext Analyzer
+##========================
+nuxeo.vcs.fulltext.search.analyzer=french
+
+##-------------------------
+## Timeout for imports
+##-------------------------
+org.nuxeo.dnd.upload.timeout=300000
+org.nuxeo.dnd.exec.timeout=300000
+nuxeo.db.transactiontimeout=700

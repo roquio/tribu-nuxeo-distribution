@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<component name="acrennes-repository-config">
+
+	<require>default-repository-config</require>
+
+	<extension target="org.nuxeo.ecm.core.storage.sql.RepositoryService"
+		point="repository">
+		
+		<repository name="default"
+			factory="org.nuxeo.ecm.core.storage.sql.ra.PoolingRepositoryFactory">
+			
+			<!-- Always redefine pool to be taken into account when merging Repository contributions -->
+			<pool minPoolSize="${nuxeo.vcs["min-pool-size"]}" maxPoolSize="${nuxeo.vcs["max-pool-size"]}"
+        		blockingTimeoutMillis="${nuxeo.vcs["blocking-timeout-millis"]}" idleTimeoutMinutes="${nuxeo.vcs["idle-timeout-minutes"]}" />
+			
+			<schema>
+				<field type="largetext">note</field>
+				<field type="largetext">relatedtext</field>
+				<field type="largetext">webp:content</field>
+				<field type="largetext">webc:welcomeText</field>
+				<field type="largetext">comment:comment</field>
+				<field type="largetext">post</field>
+				<field type="largetext">mail:mail</field>
+			</schema>
+			
+			<indexing>
+				<#if "${nuxeo.db.type}" == "postgresql">
+          			<fulltext disabled="${nuxeo.vcs.fulltext.disabled}" searchDisabled="${nuxeo.vcs.fulltext.search.disabled}" analyzer="${nuxeo.vcs.fulltext.search.analyzer}">
+          				<index name="default">
+            				<!-- all props implied -->
+          				</index>
+          				<index name="title">
+            				<field>dc:title</field>
+          				</index>
+          				<index name="description">
+            				<field>dc:description</field>
+          				</index>
+        			</fulltext>
+				</#if>
+			</indexing>
+		</repository>
+	</extension>
+
+</component>

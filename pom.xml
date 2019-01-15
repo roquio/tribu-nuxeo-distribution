@@ -3,10 +3,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>opentoutatice-ecm.distribtion</groupId>
-	<artifactId>ottc-collab-nx-distrib</artifactId>
+	<groupId>toutatice-ecm.acrennes</groupId>
+	<artifactId>acrennes-nx-distrib</artifactId>
 	<version>4.6-SNAPSHOT</version>
-	<name>Open toutatice + collab modules nuxeo distribution</name>
+	<name>Ac-rennes nuxeo distribution</name>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -29,9 +29,17 @@
 		<ottc.pad.version>4.6</ottc.pad.version>
 		<ottc.news.version>4.6</ottc.news.version>
 		
+		<ottc.profiledpublishing.version>4.6</ottc.profiledpublishing.version>
+		<ottc.remotepublishing.version>4.6</ottc.remotepublishing.version>
+		<ottc.webmode.version>4.6</ottc.webmode.version>
+		
+		<acrennes.version>4.0.11</acrennes.version>
+		
+		<shortname.version>1.0.3</shortname.version>
+		<toutapad.version>4.6</toutapad.version>
+
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
 		
-		<nuxeo.reindex.fulltext.version>6.0</nuxeo.reindex.fulltext.version>	
 	</properties>
 
 	<build>
@@ -153,15 +161,22 @@
 			<version>${ottc.es.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>opentoutatice-ecm.collab-tools</groupId>
+			<artifactId>opentoutatice-collab-tools-ecm</artifactId>
+			<version>${ottc.collab.version}</version>
+		</dependency>		
+		<dependency>
 			<groupId>opentoutatice-ecm.file-based-naming</groupId>
 			<artifactId>opentoutatice-addon-file-based-naming-ecm</artifactId>
 			<version>${ottc.filenaming.version}</version>
 		</dependency>
+		<!-- 
 		<dependency>
             <groupId>opentoutatice-ecm.file-versioning</groupId>
             <artifactId>opentoutatice-addon-file-versioning-ecm</artifactId>
             <version>${ottc.file.versioning.version}</version>
         </dependency>
+         -->
 		<dependency>
 			<groupId>opentoutatice-ecm.portal-notifications</groupId>
 			<artifactId>opentoutatice-addon-portal-notifications-ecm</artifactId>
@@ -224,12 +239,118 @@
             <version>${ottc.monitoring.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>opentoutatice-ecm.profiled-publishing</groupId>
+            <artifactId>opentoutatice-platform-profiled-publishing-ecm</artifactId>
+            <version>${ottc.profiledpublishing.version}</version>        
+		</dependency>
+        <dependency>
+            <groupId>opentoutatice-ecm.remote-publishing</groupId>
+            <artifactId>opentoutatice-platform-remote-publishing-ecm</artifactId>
+            <version>${ottc.remotepublishing.version}</version>        
+		</dependency>
+        <dependency>
+            <groupId>opentoutatice-ecm.web-mode</groupId>
+            <artifactId>opentoutatice-web-mode-ecm</artifactId>
+            <version>${ottc.webmode.version}</version>        
+		</dependency>
+		
+		<!-- Acrennes -->
+		<dependency>
+            <groupId>toutatice-ecm.acrennes</groupId>
+            <artifactId>toutatice-ecm-acrennes-adaptor</artifactId>
+            <version>${acrennes.version}</version>        
+		</dependency>
+		<dependency>
+            <groupId>toutatice-ecm.acrennes</groupId>
+            <artifactId>toutatice-ecm-acrennes-automation</artifactId>
+            <version>${acrennes.version}</version>        
+		</dependency>
+		<dependency>
+            <groupId>toutatice-ecm.acrennes</groupId>
+            <artifactId>toutatice-ecm-acrennes-core</artifactId>
+            <version>${acrennes.version}</version>        
+		</dependency>
+		<dependency>
+            <groupId>toutatice-ecm.acrennes</groupId>
+            <artifactId>toutatice-ecm-acrennes-web</artifactId>
+            <version>${acrennes.version}</version>        
+		</dependency>
+		<dependency>
+            <groupId>toutatice-ecm.acrennes</groupId>
+            <artifactId>toutatice-ecm-acrennes-studio</artifactId>
+            <version>${acrennes.version}</version>        
+		</dependency>
+		<!--
+		<dependency>
+			<groupId>acaren-nuxeo-studio-extension</groupId>
+			<artifactId>ACRENNES4</artifactId>
+			<version>${acrennes4.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>acaren-nuxeo-studio-extension</groupId>
+			<artifactId>ACRENNES6</artifactId>
+			<version>${acrennes6.version}</version>
+		</dependency>
+		-->
+				
+		<!-- Acrennes addons -->
+		<dependency>
+ 			<groupId>toutatice-acrennes-addons.shortname</groupId>
+			<artifactId>toutatice-acrennes-addons-shortname-ecm</artifactId>
+            <version>${shortname.version}</version>        
+		</dependency>
+		<dependency>
+  			<groupId>toutatice-acrennes-addons.toutapad</groupId>
+  			<artifactId>toutatice-acrennes-addons-toutapad-ecm</artifactId>
+            <version>${toutapad.version}</version>        
+		</dependency>
+
+
 		<!-- Agenda -->
 		<dependency>
 			<groupId>org.nuxeo.ecm.platform</groupId>
 			<artifactId>nuxeo-agenda</artifactId>
 			<version>${nuxeo.version}</version>
 		</dependency>
+		
+		<!-- DAM -->
+		<dependency>
+			<groupId>org.nuxeo.ecm.annot</groupId>
+			<artifactId>nuxeo-annot-api</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.annot</groupId>
+			<artifactId>nuxeo-annot-contrib</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.annot</groupId>
+			<artifactId>nuxeo-annot-core</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.annot</groupId>
+			<artifactId>nuxeo-annot-gwt</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.annot</groupId>
+			<artifactId>nuxeo-annot-http</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.annot</groupId>
+			<artifactId>nuxeo-annot-repo</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.dam</groupId>
+			<artifactId>nuxeo-dam</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+				
 
 		<!-- Imaging -->
 		<dependency>
@@ -262,6 +383,16 @@
 			<artifactId>nuxeo-platform-imaging-preview</artifactId>
 			<version>${nuxeo.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-imaging-tiling</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-imaging-tiling-preview</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>		
 
 		<!-- Audio -->
 		<dependency>
@@ -342,12 +473,6 @@
 			<version>${nuxeo.version}</version>
 		</dependency>
 		
-		<!-- Fulltext reindexation (batch) -->
-		<dependency>
-            <groupId>org.nuxeo</groupId>
-            <artifactId>nuxeo-reindex-fulltext</artifactId>
-            <version>${nuxeo.reindex.fulltext.version}</version>
-        </dependency>
 
 		<!-- Nuxeo Drive -->
 		<dependency>
@@ -392,6 +517,53 @@
 			<artifactId>nuxeo-webengine-ui</artifactId>
 			<version>${nuxeo.version}</version>
 		</dependency>
+		
+		<!-- Virtual navigation -->
+		<dependency>
+		    <groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-virtualnavigation-core-contrib</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-virtualnavigation-web</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		
+		<!-- Faceted search -->
+		<dependency>
+		    <groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-faceted-search-api</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-faceted-search-dm</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-faceted-search-jsf</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		
+		<!-- IMAP -->
+		<dependency>
+		    <groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-mail-core</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>		
+		<dependency>
+		    <groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-mail-types</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.nuxeo.ecm.platform</groupId>
+			<artifactId>nuxeo-platform-mail-web</artifactId>
+			<version>${nuxeo.version}</version>
+		</dependency>		
+		
 
 
 		<!-- Dependencies for imaging -->

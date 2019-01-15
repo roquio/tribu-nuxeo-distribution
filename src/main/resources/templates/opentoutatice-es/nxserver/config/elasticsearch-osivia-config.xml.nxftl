@@ -8,27 +8,7 @@
     <elasticSearchIndex name="nuxeo" type="doc" repository="default">
     
     <fetchFromSource>
-        <include>ecm:*</include>
-        <include>dc:*</include>
-        <include>common:*</include>
-        <include>ttc:*</include>
-        <include>wikibook:*</include>
-        <include>wikisection:*</include>
-        <include>note:*</include>
-        <include>annonce:*</include>
-        <include>ottcweb:*</include>
-        <include>ottcwebc:*</include>
-        <include>vevent:*</include>
-        <include>ttcevt:*</include>
-        <include>pi:*</include>
-        <include>pcd:*</include>
-        <include>nt:*</include>
-        <include>ottcDft:*</include>
-        <include>ottcChk:*</include>
-        <include>ttcs:*</include>
-        <include>webc:*</include>
-        <include>file:*</include>
-        <include>ottc:*</include>
+        <include>*</include>
         <exclude>ecm:binarytext</exclude>
     </fetchFromSource>
 
@@ -155,7 +135,20 @@
             "include_in_all": false
           }
        }
-   } ],
+   },{
+      "rcd_variables": {
+         "path_match": "rcd:globalVariablesValues.*",
+         "mapping": {
+                "type" : "string",
+                "fields": {
+                    "lowercase" : {
+                        "type":"string",
+                        "analyzer" : "lowercase_analyzer"       
+                    }
+                }
+          }
+       }
+   }],
    "properties" : {
       "dc:title" : {
          "type" : "multi_field",

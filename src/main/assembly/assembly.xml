@@ -35,13 +35,7 @@
 				</include>
 				<include>opentoutatice-ecm.file-based-naming:opentoutatice-addon-file-based-naming-ecm:jar:${ottc.filenaming.version}
 				</include>
-				<include>opentoutatice-ecm.file-versioning:opentoutatice-addon-file-versioning-ecm:jar:${ottc.file.versioning.version}
-				</include>
 				<include>opentoutatice-ecm.portal-notifications:opentoutatice-addon-portal-notifications-ecm:jar:${ottc.notif.version}
-				</include>
-				<include>opentoutatice-ecm.ui:opentoutatice-addon-simple-ui-ecm:jar:${ottc.ui.version}
-				</include>
-				<include>opentoutatice-ecm.workflows-integration:opentoutatice-addon-workflows-integration-ecm:jar:${ottc.wf.version}
 				</include>
 				<include>opentoutatice-ecm.collab-tools:opentoutatice-collab-tools-ecm:jar:${ottc.collab.version}
 				</include>
@@ -53,22 +47,37 @@
 				</include>
 				<include>opentoutatice-ecm.procedures:opentoutatice-addon-procedures-ecm:jar:${ottc.procedure.version}
 				</include>
-				<include>opentoutatice-ecm.checkin:opentoutatice-addon-checkin-ecm:jar:${ottc.checkin.version}
-				</include>
 				<include>opentoutatice-ecm.monitoring:opentoutatice-monitoring-ecm:jar:${ottc.monitoring.version}
                 </include>
-				<include>opentoutatice-ecm.toutapad:opentoutatice-addon-toutapad-ecm:jar:${ottc.pad.version}
-                </include>  
-                <include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
-                </include>              
 
+				<include>opentoutatice-ecm.profiled-publishing:opentoutatice-platform-profiled-publishing-ecm:jar:${ottc.profiledpublishing.version}
+                </include>  
+                <include>opentoutatice-ecm.remote-publishing:opentoutatice-platform-remote-publishing-ecm:jar:${ottc.remotepublishing.version}
+                </include>  
+                <include>opentoutatice-ecm.web-mode:opentoutatice-web-mode-ecm:jar:${ottc.webmode.version}
+                </include>
+                
+                <!-- Ac rennes -->
+                <include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-adaptor:jar:${acrennes.version}
+                </include>
+				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-automation:jar:${acrennes.version}
+                </include>
+				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-core:jar:${acrennes.version}
+                </include>
+				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-studio:jar:${acrennes.version}
+                </include>
+				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-web:jar:${acrennes.version}
+                </include>
+                
+				<include>toutatice-acrennes-addons.shortname:toutatice-acrennes-addons-shortname-ecm:jar:${shortname.version}
+                </include>
+				<include>toutatice-acrennes-addons.toutapad:toutatice-acrennes-addons-toutapad-ecm:jar:${toutapad.version}
+                </include>
+                                
 				<!-- Login & SSO -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-login-portal-sso:jar:${nuxeo.version}
 				</include>
-				
-				<!-- Fulltext reindexation (batch) -->
-                <include>org.nuxeo:nuxeo-reindex-fulltext:jar:${nuxeo.reindex.fulltext.version}
-                </include>
+
 			</includes>
 		</dependencySet>
 	
@@ -81,6 +90,23 @@
 				<!-- Nuxeo Agenda -->
 				<include>org.nuxeo.ecm.platform:nuxeo-agenda:jar:${nuxeo.version}
 				</include>
+				<!-- DAM -->
+				<include>org.nuxeo.ecm.annot:nuxeo-annot-api:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.annot:nuxeo-annot-contrib:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.annot:nuxeo-annot-core:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.annot:nuxeo-annot-gwt:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.annot:nuxeo-annot-http:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.annot:nuxeo-annot-repo:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.dam:nuxeo-dam:jar:${nuxeo.version}
+				</include>			
+				
+				
 				<!-- Nuxeo Imaging -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-imaging-api:jar:${nuxeo.version}
 				</include>
@@ -94,6 +120,10 @@
 				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-imaging-preview:jar:${nuxeo.version}
 				</include>
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-imaging-tiling:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-imaging-tiling-preview:jar:${nuxeo.version}
+				</include>				
 				<!-- Audio -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-audio-core:jar:${nuxeo.version}
 				</include>
@@ -142,6 +172,28 @@
 				</include>
 				<include>org.nuxeo.ecm.webengine:nuxeo-webengine-ui:jar:${nuxeo.version}
 				</include>
+				
+				<!-- Virtual navigation -->
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-virtualnavigation-core-contrib:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-virtualnavigation-web:jar:${nuxeo.version}
+				</include>
+				
+				<!-- Faceted search -->
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-api:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-dm:jar:${nuxeo.version}
+				</include>		
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-jsf:jar:${nuxeo.version}
+				</include>
+				
+				<!-- IMAP -->
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-mail-core:jar:${nuxeo.version}
+				</include>
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-mail-types:jar:${nuxeo.version}
+				</include>		
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-mail-web:jar:${nuxeo.version}
+				</include>				
 			</includes>
 		</dependencySet>
 
@@ -191,7 +243,6 @@
 			</includes>
 			<!-- Surcharges -->
 			<excludes>
-				<exclude>templates/common-base/nxserver/config/elasticsearch-config.xml.nxftl</exclude>
 				<exclude>lib/log4j.xml</exclude>
 			</excludes>
 		</fileSet>

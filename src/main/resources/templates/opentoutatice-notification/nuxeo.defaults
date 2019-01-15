@@ -1,0 +1,8 @@
+opentoutatice-notification.target=.
+
+nuxeo.template.includes=opentoutatice
+
+##----------------------------------------------------------------------------
+## Do not notify user if he has not Read permission
+##----------------------------------------------------------------------------
+notification.check.read.permission=true

@@ -8,13 +8,13 @@
 		point="EtherpadServers">
 
 		<EtherpadServer name="server-1" default="true" enabled="true">
-			<publicServerURL>${toutapad.publicServerURL}</publicServerURL>
-			<prefixURL>${toutapad.prefixURL}</prefixURL>
-			<privateServerURL>${toutapad.privateServerURL}</privateServerURL>
-			<apiKey>${toutapad.apiKey}</apiKey>
-			<welcomeMessage>${toutapad.welcomeMessage}</welcomeMessage>
-			<synchronizationCron>${toutapad.synchronizationCron}</synchronizationCron>
-
+			<serverURL>${acrennes.toutapad.serverURL}</serverURL>
+			<prefixURL>${acrennes.toutapad.prefixURL}</prefixURL>
+			<apiKey>${acrennes.toutapad.apiKey}</apiKey>
+			<welcomeMessage>${acrennes.toutapad.welcomeMessage}</welcomeMessage>
+			<synchronizationCron>${acrennes.toutapad.synchronizationCron}</synchronizationCron>
+			<contributionFormUrl>${acrennes.toutapad.contributionFormUrl}</contributionFormUrl>
+			<connectedView>${acrennes.toutapad.connectedView}</connectedView>
 		</EtherpadServer>
 
 	</extension>
