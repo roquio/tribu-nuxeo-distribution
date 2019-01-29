@@ -35,6 +35,7 @@
 		<ottc.profiledpublishing.version>4.6</ottc.profiledpublishing.version>
 		<ottc.remotepublishing.version>4.6</ottc.remotepublishing.version>
 		<ottc.webmode.version>4.7.1</ottc.webmode.version>
+        <ottc.sharing.version>4.7-SNAPSHOT</ottc.sharing.version>
 		
 		<acrennes.version>4.0.11</acrennes.version>
 		
@@ -275,6 +276,11 @@
             <artifactId>opentoutatice-web-mode-ecm</artifactId>
             <version>${ottc.webmode.version}</version>        
 		</dependency>
+        <dependency>
+            <groupId>opentoutatice-ecm.sharing</groupId>
+            <artifactId>opentoutatice-sharing</artifactId>
+            <version>${ottc.sharing.version}</version>        
+        </dependency>
 		
 		<!-- Acrennes -->
 		<dependency>

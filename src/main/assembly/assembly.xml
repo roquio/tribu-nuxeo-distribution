@@ -63,6 +63,7 @@
                 </include>  
                 <include>opentoutatice-ecm.web-mode:opentoutatice-web-mode-ecm:jar:${ottc.webmode.version}
                 </include>
+                <include>opentoutatice-ecm.sharing:opentoutatice-sharing:jar:${ottc.sharing.version}</include>
                 
                 <!-- Ac rennes -->
                 <include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-adaptor:jar:${acrennes.version}
