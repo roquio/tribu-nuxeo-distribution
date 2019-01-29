@@ -39,8 +39,10 @@
 				</include>
 				<include>opentoutatice-ecm.collab-tools:opentoutatice-collab-tools-ecm:jar:${ottc.collab.version}
 				</include>
+				<!-- 
 				<include>opentoutatice-ecm.drive:opentoutatice-drive:jar:${ottc.drive.version}
 				</include>
+				 -->
 				<include>opentoutatice-ecm.generic-ui-service:opentoutatice-generic-ui-service-ecm:jar:${ottc.generic-ui.version}
 				</include>
 				<include>opentoutatice-ecm.elasticsearch-customizer:opentoutatice-addon-elasticsearch-customizer-ecm:jar:${ottc.es.custom.version}
@@ -49,6 +51,11 @@
 				</include>
 				<include>opentoutatice-ecm.monitoring:opentoutatice-monitoring-ecm:jar:${ottc.monitoring.version}
                 </include>
+                <include>opentoutatice-ecm.jwt:opentoutatice-addon-jwt-ecm:jar:${ottc.jwt.version}
+                </include>     
+                <include>opentoutatice-ecm.onlyoffice:opentoutatice-addon-onlyoffice-ecm:jar:${ottc.onlyoffice.version}
+                </include>
+
 
 				<include>opentoutatice-ecm.profiled-publishing:opentoutatice-platform-profiled-publishing-ecm:jar:${ottc.profiledpublishing.version}
                 </include>  
@@ -227,6 +234,11 @@
                 </include>
                 <include>com.googlecode.json-simple:json-simple:jar:1.1.1
                 </include>
+                <!--  Dependencides for jwt/onlyoffice -->
+                <include>com.auth0:java-jwt:jar:3.3.0</include>
+                <include>com.fasterxml.jackson.core:jackson-core:jar:2.9.2</include>
+                <include>com.fasterxml.jackson.core:jackson-databind:jar:2.9.2</include>
+                <include>com.fasterxml.jackson.core:jackson-annotations:jar:2.9.2</include>
 			</includes>
 		</dependencySet>
 	</dependencySets>

@@ -5,33 +5,36 @@
 
 	<groupId>toutatice-ecm.acrennes</groupId>
 	<artifactId>acrennes-nx-distrib</artifactId>
-	<version>4.6-SNAPSHOT</version>
+	<version>4.7-SNAPSHOT</version>
 	<name>Ac-rennes nuxeo distribution</name>
 	<packaging>pom</packaging>
 
 	<properties>
 		<nuxeo.version>6.0-HF44</nuxeo.version>
 		<nuxeodrive.version>6.0-HF44</nuxeodrive.version>
-		<opentoutatice.version>4.6.5.p2</opentoutatice.version>
-		<ottc.es.version>4.6.2</ottc.es.version>
-		<ottc.collab.version>4.6.7</ottc.collab.version>
+		<opentoutatice.version>4.7.6</opentoutatice.version>
+		<ottc.es.version>4.7</ottc.es.version>
+		<ottc.collab.version>4.7</ottc.collab.version>
 		<ottc.filenaming.version>4.6</ottc.filenaming.version>
-		<ottc.file.versioning.version>4.6</ottc.file.versioning.version>
-		<ottc.wf.version>4.6</ottc.wf.version>
-		<ottc.notif.version>4.6.1</ottc.notif.version>
+		<!--  <ottc.file.versioning.version>4.6</ottc.file.versioning.version>-->
+		<!-- <ottc.wf.version>4.6</ottc.wf.version> -->
+		<ottc.notif.version>4.7</ottc.notif.version>
 		<ottc.ui.version>4.6.1</ottc.ui.version>
-		<ottc.drive.version>4.6.2</ottc.drive.version>
+		<!-- <ottc.drive.version>4.6.2</ottc.drive.version> -->
 		<ottc.generic-ui.version>4.6</ottc.generic-ui.version>
 
-		<ottc.es.custom.version>4.6</ottc.es.custom.version>
-		<ottc.procedure.version>4.6.6</ottc.procedure.version>
-		<ottc.checkin.version>4.6.1</ottc.checkin.version> 
-		<ottc.pad.version>4.6</ottc.pad.version>
-		<ottc.news.version>4.6</ottc.news.version>
+		<ottc.es.custom.version>4.7</ottc.es.custom.version>
+		<ottc.procedure.version>4.7.1</ottc.procedure.version>
+		<!-- <ottc.checkin.version>4.6.1</ottc.checkin.version> --> 
+		<!-- <ottc.pad.version>4.6</ottc.pad.version>
+		<ottc.news.version>4.6</ottc.news.version> -->
+
+		<ottc.jwt.version>4.7</ottc.jwt.version>
+		<ottc.onlyoffice.version>4.7.2</ottc.onlyoffice.version>
 		
 		<ottc.profiledpublishing.version>4.6</ottc.profiledpublishing.version>
 		<ottc.remotepublishing.version>4.6</ottc.remotepublishing.version>
-		<ottc.webmode.version>4.6</ottc.webmode.version>
+		<ottc.webmode.version>4.7.1</ottc.webmode.version>
 		
 		<acrennes.version>4.0.11</acrennes.version>
 		
@@ -182,26 +185,32 @@
 			<artifactId>opentoutatice-addon-portal-notifications-ecm</artifactId>
 			<version>${ottc.notif.version}</version>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.ui</groupId>
 			<artifactId>opentoutatice-addon-simple-ui-ecm</artifactId>
 			<version>${ottc.ui.version}</version>
 		</dependency>
+		 -->
+		 <!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.workflows-integration</groupId>
 			<artifactId>opentoutatice-addon-workflows-integration-ecm</artifactId>
 			<version>${ottc.wf.version}</version>
 		</dependency>
+		 -->
 		<dependency>
 			<groupId>opentoutatice-ecm.collab-tools</groupId>
 			<artifactId>opentoutatice-collab-tools-ecm</artifactId>
 			<version>${ottc.collab.version}</version>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.drive</groupId>
 			<artifactId>opentoutatice-drive</artifactId>
 			<version>${ottc.drive.version}</version>
 		</dependency>
+		 -->
 		<dependency>
 			<groupId>opentoutatice-ecm.generic-ui-service</groupId>
 			<artifactId>opentoutatice-generic-ui-service-ecm</artifactId>
@@ -217,6 +226,7 @@
 		    <artifactId>opentoutatice-addon-procedures-ecm</artifactId>
 		    <version>${ottc.procedure.version}</version>
 		</dependency>
+		<!-- 
 		<dependency>
 		    <groupId>opentoutatice-ecm.checkin</groupId>
 		    <artifactId>opentoutatice-addon-checkin-ecm</artifactId>
@@ -231,6 +241,17 @@
             <groupId>opentoutatice-ecm.news</groupId>
             <artifactId>opentoutatice-addon-news-ecm</artifactId>
             <version>${ottc.news.version}</version>
+        </dependency>
+                 -->
+        <dependency>
+            <groupId>opentoutatice-ecm.jwt</groupId>
+            <artifactId>opentoutatice-addon-jwt-ecm</artifactId>
+            <version>${ottc.jwt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>opentoutatice-ecm.onlyoffice</groupId>
+        	<artifactId>opentoutatice-addon-onlyoffice-ecm</artifactId>
+            <version>${ottc.onlyoffice.version}</version>
         </dependency>
         
         <dependency>
@@ -622,6 +643,28 @@
 		    <groupId>com.googlecode.json-simple</groupId>
     		<artifactId>json-simple</artifactId>
         	<version>1.1.1</version>
+		</dependency>
+		
+		<!-- JWT lib -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.9.2</version>
 		</dependency>
 		
 	</dependencies>

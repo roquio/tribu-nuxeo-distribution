@@ -31,3 +31,34 @@ nuxeo.vcs.fulltext.search.analyzer=french
 org.nuxeo.dnd.upload.timeout=300000
 org.nuxeo.dnd.exec.timeout=300000
 nuxeo.db.transactiontimeout=700
+
+
+
+##----------------------------------------------------------------------------
+## currentlyEditedCache
+##----------------------------------------------------------------------------
+# duration a cache entry is kept, in minute
+ottc.currentlyEditedCache.ttl=5
+# maximum number of entries the cache may contain
+ottc.currentlyEditedCache.maxsize=1000
+
+##----------------------------------------------------------------------------
+## recentlyEditedCache
+##----------------------------------------------------------------------------
+# duration a cache entry is kept, in minute
+ottc.recentlyEditedCache.ttl=5
+# maximum number of entries the cache may contain
+ottc.recentlyEditedCache.maxsize=1000
+
+
+##----------------------------------------------------------------------------
+## onlyoffice token
+##----------------------------------------------------------------------------
+# the algorithm used for the token, must match the onlyoffice configuration services.CoAuthoring.token.outbox.algorithm
+ottc.onlyoffice.token.algorithm.name=HS256
+# the secret key used for the token, must match the onlyoffice configuration services.CoAuthoring.secret.outbox.string
+ottc.onlyoffice.token.algorithm.key=secret
+# the duration of the token before validity expires, in seconds, defaults to 300 if unset
+ottc.onlyoffice.token.algorithm.duration=300
+# reverse proxy path of onlyoffice
+ottc.onlyoffice.proxy.path=/onlyoffice
