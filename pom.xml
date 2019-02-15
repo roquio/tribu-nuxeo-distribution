@@ -10,9 +10,9 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.0-HF44</nuxeo.version>
-		<nuxeodrive.version>6.0-HF44</nuxeodrive.version>
-		<opentoutatice.version>4.7.6</opentoutatice.version>
+		<nuxeo.version>6.0-HF45</nuxeo.version>
+		<nuxeodrive.version>6.0-HF45</nuxeodrive.version>
+		<opentoutatice.version>4.7.9</opentoutatice.version>
 		<ottc.es.version>4.7</ottc.es.version>
 		<ottc.collab.version>4.7</ottc.collab.version>
 		<ottc.filenaming.version>4.6</ottc.filenaming.version>
@@ -35,7 +35,7 @@
 		<ottc.profiledpublishing.version>4.6</ottc.profiledpublishing.version>
 		<ottc.remotepublishing.version>4.6</ottc.remotepublishing.version>
 		<ottc.webmode.version>4.7.1</ottc.webmode.version>
-        <ottc.sharing.version>4.7-SNAPSHOT</ottc.sharing.version>
+        <ottc.sharing.version>4.7</ottc.sharing.version>
 		
 		<acrennes.version>4.0.11</acrennes.version>
 		
