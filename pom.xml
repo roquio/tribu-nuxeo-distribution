@@ -12,22 +12,22 @@
 	<properties>
 		<nuxeo.version>6.0-HF45</nuxeo.version>
 		<nuxeodrive.version>6.0-HF45</nuxeodrive.version>
-		<opentoutatice.version>4.7.9</opentoutatice.version>
+		<opentoutatice.version>4.7-SNAPSHOT</opentoutatice.version>
 		<ottc.es.version>4.7</ottc.es.version>
-		<ottc.collab.version>4.7</ottc.collab.version>
+		<ottc.collab.version>4.7-SNAPSHOT</ottc.collab.version>
 		<ottc.filenaming.version>4.6</ottc.filenaming.version>
-		<!--  <ottc.file.versioning.version>4.6</ottc.file.versioning.version>-->
+		<ottc.file.versioning.version>4.6</ottc.file.versioning.version>
 		<!-- <ottc.wf.version>4.6</ottc.wf.version> -->
-		<ottc.notif.version>4.7</ottc.notif.version>
+		<ottc.notif.version>4.7-SNAPSHOT</ottc.notif.version>
 		<ottc.ui.version>4.6.1</ottc.ui.version>
 		<!-- <ottc.drive.version>4.6.2</ottc.drive.version> -->
 		<ottc.generic-ui.version>4.6</ottc.generic-ui.version>
 
-		<ottc.es.custom.version>4.7</ottc.es.custom.version>
+		<ottc.es.custom.version>4.7-SNAPSHOT</ottc.es.custom.version>
 		<ottc.procedure.version>4.7.1</ottc.procedure.version>
 		<!-- <ottc.checkin.version>4.6.1</ottc.checkin.version> --> 
-		<!-- <ottc.pad.version>4.6</ottc.pad.version>
-		<ottc.news.version>4.6</ottc.news.version> -->
+		<!-- <ottc.pad.version>4.6</ottc.pad.version>-->
+		<ottc.news.version>4.6</ottc.news.version> 
 
 		<ottc.jwt.version>4.7</ottc.jwt.version>
 		<ottc.onlyoffice.version>4.7.2</ottc.onlyoffice.version>
@@ -35,9 +35,9 @@
 		<ottc.profiledpublishing.version>4.6</ottc.profiledpublishing.version>
 		<ottc.remotepublishing.version>4.6</ottc.remotepublishing.version>
 		<ottc.webmode.version>4.7.1</ottc.webmode.version>
-        <ottc.sharing.version>4.7</ottc.sharing.version>
+        <ottc.sharing.version>4.7-SNAPSHOT</ottc.sharing.version>
 		
-		<acrennes.version>4.0.11</acrennes.version>
+		<acrennes.version>4.0.12-RC02-SNAPSHOT</acrennes.version>
 		
 		<shortname.version>1.0.3</shortname.version>
 		<toutapad.version>4.6</toutapad.version>
@@ -142,6 +142,11 @@
 			<artifactId>opentoutatice-ecm-platform-core</artifactId>
 			<version>${opentoutatice.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>opentoutatice-ecm.platform</groupId>
+            <artifactId>opentoutatice-core-type-enricher</artifactId>
+            <version>${opentoutatice.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>opentoutatice-ecm.platform</groupId>
 			<artifactId>opentoutatice-ecm-platform-services</artifactId>
@@ -174,25 +179,25 @@
 			<artifactId>opentoutatice-addon-file-based-naming-ecm</artifactId>
 			<version>${ottc.filenaming.version}</version>
 		</dependency>
-		<!-- 
+ 
 		<dependency>
             <groupId>opentoutatice-ecm.file-versioning</groupId>
             <artifactId>opentoutatice-addon-file-versioning-ecm</artifactId>
             <version>${ottc.file.versioning.version}</version>
         </dependency>
-         -->
+
 		<dependency>
 			<groupId>opentoutatice-ecm.portal-notifications</groupId>
 			<artifactId>opentoutatice-addon-portal-notifications-ecm</artifactId>
 			<version>${ottc.notif.version}</version>
 		</dependency>
-		<!-- 
+
 		<dependency>
 			<groupId>opentoutatice-ecm.ui</groupId>
 			<artifactId>opentoutatice-addon-simple-ui-ecm</artifactId>
 			<version>${ottc.ui.version}</version>
 		</dependency>
-		 -->
+
 		 <!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.workflows-integration</groupId>
@@ -237,13 +242,13 @@
 		    <groupId>opentoutatice-ecm.toutapad</groupId>
 		    <artifactId>opentoutatice-addon-toutapad-ecm</artifactId>
 		    <version>${ottc.pad.version}</version>
-		</dependency>
+		</dependency>                 -->
 		<dependency>
             <groupId>opentoutatice-ecm.news</groupId>
             <artifactId>opentoutatice-addon-news-ecm</artifactId>
             <version>${ottc.news.version}</version>
         </dependency>
-                 -->
+
         <dependency>
             <groupId>opentoutatice-ecm.jwt</groupId>
             <artifactId>opentoutatice-addon-jwt-ecm</artifactId>

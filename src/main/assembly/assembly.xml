@@ -23,6 +23,8 @@
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-core:jar:${opentoutatice.version}
 				</include>
+                <include>opentoutatice-ecm.platform:opentoutatice-core-type-enricher:jar:${opentoutatice.version}
+                </include>		
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-services:jar:${opentoutatice.version}
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-web:jar:${opentoutatice.version}
@@ -55,7 +57,14 @@
                 </include>     
                 <include>opentoutatice-ecm.onlyoffice:opentoutatice-addon-onlyoffice-ecm:jar:${ottc.onlyoffice.version}
                 </include>
-
+                <include>opentoutatice-ecm.file-versioning:opentoutatice-addon-file-versioning-ecm:jar:${ottc.file.versioning.version}
+                </include>
+                <!-- 
+                <include>opentoutatice-ecm.ui:opentoutatice-addon-simple-ui-ecm:jar:${ottc.ui.version}
+                </include>
+                 -->
+                <include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
+                </include>
 
 				<include>opentoutatice-ecm.profiled-publishing:opentoutatice-platform-profiled-publishing-ecm:jar:${ottc.profiledpublishing.version}
                 </include>  
@@ -257,6 +266,7 @@
 			<!-- Surcharges -->
 			<excludes>
 				<exclude>lib/log4j.xml</exclude>
+				<exclude>templates/common/config/blacklist.nxftl</exclude>
 			</excludes>
 		</fileSet>
 
