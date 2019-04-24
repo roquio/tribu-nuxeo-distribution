@@ -12,38 +12,49 @@
 	<properties>
 		<nuxeo.version>6.0-HF45</nuxeo.version>
 		<nuxeodrive.version>6.0-HF45</nuxeodrive.version>
-		<opentoutatice.version>4.7-SNAPSHOT</opentoutatice.version>
+		<opentoutatice.version>4.7.14-RC2</opentoutatice.version>
 		<ottc.es.version>4.7</ottc.es.version>
-		<ottc.collab.version>4.7-SNAPSHOT</ottc.collab.version>
+		<ottc.collab.version>4.7.14-RC2</ottc.collab.version>
 		<ottc.filenaming.version>4.6</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.6</ottc.file.versioning.version>
 		<!-- <ottc.wf.version>4.6</ottc.wf.version> -->
-		<ottc.notif.version>4.7-SNAPSHOT</ottc.notif.version>
-		<ottc.ui.version>4.6.1</ottc.ui.version>
+		<ottc.notif.version>4.7.14-RC2</ottc.notif.version>
+		<!-- <ottc.ui.version>4.6.1</ottc.ui.version> -->
 		<!-- <ottc.drive.version>4.6.2</ottc.drive.version> -->
 		<ottc.generic-ui.version>4.6</ottc.generic-ui.version>
 
-		<ottc.es.custom.version>4.7-SNAPSHOT</ottc.es.custom.version>
+		<ottc.es.custom.version>4.7.14-RC2</ottc.es.custom.version>
 		<ottc.procedure.version>4.7.1</ottc.procedure.version>
 		<!-- <ottc.checkin.version>4.6.1</ottc.checkin.version> --> 
 		<!-- <ottc.pad.version>4.6</ottc.pad.version>-->
-		<ottc.news.version>4.6</ottc.news.version> 
+		<ottc.news.version>4.7.14-RC2</ottc.news.version> 
 
 		<ottc.jwt.version>4.7</ottc.jwt.version>
 		<ottc.onlyoffice.version>4.7.2</ottc.onlyoffice.version>
 		
 		<ottc.profiledpublishing.version>4.6</ottc.profiledpublishing.version>
 		<ottc.remotepublishing.version>4.6</ottc.remotepublishing.version>
-		<ottc.webmode.version>4.7.1</ottc.webmode.version>
-        <ottc.sharing.version>4.7-SNAPSHOT</ottc.sharing.version>
+		<ottc.webmode.version>4.7.14-RC2</ottc.webmode.version>
+        <ottc.sharing.version>4.7.14-RC2</ottc.sharing.version>
+		<ottc.monitoring.version>2.1</ottc.monitoring.version>
 		
-		<acrennes.version>4.0.12-RC02-SNAPSHOT</acrennes.version>
-		
+		<!-- Add-ons métier -->
+		<acrennes.version>4.0.12-RC04</acrennes.version>
 		<shortname.version>1.0.3</shortname.version>
 		<toutapad.version>4.6</toutapad.version>
-
-		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
-		
+        <climat.version>1.2.0</climat.version>
+        <cst.version>2.3.0</cst.version>
+        <dco.version>4.2.0</dco.version>
+		<ficheslogiciels.version>6.3.1-RC01</ficheslogiciels.version>
+		<listeemargement.version>4.2.0</listeemargement.version>
+		<merens.version>1.5.0</merens.version>
+		<mpe.version>4.1.0</mpe.version>
+		<p1d.version>1.6.8</p1d.version>
+		<publidoc.version>4.3.0</publidoc.version>
+		<uar.version>4.3.0</uar.version>
+		<ACRENNES3.version>2.5.1</ACRENNES3.version>
+		<ACRENNES4.version>2.5.0</ACRENNES4.version>
+		<ACRENNES6.version>2.2.1</ACRENNES6.version>
 	</properties>
 
 	<build>
@@ -192,19 +203,20 @@
 			<version>${ottc.notif.version}</version>
 		</dependency>
 
+         <!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.ui</groupId>
 			<artifactId>opentoutatice-addon-simple-ui-ecm</artifactId>
 			<version>${ottc.ui.version}</version>
 		</dependency>
 
-		 <!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.workflows-integration</groupId>
 			<artifactId>opentoutatice-addon-workflows-integration-ecm</artifactId>
 			<version>${ottc.wf.version}</version>
 		</dependency>
 		 -->
+		 
 		<dependency>
 			<groupId>opentoutatice-ecm.collab-tools</groupId>
 			<artifactId>opentoutatice-collab-tools-ecm</artifactId>
@@ -337,7 +349,71 @@
   			<artifactId>toutatice-acrennes-addons-toutapad-ecm</artifactId>
             <version>${toutapad.version}</version>        
 		</dependency>
-
+		<dependency>
+            <groupId>toutatice-services.climat</groupId>
+            <artifactId>toutatice-climat-ecm</artifactId>
+            <version>${climat.version}</version>
+		</dependency>
+		<dependency>
+            <groupId>toutatice-services.cst</groupId>
+            <artifactId>toutatice-cst-ecm</artifactId>  
+            <version>${cst.version}</version>
+    	</dependency>
+    	<dependency>
+    	   <groupId>toutatice-services.depotConfidentiel</groupId>
+            <artifactId>toutatice-dco-ecm</artifactId>
+            <version>${dco.version}</version>
+    	</dependency>
+    	<dependency>
+    	   <groupId>toutatice-services.ficheslogiciels</groupId>
+           <artifactId>toutatice-ficheslogiciels-ecm</artifactId>
+           <version>${ficheslogiciels.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>toutatice-services.listeemargement</groupId>
+            <artifactId>toutatice-listeemargement-ecm</artifactId>
+            <version>${listeemargement.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>toutatice-services.merens</groupId>
+            <artifactId>toutatice-merens-ecm</artifactId>
+            <version>${merens.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>toutatice-services.mpe</groupId>
+            <artifactId>toutatice-mpe-ecm</artifactId>
+            <version>${mpe.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>toutatice-services.p1d</groupId>
+            <artifactId>toutatice-p1d-ecm</artifactId>
+            <version>${p1d.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>toutatice-services.publidoc</groupId>
+            <artifactId>toutatice-publidoc-ecm</artifactId>
+            <version>${publidoc.version}</version>      
+        </dependency>
+        <dependency>
+            <groupId>toutatice-services.uar</groupId>
+            <artifactId>toutatice-uar-ecm</artifactId>
+            <version>${uar.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>acaren-nuxeo-studio</groupId>
+            <artifactId>ACRENNES3</artifactId>
+            <version>${ACRENNES3.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>acaren-nuxeo-studio</groupId>
+            <artifactId>ACRENNES4</artifactId>
+            <version>${ACRENNES4.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>acaren-nuxeo-studio</groupId>
+            <artifactId>ACRENNES6</artifactId>
+            <version>${ACRENNES6.version}</version>
+        </dependency>
 
 		<!-- Agenda -->
 		<dependency>
