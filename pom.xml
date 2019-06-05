@@ -10,11 +10,11 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.0-HF44</nuxeo.version>
-		<nuxeodrive.version>6.0-HF44</nuxeodrive.version>
+		<nuxeo.version>6.0-HF45</nuxeo.version>
+		<nuxeodrive.version>6.0-HF45</nuxeodrive.version>
 		
-		<opentoutatice.version>4.4.16.1</opentoutatice.version>
-		<ottc.es.version>1.3.1</ottc.es.version>
+		<opentoutatice.version>4.4.17.5</opentoutatice.version>
+		<ottc.es.version>4.4.17.5</ottc.es.version>
 		<ottc.collab.version>4.4.17</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.4.12</ottc.file.versioning.version>
@@ -31,7 +31,7 @@
 		<ottc.news.version>4.4.13.3</ottc.news.version>
 		<ottc.jwt.version>4.4.12</ottc.jwt.version>
 		<ottc.onlyoffice.version>4.4.15.5</ottc.onlyoffice.version>
-		<ottc.quota.version>4.4-SNAPSHOT</ottc.quota.version>		
+		<!--  <ottc.quota.version>4.4-SNAPSHOT</ottc.quota.version>-->		
 		<foad.custom.nx>4.4.2</foad.custom.nx>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
@@ -241,11 +241,13 @@
             <version>${ottc.monitoring.version}</version>
         </dependency>
         
+        <!-- 
         <dependency>
             <groupId>opentoutatice-ecm.quota</groupId>
             <artifactId>opentoutatice-addon-quota</artifactId>
             <version>${ottc.quota.version}</version>
-        </dependency>        
+        </dependency>
+         -->        
         
         <!-- Custom foad -->
         <dependency>
