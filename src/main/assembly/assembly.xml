@@ -114,7 +114,7 @@
                 <!-- Studio -->
                 <include>acaren-nuxeo-studio:ACRENNES3:jar:${ACRENNES3.version}
                 </include>
-                <include>acaren-nuxeo-studio:ACRENNES4:jar:${ACRENNES4.version}
+                <include>toutatice-services.acrennes-nuxeo-marketplaces:acrennes4:jar:${ACRENNES4.version}
                 </include>
                 <include>acaren-nuxeo-studio:ACRENNES6:jar:${ACRENNES6.version}
                 </include>

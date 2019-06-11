@@ -405,8 +405,8 @@
             <version>${ACRENNES3.version}</version>
         </dependency>
         <dependency>
-            <groupId>acaren-nuxeo-studio</groupId>
-            <artifactId>ACRENNES4</artifactId>
+            <groupId>toutatice-services.acrennes-nuxeo-marketplaces</groupId>
+            <artifactId>acrennes4</artifactId>
             <version>${ACRENNES4.version}</version>
         </dependency>
         <dependency>
