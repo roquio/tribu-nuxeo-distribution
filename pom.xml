@@ -31,7 +31,7 @@
 		<ottc.news.version>4.4.13.3</ottc.news.version>
 		<ottc.jwt.version>4.4.12</ottc.jwt.version>
 		<ottc.onlyoffice.version>4.4.15.5</ottc.onlyoffice.version>
-		<!--  <ottc.quota.version>4.4-SNAPSHOT</ottc.quota.version>-->		
+		<ottc.quota.version>4.4-SNAPSHOT</ottc.quota.version>		
 		<foad.custom.nx>4.4.2</foad.custom.nx>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
@@ -241,13 +241,13 @@
             <version>${ottc.monitoring.version}</version>
         </dependency>
         
-        <!-- 
+
         <dependency>
             <groupId>opentoutatice-ecm.quota</groupId>
             <artifactId>opentoutatice-addon-quota</artifactId>
             <version>${ottc.quota.version}</version>
         </dependency>
-         -->        
+      
         
         <!-- Custom foad -->
         <dependency>
