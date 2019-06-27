@@ -12,18 +12,18 @@
 	<properties>
 		<nuxeo.version>6.0-HF45</nuxeo.version>
 		<nuxeodrive.version>6.0-HF45</nuxeodrive.version>
-		<opentoutatice.version>4.7.14-RC2</opentoutatice.version>
+		<opentoutatice.version>4.7.14</opentoutatice.version>
 		<ottc.es.version>4.7</ottc.es.version>
-		<ottc.collab.version>4.7.14-RC2</ottc.collab.version>
+		<ottc.collab.version>4.7.14</ottc.collab.version>
 		<ottc.filenaming.version>4.6</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.6</ottc.file.versioning.version>
 		<!-- <ottc.wf.version>4.6</ottc.wf.version> -->
-		<ottc.notif.version>4.7.14-RC2</ottc.notif.version>
+		<ottc.notif.version>4.7.14</ottc.notif.version>
 		<!-- <ottc.ui.version>4.6.1</ottc.ui.version> -->
 		<!-- <ottc.drive.version>4.6.2</ottc.drive.version> -->
 		<ottc.generic-ui.version>4.6</ottc.generic-ui.version>
 
-		<ottc.es.custom.version>4.7.14-RC2</ottc.es.custom.version>
+		<ottc.es.custom.version>4.7.14</ottc.es.custom.version>
 		<ottc.procedure.version>4.7.1</ottc.procedure.version>
 		<!-- <ottc.checkin.version>4.6.1</ottc.checkin.version> --> 
 		<!-- <ottc.pad.version>4.6</ottc.pad.version>-->
@@ -34,12 +34,12 @@
 		
 		<ottc.profiledpublishing.version>4.6</ottc.profiledpublishing.version>
 		<ottc.remotepublishing.version>4.6</ottc.remotepublishing.version>
-		<ottc.webmode.version>4.7.14-RC2</ottc.webmode.version>
-        <ottc.sharing.version>4.7.14-RC2</ottc.sharing.version>
+		<ottc.webmode.version>4.7.14</ottc.webmode.version>
+        <ottc.sharing.version>4.7.14</ottc.sharing.version>
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
 		
 		<!-- Add-ons métier -->
-		<acrennes.version>4.1.0-RC01</acrennes.version>
+		<acrennes.version>4.1.0</acrennes.version>
 		<shortname.version>1.0.3</shortname.version>
 		<toutapad.version>4.6</toutapad.version>
         <climat.version>1.2.0</climat.version>
