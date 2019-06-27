@@ -27,7 +27,7 @@
 		<ottc.procedure.version>4.7.1</ottc.procedure.version>
 		<!-- <ottc.checkin.version>4.6.1</ottc.checkin.version> --> 
 		<!-- <ottc.pad.version>4.6</ottc.pad.version>-->
-		<ottc.news.version>4.7.14-RC2</ottc.news.version> 
+		<ottc.news.version>4.7.14</ottc.news.version> 
 
 		<ottc.jwt.version>4.7</ottc.jwt.version>
 		<ottc.onlyoffice.version>4.7.2</ottc.onlyoffice.version>
