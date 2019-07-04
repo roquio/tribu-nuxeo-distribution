@@ -39,7 +39,7 @@
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
 		
 		<!-- Add-ons métier -->
-		<acrennes.version>4.1.0</acrennes.version>
+		<acrennes.version>4.1.1-RC01</acrennes.version>
 		<shortname.version>1.0.3</shortname.version>
 		<toutapad.version>4.6</toutapad.version>
         <climat.version>1.2.0</climat.version>
@@ -51,7 +51,7 @@
 		<mpe.version>4.1.0</mpe.version>
 		<p1d.version>1.6.8</p1d.version>
 		<publidoc.version>4.3.0</publidoc.version>
-		<uar.version>4.3.2-RC01</uar.version>
+		<uar.version>4.3.2-RC05</uar.version>
 		<ACRENNES3.version>2.5.1</ACRENNES3.version>
 		<ACRENNES4.version>2.5.3-RC01</ACRENNES4.version>
 		<ACRENNES6.version>2.2.1</ACRENNES6.version>
