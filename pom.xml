@@ -5,7 +5,7 @@
 
 	<groupId>opentoutatice-ecm.distribtion</groupId>
 	<artifactId>ottc-collab-nx-distrib</artifactId>
-	<version>4.4-SNAPSHOT</version>
+	<version>4.4.18</version>
 	<name>Open toutatice + collab modules nuxeo distribution</name>
 	<packaging>pom</packaging>
 
