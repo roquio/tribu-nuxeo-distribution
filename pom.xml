@@ -5,13 +5,13 @@
 
 	<groupId>opentoutatice-ecm.distribtion</groupId>
 	<artifactId>ottc-collab-nx-distrib</artifactId>
-	<version>4.4.17.5</version>
+	<version>4.4-SNAPSHOT</version>
 	<name>Open toutatice + collab modules nuxeo distribution</name>
 	<packaging>pom</packaging>
 
 	<properties>
 		<nuxeo.version>6.0-HF45</nuxeo.version>
-		<nuxeodrive.version>6.0-HF45</nuxeodrive.version>
+		<!-- <nuxeodrive.version>6.0-HF45</nuxeodrive.version>  -->
 		
 		<opentoutatice.version>4.4.17.5</opentoutatice.version>
 		<ottc.es.version>4.4.17.5</ottc.es.version>
@@ -21,7 +21,7 @@
 		<ottc.wf.version>4.4.12.2</ottc.wf.version>
 		<ottc.notif.version>4.4.13.5</ottc.notif.version>
 		<ottc.ui.version>2.1</ottc.ui.version>
-		<ottc.drive.version>4.4</ottc.drive.version>
+		<!-- <ottc.drive.version>4.4</ottc.drive.version>  -->
 		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
 
 		<ottc.es.custom.version>4.4.17</ottc.es.custom.version>
@@ -189,11 +189,13 @@
 			<artifactId>opentoutatice-collab-tools-ecm</artifactId>
 			<version>${ottc.collab.version}</version>
 		</dependency>
+		<!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.drive</groupId>
 			<artifactId>opentoutatice-drive</artifactId>
 			<version>${ottc.drive.version}</version>
 		</dependency>
+		 -->
 		<dependency>
 			<groupId>opentoutatice-ecm.generic-ui-service</groupId>
 			<artifactId>opentoutatice-generic-ui-service-ecm</artifactId>
@@ -381,7 +383,7 @@
             <version>${nuxeo.reindex.fulltext.version}</version>
         </dependency>
 
-		<!-- Nuxeo Drive -->
+		<!-- Nuxeo Drive
 		<dependency>
   			<groupId>org.nuxeo.ecm</groupId>
 			<artifactId>nuxeo-drive-core</artifactId>
@@ -407,6 +409,7 @@
 			<artifactId>nuxeo-wss-front</artifactId>
 			<version>${nuxeodrive.version}</version>
 		</dependency>
+		-->
 
 		<!-- Platform explorer -->
 		<dependency>
