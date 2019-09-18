@@ -76,10 +76,10 @@
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-login-portal-sso:jar:${nuxeo.version}
 				</include>
 				
-				<!-- Fulltext reindexation (batch) -->
+				<!-- Fulltext reindexation (batch)
                 <include>org.nuxeo:nuxeo-reindex-fulltext:jar:${nuxeo.reindex.fulltext.version}
                 </include>
-                
+                 -->
                 <!-- custom foad -->
                 <include>fr.gouv.education.foad:foad-nuxeo-custom:jar:${foad.custom.nx}
                 </include>

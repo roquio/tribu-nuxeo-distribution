@@ -10,33 +10,32 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.0-HF45</nuxeo.version>
-		<!-- <nuxeodrive.version>6.0-HF45</nuxeodrive.version>  -->
-		
-		<opentoutatice.version>4.4.17.5</opentoutatice.version>
-		<ottc.es.version>4.4.17.5</ottc.es.version>
-		<ottc.collab.version>4.4.17</ottc.collab.version>
+		<nuxeo.version>6.1.1</nuxeo.version>
+	
+		<opentoutatice.version>4.4.18</opentoutatice.version>
+		<ottc.es.version>4.4.18</ottc.es.version>
+		<ottc.collab.version>4.4.18</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
-		<ottc.file.versioning.version>4.4.12</ottc.file.versioning.version>
-		<ottc.wf.version>4.4.12.2</ottc.wf.version>
-		<ottc.notif.version>4.4.13.5</ottc.notif.version>
+		<ottc.file.versioning.version>4.4.18</ottc.file.versioning.version>
+		<ottc.wf.version>4.4.18</ottc.wf.version>
+		<ottc.notif.version>4.4.18</ottc.notif.version>
 		<ottc.ui.version>2.1</ottc.ui.version>
 		<!-- <ottc.drive.version>4.4</ottc.drive.version>  -->
 		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
 
-		<ottc.es.custom.version>4.4.17</ottc.es.custom.version>
-		<ottc.procedure.version>4.4.12.4</ottc.procedure.version>
-		<ottc.checkin.version>3.4.2</ottc.checkin.version> 
-		<ottc.pad.version>4.4.12</ottc.pad.version>
-		<ottc.news.version>4.4.13.3</ottc.news.version>
-		<ottc.jwt.version>4.4.12</ottc.jwt.version>
-		<ottc.onlyoffice.version>4.4.15.5</ottc.onlyoffice.version>
+		<ottc.es.custom.version>4.4.18</ottc.es.custom.version>
+		<ottc.procedure.version>4.4.18</ottc.procedure.version>
+		<ottc.checkin.version>4.4.18</ottc.checkin.version> 
+		<ottc.pad.version>4.4.18</ottc.pad.version>
+		<ottc.news.version>4.4.18</ottc.news.version>
+		<ottc.jwt.version>4.4.18</ottc.jwt.version>
+		<ottc.onlyoffice.version>4.4.18</ottc.onlyoffice.version>
 		<!--  <ottc.quota.version>4.4-SNAPSHOT</ottc.quota.version>-->		
 		<foad.custom.nx>4.4.2</foad.custom.nx>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
 		
-		<nuxeo.reindex.fulltext.version>6.0</nuxeo.reindex.fulltext.version>	
+		<!-- <nuxeo.reindex.fulltext.version>6.1.0</nuxeo.reindex.fulltext.version> -->	
 	</properties>
 
 	<build>
@@ -376,13 +375,13 @@
 			<version>${nuxeo.version}</version>
 		</dependency>
 		
-		<!-- Fulltext reindexation (batch) -->
+		<!-- Fulltext reindexation (batch) 
 		<dependency>
             <groupId>org.nuxeo</groupId>
             <artifactId>nuxeo-reindex-fulltext</artifactId>
             <version>${nuxeo.reindex.fulltext.version}</version>
         </dependency>
-
+-->
 		<!-- Nuxeo Drive
 		<dependency>
   			<groupId>org.nuxeo.ecm</groupId>
