@@ -1,0 +1,7 @@
+opentoutatice-es-alias.target=.
+nuxeo.template.includes=common,opentoutatice,opentoutatice-es
+
+##----------------------------------------------------------------------------
+## Loop timeout for re-indexing waiting in seconds
+##----------------------------------------------------------------------------
+#ottc.reindexing.check.loop.period=30
