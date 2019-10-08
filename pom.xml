@@ -5,7 +5,7 @@
 
 	<groupId>toutatice-ecm.acrennes</groupId>
 	<artifactId>acrennes-nx-distrib</artifactId>
-	<version>4.7.20-RC01</version>
+	<version>4.7-SNAPSHOT</version>
 	<name>Ac-rennes nuxeo distribution</name>
 	<packaging>pom</packaging>
 
@@ -13,7 +13,7 @@
 		<nuxeo.version>6.1.1</nuxeo.version>
 		<opentoutatice.version>4.7.17.2</opentoutatice.version>
 		<!-- <ottc.es.version>4.7.17</ottc.es.version> -->
-		<ottc.es.version>4.7-es-alias-RC03</ottc.es.version>
+		<ottc.es.version>4.7-es-alias-RC04</ottc.es.version>
 		<ottc.collab.version>4.7.17</ottc.collab.version>
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
