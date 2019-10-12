@@ -13,7 +13,7 @@
 		<nuxeo.version>6.1.1</nuxeo.version>
 		<opentoutatice.version>4.7.17.2</opentoutatice.version>
 		<!-- <ottc.es.version>4.7.17</ottc.es.version> -->
-		<ottc.es.version>4.7-es-alias-RC06</ottc.es.version>
+		<ottc.es.version>4.7-es-alias-RC07</ottc.es.version>
 		<ottc.collab.version>4.7.17</ottc.collab.version>
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
