@@ -215,21 +215,11 @@
 	</category>
 
 	<!-- Queries monitoring -->
-	<!-- Es part -->
-	<category
-		name="org.opentoutatice.elasticsearch.core.service.OttcElasticSearchServiceImpl"
-		additivity="false">
-		<appender-ref ref="ES-QUERY" />
-		<priority value="DEBUG" />
-	</category>
-	<!-- Automation -->
-	<!-- Total & json response -->
 	<category name="fr.toutatice.ecm.elasticsearch"
 		additivity="false">
 		<appender-ref ref="ES-QUERY" />
 		<priority value="DEBUG" />
 	</category>
-	<!-- -->
 
 	<category name="org.apache.catalina.loader" additivity="false">
 		<appender-ref ref="CLASSLOADER" />
