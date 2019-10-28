@@ -24,7 +24,7 @@
 
       <rdnAttribute>uid</rdnAttribute>
 
-      <schema>user</schema>
+      <schema>opentoutatice_user</schema>
       <idField>username</idField>
       <passwordField>password</passwordField>
       <fieldMapping name="username">uid</fieldMapping>
@@ -32,6 +32,7 @@
       <fieldMapping name="firstName">givenName</fieldMapping>
       <fieldMapping name="lastName">sn</fieldMapping>
       <fieldMapping name="email">mail</fieldMapping>
+      <fieldMapping name="groups">portalPersonProfile</fieldMapping>
       <searchFilter>(&amp;((objectClass=inetOrgPerson)))</searchFilter>
 
       <searchBaseDn>${ldap.persondn}</searchBaseDn>
@@ -62,14 +63,17 @@
 
       <rdnAttribute>cn</rdnAttribute>
 
-
-      <schema>group</schema>
+      <schema>opentoutatice_group</schema>
       <idField>groupname</idField>
       <fieldMapping name="groupname">cn</fieldMapping>
       <fieldMapping name="grouplabel">portalDisplayName</fieldMapping>      
       <fieldMapping name="description">description</fieldMapping>
       <fieldMapping name="members">uniqueMember</fieldMapping>
+      <fieldMapping name="type">portalProfileType</fieldMapping>
+      <fieldMapping name="workspaceId">portalCollabWorkspaceId</fieldMapping>
+      <fieldMapping name="role">portalCollabWorkspaceRole</fieldMapping>
       <fieldMapping name="subGroups">subGroups</fieldMapping>
+
 
       <searchBaseDn>${ldap.groupdn}</searchBaseDn>
       <searchClass>groupOfUniqueNames</searchClass>
