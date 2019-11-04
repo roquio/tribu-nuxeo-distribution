@@ -13,7 +13,7 @@
 		<nuxeo.version>6.1.1</nuxeo.version>
 	
 		<opentoutatice.version>4.4.18</opentoutatice.version>
-		<ottc.es.version>4.4.18</ottc.es.version>
+		<ottc.es.version>4.4.19-alias</ottc.es.version>
 		<ottc.collab.version>4.4.18</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.4.18</ottc.file.versioning.version>
@@ -30,7 +30,7 @@
 		<ottc.news.version>4.4.18</ottc.news.version>
 		<ottc.jwt.version>4.4.18</ottc.jwt.version>
 		<ottc.onlyoffice.version>4.4.18</ottc.onlyoffice.version>
-		<ottc.quota.version>4.4-SNAPSHOT</ottc.quota.version>		
+		<ottc.quota.version>4.4.19</ottc.quota.version>		
 		<foad.custom.nx>4.4.2</foad.custom.nx>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
