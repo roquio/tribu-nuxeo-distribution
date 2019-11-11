@@ -180,3 +180,4 @@ nuxeo.server.http.header.max.size=32768
 ## Upload size limit
 ##----------------------------------------------------------------------------
 ottc.widget.filemaxSize=500Mo
+ottc.widget.filemaxSize.long=500000000
