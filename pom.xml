@@ -11,7 +11,7 @@
 
 	<properties>
 		<nuxeo.version>6.1.1</nuxeo.version>
-		<opentoutatice.version>4.7.17.2</opentoutatice.version>
+		<opentoutatice.version>4.7.25</opentoutatice.version>
 		<!-- <ottc.es.version>4.7.17</ottc.es.version> -->
 		<ottc.es.version>4.7-es-alias-RC08</ottc.es.version>
 		<ottc.collab.version>4.7.17</ottc.collab.version>
