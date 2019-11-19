@@ -12,8 +12,7 @@
 	<properties>
 		<nuxeo.version>6.1.1</nuxeo.version>
 		<opentoutatice.version>4.7.25</opentoutatice.version>
-		<!-- <ottc.es.version>4.7.17</ottc.es.version> -->
-		<ottc.es.version>4.7-es-alias-RC08</ottc.es.version>
+		<ottc.es.version>4.7.20</ottc.es.version>
 		<ottc.collab.version>4.7.17</ottc.collab.version>
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
@@ -34,7 +33,7 @@
 		
 		<ottc.profiledpublishing.version>4.7.17</ottc.profiledpublishing.version>
 		<ottc.remotepublishing.version>4.7.17</ottc.remotepublishing.version>
-		<ottc.webmode.version>4.7.17</ottc.webmode.version>
+		<ottc.webmode.version>4.7.17.1</ottc.webmode.version>
         <ottc.sharing.version>4.7.17</ottc.sharing.version>
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
         		
