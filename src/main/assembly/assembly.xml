@@ -9,7 +9,7 @@
 	<includeBaseDirectory>false</includeBaseDirectory>
 
 	<dependencySets>
-	
+
 		<dependencySet>
 			<outputDirectory>/${artifactId}-${project.version}/nxserver/plugins
 			</outputDirectory>
@@ -23,8 +23,8 @@
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-core:jar:${opentoutatice.version}
 				</include>
-                <include>opentoutatice-ecm.platform:opentoutatice-core-type-enricher:jar:${opentoutatice.version}
-                </include>		
+				<include>opentoutatice-ecm.platform:opentoutatice-core-type-enricher:jar:${opentoutatice.version}
+                </include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-services:jar:${opentoutatice.version}
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-web:jar:${opentoutatice.version}
@@ -32,7 +32,7 @@
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-reporting:jar:${opentoutatice.version}
                 </include>
 
-				<!-- Add ons -->				
+				<!-- Add ons -->
 				<include>opentoutatice-ecm.elasticsearch:opentoutatice-addon-elasticsearch-ecm:jar:${ottc.es.version}
 				</include>
 				<include>opentoutatice-ecm.file-based-naming:opentoutatice-addon-file-based-naming-ecm:jar:${ottc.filenaming.version}
@@ -41,10 +41,8 @@
 				</include>
 				<include>opentoutatice-ecm.collab-tools:opentoutatice-collab-tools-ecm:jar:${ottc.collab.version}
 				</include>
-				<!-- 
-				<include>opentoutatice-ecm.drive:opentoutatice-drive:jar:${ottc.drive.version}
-				</include>
-				 -->
+				<!-- <include>opentoutatice-ecm.drive:opentoutatice-drive:jar:${ottc.drive.version} 
+					</include> -->
 				<include>opentoutatice-ecm.generic-ui-service:opentoutatice-generic-ui-service-ecm:jar:${ottc.generic-ui.version}
 				</include>
 				<include>opentoutatice-ecm.elasticsearch-customizer:opentoutatice-addon-elasticsearch-customizer-ecm:jar:${ottc.es.custom.version}
@@ -53,29 +51,27 @@
 				</include>
 				<include>opentoutatice-ecm.monitoring:opentoutatice-monitoring-ecm:jar:${ottc.monitoring.version}
                 </include>
-                <include>opentoutatice-ecm.jwt:opentoutatice-addon-jwt-ecm:jar:${ottc.jwt.version}
-                </include>     
-                <include>opentoutatice-ecm.onlyoffice:opentoutatice-addon-onlyoffice-ecm:jar:${ottc.onlyoffice.version}
+				<include>opentoutatice-ecm.jwt:opentoutatice-addon-jwt-ecm:jar:${ottc.jwt.version}
                 </include>
-                <include>opentoutatice-ecm.file-versioning:opentoutatice-addon-file-versioning-ecm:jar:${ottc.file.versioning.version}
+				<include>opentoutatice-ecm.onlyoffice:opentoutatice-addon-onlyoffice-ecm:jar:${ottc.onlyoffice.version}
                 </include>
-                <!-- 
-                <include>opentoutatice-ecm.ui:opentoutatice-addon-simple-ui-ecm:jar:${ottc.ui.version}
+				<include>opentoutatice-ecm.file-versioning:opentoutatice-addon-file-versioning-ecm:jar:${ottc.file.versioning.version}
                 </include>
-                 -->
-                <include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
+				<!-- <include>opentoutatice-ecm.ui:opentoutatice-addon-simple-ui-ecm:jar:${ottc.ui.version} 
+					</include> -->
+				<include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
                 </include>
 
 				<include>opentoutatice-ecm.profiled-publishing:opentoutatice-platform-profiled-publishing-ecm:jar:${ottc.profiledpublishing.version}
-                </include>  
-                <include>opentoutatice-ecm.remote-publishing:opentoutatice-platform-remote-publishing-ecm:jar:${ottc.remotepublishing.version}
-                </include>  
-                <include>opentoutatice-ecm.web-mode:opentoutatice-web-mode-ecm:jar:${ottc.webmode.version}
                 </include>
-                <include>opentoutatice-ecm.sharing:opentoutatice-sharing:jar:${ottc.sharing.version}</include>
-                
-                <!-- Ac rennes -->
-                <include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-adaptor:jar:${acrennes.version}
+				<include>opentoutatice-ecm.remote-publishing:opentoutatice-platform-remote-publishing-ecm:jar:${ottc.remotepublishing.version}
+                </include>
+				<include>opentoutatice-ecm.web-mode:opentoutatice-web-mode-ecm:jar:${ottc.webmode.version}
+                </include>
+				<include>opentoutatice-ecm.sharing:opentoutatice-sharing:jar:${ottc.sharing.version}</include>
+
+				<!-- Ac rennes -->
+				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-adaptor:jar:${acrennes.version}
                 </include>
 				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-automation:jar:${acrennes.version}
                 </include>
@@ -85,47 +81,46 @@
                 </include>
 				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-web:jar:${acrennes.version}
                 </include>
-                
+
 				<include>toutatice-acrennes-addons.shortname:toutatice-acrennes-addons-shortname-ecm:jar:${shortname.version}
                 </include>
 				<include>toutatice-acrennes-addons.toutapad:toutatice-acrennes-addons-toutapad-ecm:jar:${toutapad.version}
                 </include>
-                <include>toutatice-services.climat:toutatice-climat-ecm:jar:${climat.version}
+				<include>toutatice-services.climat:toutatice-climat-ecm:jar:${climat.version}
                 </include>
-                <include>toutatice-services.cst:toutatice-cst-ecm:jar:${cst.version}
+				<include>toutatice-services.cst:toutatice-cst-ecm:jar:${cst.version}
                 </include>
-                <include>toutatice-services.depotConfidentiel:toutatice-dco-ecm:jar:${dco.version}
+				<include>toutatice-services.depotConfidentiel:toutatice-dco-ecm:jar:${dco.version}
                 </include>
-                <include>toutatice-services.ficheslogiciels:toutatice-ficheslogiciels-ecm:jar:${ficheslogiciels.version}
+				<include>toutatice-services.ficheslogiciels:toutatice-ficheslogiciels-ecm:jar:${ficheslogiciels.version}
                 </include>
-                <include>toutatice-services.listeemargement:toutatice-listeemargement-ecm:jar:${listeemargement.version}
+				<include>toutatice-services.listeemargement:toutatice-listeemargement-ecm:jar:${listeemargement.version}
                 </include>
-                <include>toutatice-services.merens:toutatice-merens-ecm:jar:${merens.version}
+				<include>toutatice-services.merens:toutatice-merens-ecm:jar:${merens.version}
                 </include>
-                <include>toutatice-services.mpe:toutatice-mpe-ecm:jar:${mpe.version}
+				<include>toutatice-services.mpe:toutatice-mpe-ecm:jar:${mpe.version}
                 </include>
-                <include>toutatice-services.p1d:toutatice-p1d-ecm:jar:${p1d.version}
+				<include>toutatice-services.p1d:toutatice-p1d-ecm:jar:${p1d.version}
                 </include>
-                <include>toutatice-services.publidoc:toutatice-publidoc-ecm:jar:${publidoc.version}
+				<include>toutatice-services.publidoc:toutatice-publidoc-ecm:jar:${publidoc.version}
                 </include>
-                <include>toutatice-services.uar:toutatice-uar-ecm:jar:${uar.version}
+				<include>toutatice-services.uar:toutatice-uar-ecm:jar:${uar.version}
                 </include>
 
-                <!-- Studio -->
-                <include>acaren-nuxeo-studio:ACRENNES3:jar:${ACRENNES3.version}
+				<!-- Studio -->
+				<include>acaren-nuxeo-studio:ACRENNES3:jar:${ACRENNES3.version}
                 </include>
-                <include>toutatice-services.acrennes-nuxeo-marketplaces:acrennes4:jar:${ACRENNES4.version}
+				<include>toutatice-services.acrennes-nuxeo-marketplaces:acrennes4:jar:${ACRENNES4.version}
                 </include>
-                <include>acaren-nuxeo-studio:ACRENNES6:jar:${ACRENNES6.version}
+				<include>acaren-nuxeo-studio:ACRENNES6:jar:${ACRENNES6.version}
                 </include>
-                
+
 				<!-- Login & SSO -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-login-portal-sso:jar:${nuxeo.version}
 				</include>
-
 			</includes>
 		</dependencySet>
-	
+
 		<dependencySet>
 			<outputDirectory>/${artifactId}-${project.version}/nxserver/bundles
 			</outputDirectory>
@@ -148,10 +143,9 @@
 				</include>
 				<include>org.nuxeo.ecm.annot:nuxeo-annot-repo:jar:${nuxeo.version}
 				</include>
-				<!-- <include>org.nuxeo.dam:nuxeo-dam:jar:${nuxeo.version}
-				</include>			 -->
-				
-				
+				<!-- <include>org.nuxeo.dam:nuxeo-dam:jar:${nuxeo.version} </include> -->
+
+
 				<!-- Nuxeo Imaging -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-imaging-api:jar:${nuxeo.version}
 				</include>
@@ -168,20 +162,20 @@
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-imaging-tiling:jar:${nuxeo.version}
 				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-imaging-tiling-preview:jar:${nuxeo.version}
-				</include>				
+				</include>
 				<!-- Audio -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-audio-core:jar:${nuxeo.version}
 				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-audio-jsf:jar:${nuxeo.version}
 				</include>
 				<!-- Video -->
-                <include>org.nuxeo.ecm.platform:nuxeo-platform-video-api:jar:${nuxeo.version}
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-video-api:jar:${nuxeo.version}
                 </include>
-                <include>org.nuxeo.ecm.platform:nuxeo-platform-video-core:jar:${nuxeo.version}
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-video-core:jar:${nuxeo.version}
                 </include>
-                 <include>org.nuxeo.ecm.platform:nuxeo-platform-video-convert:jar:${nuxeo.version}
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-video-convert:jar:${nuxeo.version}
                 </include>
-                 <include>org.nuxeo.ecm.platform:nuxeo-platform-video-jsf:jar:${nuxeo.version}
+				<include>org.nuxeo.ecm.platform:nuxeo-platform-video-jsf:jar:${nuxeo.version}
                 </include>
 				<!-- Webengine -->
 				<include>org.nuxeo.ecm.webengine:nuxeo-webengine-blogs:jar:${nuxeo.version}
@@ -206,28 +200,28 @@
 				</include>
 				<include>org.nuxeo.ecm.webengine:nuxeo-webengine-ui:jar:${nuxeo.version}
 				</include>
-				
+
 				<!-- Virtual navigation -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-virtualnavigation-core-contrib:jar:${nuxeo.version}
 				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-virtualnavigation-web:jar:${nuxeo.version}
 				</include>
-				
+
 				<!-- Faceted search -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-api:jar:${nuxeo.version}
 				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-dm:jar:${nuxeo.version}
-				</include>		
+				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-jsf:jar:${nuxeo.version}
 				</include>
-				
+
 				<!-- IMAP -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-mail-core:jar:${nuxeo.version}
 				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-mail-types:jar:${nuxeo.version}
-				</include>		
+				</include>
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-mail-web:jar:${nuxeo.version}
-				</include>				
+				</include>
 			</includes>
 		</dependencySet>
 
@@ -254,18 +248,34 @@
 				<!-- Dependencies for Java Melody monitoring -->
 				<include>net.bull.javamelody:javamelody-core:jar:1.62.0
                 </include>
-                <include>org.jrobin:jrobin:jar:1.5.9
+				<include>org.jrobin:jrobin:jar:1.5.9
                 </include>
-                <!--  Dependencides for etherpad client -->
-                <include>org:etherpad_lite_client:jar:1.2.7
+				<!-- Dependencides for etherpad client -->
+				<include>org:etherpad_lite_client:jar:1.2.7
                 </include>
-                <include>com.googlecode.json-simple:json-simple:jar:1.1.1
+				<include>com.googlecode.json-simple:json-simple:jar:1.1.1
                 </include>
-                <!--  Dependencides for jwt/onlyoffice -->
-                <include>com.auth0:java-jwt:jar:3.3.0</include>
-                <include>com.fasterxml.jackson.core:jackson-core:jar:2.9.2</include>
-                <include>com.fasterxml.jackson.core:jackson-databind:jar:2.9.2</include>
-                <include>com.fasterxml.jackson.core:jackson-annotations:jar:2.9.2</include>
+				<!-- Dependencides for jwt/onlyoffice -->
+				<include>com.auth0:java-jwt:jar:3.3.0</include>
+				<include>com.fasterxml.jackson.core:jackson-core:jar:2.9.2</include>
+				<include>com.fasterxml.jackson.core:jackson-databind:jar:2.9.2</include>
+				<include>com.fasterxml.jackson.core:jackson-annotations:jar:2.9.2</include>
+			</includes>
+		</dependencySet>
+
+		<!-- Tomcat libs -->
+		<dependencySet>
+			<outputDirectory>/${artifactId}-${project.version}/lib
+			</outputDirectory>
+			<unpack>false</unpack>
+			<scope>runtime</scope>
+			<includes>
+				<!-- Logs -->
+				<include>org.apache.logging.log4j:log4j-api:jar:${log4j.version}</include>
+				<include>org.apache.logging.log4j:log4j-core:jar:${log4j.version}</include>
+				<include>org.apache.logging.log4j:log4j-jcl:jar:${log4j.version}</include>
+				<include>org.apache.logging.log4j:log4j-1.2-api:jar:${log4j.version}</include>
+				<include>org.apache.logging.log4j:log4j-slf4j-impl:jar:${log4j.version}</include>
 			</includes>
 		</dependencySet>
 	</dependencySets>
@@ -282,16 +292,19 @@
 			</includes>
 			<!-- Surcharges -->
 			<excludes>
+				<!-- log4j -->
 				<exclude>lib/log4j.xml</exclude>
+				<exclude>lib/log4j-1.2.17.jar</exclude>
+				<!-- Services Nx -->
 				<exclude>templates/common/config/blacklist.nxftl</exclude>
 			</excludes>
 		</fileSet>
 
 		<!-- Templates -->
-        <fileSet>
-            <outputDirectory>/${artifactId}-${project.version}</outputDirectory>
-            <directory>src/main/resources</directory>
-        </fileSet>
+		<fileSet>
+			<outputDirectory>/${artifactId}-${project.version}</outputDirectory>
+			<directory>src/main/resources</directory>
+		</fileSet>
 	</fileSets>
 
 </assembly>

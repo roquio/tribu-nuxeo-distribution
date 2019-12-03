@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+APPENDERS CONFIGURATION:
+
+[RUNTIME]
+- Purpose: to gather all common applicative logs
+- Max log volume : 100 MB
+- Max aged logs: 7 days  
+
+[GRANTING]
+- Purpose: to gather all applicative logs dealing with the ACL resolution
+- Max log volume : 20 MB
+- Max aged logs: 7 days  
+
+[ERROR-FILE]
+- Purpose: Nuxeo native appender to gather error logs
+- Max log volume : 20 MB
+- Max aged logs: 7 days  
+
+[STDERR-FILE]
+- Purpose: Nuxeo native appender to gather error logs from stderr channel redirected by Tomcat
+- Max log volume : 20 MB
+- Max aged logs: 7 days  
+
+[AUTOMATION]
+- Purpose: Nuxeo native appender to gather logs from the content automation service
+- Max log volume : 100 MB
+- Max aged logs: 7 days  
+
+[ELASTIC]
+- Purpose: Nuxeo native appender to gather logs from elasticsearch service
+- Max log volume : 100 MB
+- Max aged logs: 7 days  
+
+[CLASSLOADER]
+- Purpose: Nuxeo native appender to gather logs from classloader
+- Max log volume : 20 MB
+- Max aged logs: 7 days  
+
+[STORAGE]
+- Purpose: Nuxeo native appender to gather logs from VCS activity
+- Max log volume : 100 MB
+- Max aged logs: 7 days  
+
+[CUSTOM-STORAGE]
+- Purpose: appender to gather logs from VCS activity dealing with ACL predicats
+- Max log volume : 100 MB
+- Max aged logs: 7 days
+
+[MIGRATION]
+- Purpose: appender to gather logs from Opentoutatice's model and/or features migration
+- Max log volume : 500 MB
+- Max aged logs: 7 days
+
+[ZDT-ES]
+- Purpose: appender to gather logs from Zero DownTime Elasticsearch Re-indexing
+- Max log volume : no max (logs are kept and must be manually deleted)
+- Max aged logs: no max 
+ -->
+<Configuration status="trace" name="Nuxeo" packages="" monitorInterval="30">
+  <Appenders>
+    <Console name="CONSOLE" target="SYSTEM_OUT">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+    </Console>
+    <RollingFile name="RUNTIME" fileName="${sys:nuxeo.log.dir}/server.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/server-%d{dd-MM-yyyy}-%i.log.zip">
+      <!-- <RegexFilter regex=".+is not granted to.+" onMatch="DENY" onMismatch="ACCEPT"/> -->
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="5" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/server-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    <RollingFile name="GRANTING" fileName="${sys:nuxeo.log.dir}/granting.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/granting-%d{dd-MM-yyyy}-%i.log.zip">
+      <RegexFilter regex=".+is not granted to.+" onMatch="ACCEPT" onMismatch="DENY"/>
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="1" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/granting-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    <RollingFile name="ERROR-FILE" fileName="${sys:nuxeo.log.dir}/nuxeo-error.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/nuxeo-error-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="1" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/nuxeo-error-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    <RollingFile name="STDERR-FILE" fileName="${sys:nuxeo.log.dir}/nuxeo-stderr.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/nuxeo-stderr-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="1" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/nuxeo-stderr-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    <RollingFile name="AUTOMATION" fileName="${sys:nuxeo.log.dir}/automation.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/automation-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="5" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/automation-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    <RollingFile name="ELASTIC" fileName="${sys:nuxeo.log.dir}/elastic.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/elastic-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="5" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/elastic-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    <RollingFile name="CLASSLOADER" fileName="${sys:nuxeo.log.dir}/classloader.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/classloader-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="1" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/classloader-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    <RollingFile name="TOMCAT" fileName="${sys:nuxeo.log.dir}/tomcat.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/tomcat-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="1" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/tomcat-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    <RollingFile name="STORAGE" fileName="${sys:nuxeo.log.dir}/storage.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/storage-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="5" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/storage-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+
+	<RollingFile name="MIGRATION" fileName="${sys:nuxeo.log.dir}/migration.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/migration-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="5" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/migration-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>
+    
+    <RollingFile name="ZDT-ES" fileName="${sys:nuxeo.log.dir}/zero-down-time-elasticsearch-reindexing.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/zero-down-time-elasticsearch-reindexing-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <!-- No automatic deletions of archived logs; logs are kept and must be manually deleted -->
+      <DefaultRolloverStrategy fileIndex="nomax" />
+    </RollingFile>
+
+  </Appenders>
+  <Loggers>
+    <Logger name="org.apache.catalina.loader" additivity="false">
+      <AppenderRef ref="CLASSLOADER"/>
+    </Logger>
+    <Logger name="org.apache.catalina.core.AprLifecycleListener" level="info" additivity="false">
+      <AppenderRef ref="TOMCAT"/>
+    </Logger>
+    <Logger name="org.jboss.seam" level="warn"/>
+    <Logger name="org.jboss.ejb3" level="warn"/>
+    <Logger name="org.jboss.ejb3.cache.simple.StatefulSessionFilePersistenceManager" level="warn"/>
+    <Logger name="org.jboss.seam.contexts.Contexts" level="warn"/>
+    <Logger name="org.jboss.seam.contexts.Lifecycle" level="warn"/>
+    <Logger name="org.jboss.mx.loading" level="info"/>
+    <Logger name="org.jboss.system.server.Server" level="info"/>
+    <!-- Limit the JSR77 categories -->
+    <Logger name="org.jboss.management" level="info" additivity="true"/>
+    <!-- Limit the jboss-serialization to INFO as its DEBUG is verbose -->
+    <Logger name="org.jboss.serial" level="info" additivity="true"/>
+    <Logger name="org.apache" level="info" additivity="true"/>
+    <Logger name="org.apache.cxf" level="warn"/>
+    <Logger name="org.apache.myfaces.renderkit.html.util.DefaultAddResource" level="error"/>
+    <Logger name="org.ajax4jsf" level="info"/>
+    <Logger name="org.ajax4jsf.cache.LRUMapCacheFactory" level="error"/>
+    <Logger name="org.hibernate" level="warn"/>
+    <Logger name="org.hibernate.engine.StatefulPersistenceContext.ProxyWarnLog" level="error"/>
+    <Logger name="org.hibernate.impl.SessionFactoryObjectFactory" level="error"/>
+    <Logger name="org.hibernate.cache.EhCacheProvider" level="error"/>
+    <Logger name="org.hibernate.hql.ast.tree.FromElementType" level="error"/>
+    <Logger name="org.hibernate.ejb.Ejb3Configuration" level="error"/>
+    <Logger name="org.jbpm" level="info"/>
+    <Logger name="org.jbpm.jpdl.xml.JpdlXmlReader" level="error"/>
+    <Logger name="org.nuxeo" level="warn"/>
+    <Logger name="org.nuxeo.elasticsearch.ElasticSearchComponent" level="info"/>
+    <Logger name="org.nuxeo.ecm.platform.query.core.PageProviderClassReplacerRegistry" level="info"/>
+<!-- Uncomment to debug SQL statements -->
+<!--
+    <Logger name="org.nuxeo.ecm.core.storage.sql.jdbc" level="trace"/>
+-->
+<!-- Uncomment to debug concurrent session execution errors on thread -->
+<!--
+    <Logger name="org.nuxeo.ecm.core.storage.sql.SessionImpl" level="debug"/>
+-->
+<!-- Uncomment to debug fragments pre-processing -->
+<!--
+    <Logger name="org.nuxeo.runtime.deployment.preprocessor" level="info"/>
+-->
+    <Logger name="org.nuxeo.runtime.reload" level="info"/>
+    <Logger name="org.nuxeo.runtime.osgi.OSGiRuntimeService" level="info"/>
+<!-- Uncomment for components registration info -->
+<!--
+    <Logger name="org.nuxeo.runtime.model.impl" level="info"/>
+  -->
+    <Logger name="org.nuxeo.osgi.application.loader.FrameworkLoader" level="info"/>
+    <Logger name="org.nuxeo.osgi.application.StandaloneApplication" level="info"/>
+    <Logger name="org.nuxeo.osgi.application.FrameworkBootstrap" level="info"/>
+    <Logger name="org.nuxeo.runtime.jboss.deployment.NuxeoDeployer" level="info"/>
+    <Logger name="org.nuxeo.runtime.tomcat.NuxeoDeployer" level="info"/>
+<!-- Display INFO logs for automation traces when activated -->
+    <Logger name="org.nuxeo.ecm.automation.core" level="info">
+    	<AppenderRef ref="AUTOMATION" />
+    </Logger>
+    <Logger name="javax.enterprise.resource.webcontainer.jsf.renderkit" level="info"/>
+    <Logger name="javax.enterprise.resource.webcontainer.jsf.application" level="info"/>
+    <Logger name="javax.enterprise.resource.webcontainer.jsf.lifecycle" level="info"/>
+<!-- Limit the jacorb Logger to WARN as its INFO is verbose -->
+    <Logger name="jacorb" level="warn" additivity="true"/>
+<!-- Limit the org.jgroups Logger to WARN as its INFO is verbose -->
+    <Logger name="org.jgroups" level="warn" additivity="true"/>
+<!-- Limit the org.quartz Logger to WARN as its DEBUG is verbose -->
+    <Logger name="org.quartz" level="warn" additivity="true"/>
+<!-- make Jersey less noisy -->
+    <Logger name="com.sun.jersey.spi.container.servlet.WebComponent" level="error"/>
+    <Logger name="org.apache.shindig.common.xml.XmlUtil" level="warn"/>
+    <Logger name="org.apache.myfaces.shared_tomahawk" level="warn"/>
+    <Logger name="org.artofsolving.jodconverter" level="warn"/>
+<!-- Show the evolution of the DataSource pool in the logs [inUse/Available/Max] 
+-->
+    <Logger name="org.jboss.resource.connectionmanager.JBossManagedConnectionPool" level="trace"/>
+<!-- VCS Storage logging -->
+<!--
+    <Logger name="org.nuxeo.ecm.core.management.jtajca" level="trace" additivity="false">
+      <AppenderRef ref="STORAGE" />
+    </Logger> -->
+    <Logger name="org.nuxeo.ecm.core.storage.sql.jdbc" level="trace" additivity="false">
+      <AppenderRef ref="STORAGE" />
+      <ContextMapFilter onMatch="ACCEPT" onMismatch="DENY">
+        <KeyValuePair key="RemoteAddr" value="127.0.0.1" />
+      </ContextMapFilter>
+    </Logger>
+  
+<!-- Elasticsearch logging -->
+<!--
+    <Logger name="org.nuxeo.elasticsearch" level="trace" additivity="false">
+      <AppenderRef ref="ELASTIC" />
+    </Logger>
+-->
+
+<!-- == Zero Down Time Elasticsearch Re-indexing == -->
+<!-- Both packages (es & work) must be activated -->
+ 	<Logger name="org.nuxeo.elasticsearch" level="info" additivity="false">
+      <AppenderRef ref="ZDT-ES" />
+    </Logger>
+    <Logger name="org.nuxeo.ecm.core.work.AbstractWork" level="info" additivity="false">
+      <AppenderRef ref="ZDT-ES" />
+    </Logger>
+<!-- ==== -->    
+
+    <Logger name="nuxeo-error-log" level="trace">
+      <AppenderRef ref="ERROR-FILE" />
+    </Logger>
+<!-- System.err redirected by Tomcat to a logger STDERR with level ERROR -->
+    <Logger name="STDERR" level="error" additivity="false">
+      <AppenderRef ref="STDERR-FILE" />
+    </Logger>
+    <Root level="warn">
+      <AppenderRef ref="RUNTIME"/>
+      <AppenderRef ref="GRANTING"/>
+      <AppenderRef ref="CONSOLE"/>
+    </Root>
+  </Loggers>
+</Configuration>
