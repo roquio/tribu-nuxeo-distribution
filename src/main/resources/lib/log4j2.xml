@@ -7,11 +7,6 @@ APPENDERS CONFIGURATION:
 - Max log volume : 100 MB
 - Max aged logs: 7 days  
 
-[GRANTING]
-- Purpose: to gather all applicative logs dealing with the ACL resolution
-- Max log volume : 20 MB
-- Max aged logs: 7 days  
-
 [ERROR-FILE]
 - Purpose: Nuxeo native appender to gather error logs
 - Max log volume : 20 MB
@@ -42,11 +37,6 @@ APPENDERS CONFIGURATION:
 - Max log volume : 100 MB
 - Max aged logs: 7 days  
 
-[CUSTOM-STORAGE]
-- Purpose: appender to gather logs from VCS activity dealing with ACL predicats
-- Max log volume : 100 MB
-- Max aged logs: 7 days
-
 [MIGRATION]
 - Purpose: appender to gather logs from Opentoutatice's model and/or features migration
 - Max log volume : 500 MB
@@ -65,7 +55,6 @@ APPENDERS CONFIGURATION:
       </PatternLayout>
     </Console>
     <RollingFile name="RUNTIME" fileName="${sys:nuxeo.log.dir}/server.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/server-%d{dd-MM-yyyy}-%i.log.zip">
-      <!-- <RegexFilter regex=".+is not granted to.+" onMatch="DENY" onMismatch="ACCEPT"/> -->
       <PatternLayout>
         <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
       </PatternLayout>
@@ -76,22 +65,6 @@ APPENDERS CONFIGURATION:
       <DefaultRolloverStrategy min="1" max="5" fileIndex="max">
         <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
           <IfFileName glob="*/server-*.log.zip" />
-          <IfLastModified age="P7D" />
-        </Delete>
-      </DefaultRolloverStrategy>
-    </RollingFile>
-    <RollingFile name="GRANTING" fileName="${sys:nuxeo.log.dir}/granting.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/granting-%d{dd-MM-yyyy}-%i.log.zip">
-      <RegexFilter regex=".+is not granted to.+" onMatch="ACCEPT" onMismatch="DENY"/>
-      <PatternLayout>
-        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
-      </PatternLayout>
-      <Policies>
-        <TimeBasedTriggeringPolicy/>
-        <SizeBasedTriggeringPolicy size="20 MB" />
-      </Policies>
-      <DefaultRolloverStrategy min="1" max="1" fileIndex="max">
-        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
-          <IfFileName glob="*/granting-*.log.zip" />
           <IfLastModified age="P7D" />
         </Delete>
       </DefaultRolloverStrategy>
@@ -314,12 +287,6 @@ APPENDERS CONFIGURATION:
     <Logger name="org.nuxeo.ecm.core.management.jtajca" level="trace" additivity="false">
       <AppenderRef ref="STORAGE" />
     </Logger> -->
-    <Logger name="org.nuxeo.ecm.core.storage.sql.jdbc" level="trace" additivity="false">
-      <AppenderRef ref="STORAGE" />
-      <ContextMapFilter onMatch="ACCEPT" onMismatch="DENY">
-        <KeyValuePair key="RemoteAddr" value="127.0.0.1" />
-      </ContextMapFilter>
-    </Logger>
   
 <!-- Elasticsearch logging -->
 <!--
@@ -347,7 +314,6 @@ APPENDERS CONFIGURATION:
     </Logger>
     <Root level="warn">
       <AppenderRef ref="RUNTIME"/>
-      <AppenderRef ref="GRANTING"/>
       <AppenderRef ref="CONSOLE"/>
     </Root>
   </Loggers>
