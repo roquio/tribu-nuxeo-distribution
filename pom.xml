@@ -3,10 +3,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>toutatice-ecm.acrennes</groupId>
-	<artifactId>toutafront-nx-distrib</artifactId>
-	<version>4.7-SNAPSHOT</version>
-	<name>ToutaFront nuxeo distribution</name>
+	<groupId>fr.toutatice.acrennes.nuxeo</groupId>
+	<artifactId>toutatice-nuxeo-distribution</artifactId>
+	<version>4.9-SNAPSHOT</version>
+	<name>Toutatice Nuxeo distribution</name>
 	<packaging>pom</packaging>
 
 	<properties>
