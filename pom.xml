@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>toutatice-ecm.acrennes</groupId>
-	<artifactId>acrennes-nx-distrib</artifactId>
+	<artifactId>toutafront-nx-distrib</artifactId>
 	<version>4.7-SNAPSHOT</version>
-	<name>Ac-rennes nuxeo distribution</name>
+	<name>ToutaFront nuxeo distribution</name>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -15,19 +15,20 @@
 		<ottc.es.version>4.7.20</ottc.es.version>
 		<ottc.collab.version>4.7.17</ottc.collab.version>
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
-		<ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
-		<!-- <ottc.wf.version>4.6</ottc.wf.version> -->
-		<ottc.notif.version>4.7.17</ottc.notif.version>
-		<!-- <ottc.ui.version>4.6.1</ottc.ui.version> -->
+		<!-- <ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
+		 <ottc.wf.version>4.6</ottc.wf.version> -->
+		<!--<ottc.notif.version>4.7.17</ottc.notif.version>
+		 <ottc.ui.version>4.6.1</ottc.ui.version> -->
 		<!-- <ottc.drive.version>4.6.2</ottc.drive.version> -->
 		<ottc.generic-ui.version>4.7.17</ottc.generic-ui.version>
 
 		<ottc.es.custom.version>4.7.17.1</ottc.es.custom.version>
-		<ottc.procedure.version>4.7.17</ottc.procedure.version>
-		<!-- <ottc.checkin.version>4.6.1</ottc.checkin.version> -->
-		<!-- <ottc.pad.version>4.6</ottc.pad.version> -->
-		<ottc.news.version>4.7.17</ottc.news.version>
+		<!--<ottc.procedure.version>4.7.17</ottc.procedure.version>
+		 <ottc.checkin.version>4.6.1</ottc.checkin.version>
+		<ottc.pad.version>4.6</ottc.pad.version> 
+		<ottc.news.version>4.7.17</ottc.news.version>-->
 
+<!-- 
 		<ottc.jwt.version>4.7.17</ottc.jwt.version>
 		<ottc.onlyoffice.version>4.7.17</ottc.onlyoffice.version>
 
@@ -35,9 +36,11 @@
 		<ottc.remotepublishing.version>4.7.18</ottc.remotepublishing.version>
 		<ottc.webmode.version>4.7.17.1</ottc.webmode.version>
         <ottc.sharing.version>4.7.17</ottc.sharing.version>
+         -->
+        
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
 
-		<!-- Add-ons métier -->
+		<!-- Add-ons métie
 		<acrennes.version>4.1.3</acrennes.version>
 		<shortname.version>1.0.4</shortname.version>
 
@@ -55,7 +58,7 @@
 		<ACRENNES3.version>2.5.1</ACRENNES3.version>
 		<ACRENNES4.version>2.5.3-RC01</ACRENNES4.version>
 		<ACRENNES6.version>2.2.1</ACRENNES6.version>
-
+r -->
 		<!-- Logs -->
 		<log4j.version>2.8</log4j.version>
 	</properties>
@@ -193,18 +196,18 @@
 			<artifactId>opentoutatice-addon-file-based-naming-ecm</artifactId>
 			<version>${ottc.filenaming.version}</version>
 		</dependency>
-
+<!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.file-versioning</groupId>
 			<artifactId>opentoutatice-addon-file-versioning-ecm</artifactId>
 			<version>${ottc.file.versioning.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>opentoutatice-ecm.portal-notifications</groupId>
 			<artifactId>opentoutatice-addon-portal-notifications-ecm</artifactId>
 			<version>${ottc.notif.version}</version>
 		</dependency>
+ -->
 
 		<!-- <dependency> <groupId>opentoutatice-ecm.ui</groupId> <artifactId>opentoutatice-addon-simple-ui-ecm</artifactId> 
 			<version>${ottc.ui.version}</version> </dependency> <dependency> <groupId>opentoutatice-ecm.workflows-integration</groupId> 
@@ -220,17 +223,17 @@
 			<groupId>opentoutatice-ecm.elasticsearch-customizer</groupId>
 			<artifactId>opentoutatice-addon-elasticsearch-customizer-ecm</artifactId>
 			<version>${ottc.es.custom.version}</version>
-		</dependency>
+		</dependency><!--
 		<dependency>
 			<groupId>opentoutatice-ecm.procedures</groupId>
 			<artifactId>opentoutatice-addon-procedures-ecm</artifactId>
 			<version>${ottc.procedure.version}</version>
 		</dependency>
 
-		<!-- <dependency> <groupId>opentoutatice-ecm.checkin</groupId> <artifactId>opentoutatice-addon-checkin-ecm</artifactId> 
+		 <dependency> <groupId>opentoutatice-ecm.checkin</groupId> <artifactId>opentoutatice-addon-checkin-ecm</artifactId> 
 			<version>${ottc.checkin.version}</version> </dependency> <dependency> <groupId>opentoutatice-ecm.toutapad</groupId> 
 			<artifactId>opentoutatice-addon-toutapad-ecm</artifactId> <version>${ottc.pad.version}</version> 
-			</dependency> -->
+			</dependency> 
 		<dependency>
 			<groupId>opentoutatice-ecm.news</groupId>
 			<artifactId>opentoutatice-addon-news-ecm</artifactId>
@@ -247,13 +250,13 @@
 			<artifactId>opentoutatice-addon-onlyoffice-ecm</artifactId>
 			<version>${ottc.onlyoffice.version}</version>
 		</dependency>
-
+-->
 		<dependency>
 			<groupId>opentoutatice-ecm.monitoring</groupId>
 			<artifactId>opentoutatice-monitoring-ecm</artifactId>
 			<version>${ottc.monitoring.version}</version>
 		</dependency>
-
+<!-- 
 		<dependency>
 			<groupId>opentoutatice-ecm.profiled-publishing</groupId>
 			<artifactId>opentoutatice-platform-profiled-publishing-ecm</artifactId>
@@ -273,9 +276,9 @@
 			<groupId>opentoutatice-ecm.sharing</groupId>
 			<artifactId>opentoutatice-sharing</artifactId>
 			<version>${ottc.sharing.version}</version>
-		</dependency>
+		</dependency> -->
 
-		<!-- Acrennes -->
+		<!-- Acrennes 
 		<dependency>
 			<groupId>toutatice-ecm.acrennes</groupId>
 			<artifactId>toutatice-ecm-acrennes-adaptor</artifactId>
@@ -301,12 +304,12 @@
 			<artifactId>toutatice-ecm-acrennes-studio</artifactId>
 			<version>${acrennes.version}</version>
 		</dependency>
-		<!-- <dependency> <groupId>acaren-nuxeo-studio-extension</groupId> <artifactId>ACRENNES4</artifactId> 
+		 <dependency> <groupId>acaren-nuxeo-studio-extension</groupId> <artifactId>ACRENNES4</artifactId> 
 			<version>${acrennes4.version}</version> </dependency> <dependency> <groupId>acaren-nuxeo-studio-extension</groupId> 
 			<artifactId>ACRENNES6</artifactId> <version>${acrennes6.version}</version> 
 			</dependency> -->
 
-		<!-- Acrennes addons -->
+		<!-- Acrennes addons 
 		<dependency>
 			<groupId>toutatice-acrennes-addons.shortname</groupId>
 			<artifactId>toutatice-acrennes-addons-shortname-ecm</artifactId>
@@ -384,7 +387,7 @@
 			<artifactId>ACRENNES6</artifactId>
 			<version>${ACRENNES6.version}</version>
 		</dependency>
-
+-->
 
 		<!-- Agenda -->
 		<dependency>

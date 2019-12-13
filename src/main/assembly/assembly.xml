@@ -37,8 +37,9 @@
 				</include>
 				<include>opentoutatice-ecm.file-based-naming:opentoutatice-addon-file-based-naming-ecm:jar:${ottc.filenaming.version}
 				</include>
+				<!-- 
 				<include>opentoutatice-ecm.portal-notifications:opentoutatice-addon-portal-notifications-ecm:jar:${ottc.notif.version}
-				</include>
+				</include> -->
 				<include>opentoutatice-ecm.collab-tools:opentoutatice-collab-tools-ecm:jar:${ottc.collab.version}
 				</include>
 				<!-- <include>opentoutatice-ecm.drive:opentoutatice-drive:jar:${ottc.drive.version} 
@@ -47,18 +48,18 @@
 				</include>
 				<include>opentoutatice-ecm.elasticsearch-customizer:opentoutatice-addon-elasticsearch-customizer-ecm:jar:${ottc.es.custom.version}
 				</include>
-				<include>opentoutatice-ecm.procedures:opentoutatice-addon-procedures-ecm:jar:${ottc.procedure.version}
-				</include>
+				<!-- <include>opentoutatice-ecm.procedures:opentoutatice-addon-procedures-ecm:jar:${ottc.procedure.version}
+				</include> -->
 				<include>opentoutatice-ecm.monitoring:opentoutatice-monitoring-ecm:jar:${ottc.monitoring.version}
                 </include>
-				<include>opentoutatice-ecm.jwt:opentoutatice-addon-jwt-ecm:jar:${ottc.jwt.version}
+				<!-- <include>opentoutatice-ecm.jwt:opentoutatice-addon-jwt-ecm:jar:${ottc.jwt.version}
                 </include>
 				<include>opentoutatice-ecm.onlyoffice:opentoutatice-addon-onlyoffice-ecm:jar:${ottc.onlyoffice.version}
                 </include>
 				<include>opentoutatice-ecm.file-versioning:opentoutatice-addon-file-versioning-ecm:jar:${ottc.file.versioning.version}
-                </include>
+                </include> -->
 				<!-- <include>opentoutatice-ecm.ui:opentoutatice-addon-simple-ui-ecm:jar:${ottc.ui.version} 
-					</include> -->
+					</include>
 				<include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
                 </include>
 
@@ -69,8 +70,8 @@
 				<include>opentoutatice-ecm.web-mode:opentoutatice-web-mode-ecm:jar:${ottc.webmode.version}
                 </include>
 				<include>opentoutatice-ecm.sharing:opentoutatice-sharing:jar:${ottc.sharing.version}</include>
-
-				<!-- Ac rennes -->
+ -->
+				<!-- Ac rennes 
 				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-adaptor:jar:${acrennes.version}
                 </include>
 				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-automation:jar:${acrennes.version}
@@ -105,15 +106,15 @@
 				<include>toutatice-services.publidoc:toutatice-publidoc-ecm:jar:${publidoc.version}
                 </include>
 				<include>toutatice-services.uar:toutatice-uar-ecm:jar:${uar.version}
-                </include>
+                </include>-->
 
-				<!-- Studio -->
+				<!-- Studio
 				<include>acaren-nuxeo-studio:ACRENNES3:jar:${ACRENNES3.version}
                 </include>
 				<include>toutatice-services.acrennes-nuxeo-marketplaces:acrennes4:jar:${ACRENNES4.version}
                 </include>
 				<include>acaren-nuxeo-studio:ACRENNES6:jar:${ACRENNES6.version}
-                </include>
+                </include> -->
 
 				<!-- Login & SSO -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-login-portal-sso:jar:${nuxeo.version}
