@@ -17,102 +17,33 @@
 			<scope>runtime</scope>
 			<includes>
 				<!-- OpenToutatice -->
-				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-attached-files:jar:${opentoutatice.version}
-				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-automation:jar:${opentoutatice.version}
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-core:jar:${opentoutatice.version}
 				</include>
-				<include>opentoutatice-ecm.platform:opentoutatice-core-type-enricher:jar:${opentoutatice.version}
-                </include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-services:jar:${opentoutatice.version}
 				</include>
 				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-web:jar:${opentoutatice.version}
 				</include>
-				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-reporting:jar:${opentoutatice.version}
-                </include>
+				<include>opentoutatice-ecm.platform:opentoutatice-ecm-platform-probes:jar:${opentoutatice.version}
+				</include>
 
 				<!-- Add ons -->
 				<include>opentoutatice-ecm.elasticsearch:opentoutatice-addon-elasticsearch-ecm:jar:${ottc.es.version}
 				</include>
-				<include>opentoutatice-ecm.file-based-naming:opentoutatice-addon-file-based-naming-ecm:jar:${ottc.filenaming.version}
-				</include>
 				<include>opentoutatice-ecm.portal-notifications:opentoutatice-addon-portal-notifications-ecm:jar:${ottc.notif.version}
 				</include>
-				<include>opentoutatice-ecm.collab-tools:opentoutatice-collab-tools-ecm:jar:${ottc.collab.version}
-				</include>
-				<!-- <include>opentoutatice-ecm.drive:opentoutatice-drive:jar:${ottc.drive.version} 
-					</include> -->
 				<include>opentoutatice-ecm.generic-ui-service:opentoutatice-generic-ui-service-ecm:jar:${ottc.generic-ui.version}
 				</include>
-				<include>opentoutatice-ecm.elasticsearch-customizer:opentoutatice-addon-elasticsearch-customizer-ecm:jar:${ottc.es.custom.version}
-				</include>
-				<include>opentoutatice-ecm.procedures:opentoutatice-addon-procedures-ecm:jar:${ottc.procedure.version}
-				</include>
-				<include>opentoutatice-ecm.monitoring:opentoutatice-monitoring-ecm:jar:${ottc.monitoring.version}
-                </include>
-				<include>opentoutatice-ecm.jwt:opentoutatice-addon-jwt-ecm:jar:${ottc.jwt.version}
-                </include>
-				<include>opentoutatice-ecm.onlyoffice:opentoutatice-addon-onlyoffice-ecm:jar:${ottc.onlyoffice.version}
-                </include>
-				<include>opentoutatice-ecm.file-versioning:opentoutatice-addon-file-versioning-ecm:jar:${ottc.file.versioning.version}
-                </include>
-				<!-- <include>opentoutatice-ecm.ui:opentoutatice-addon-simple-ui-ecm:jar:${ottc.ui.version} 
-					</include> -->
-				<include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
-                </include>
-
-				<include>opentoutatice-ecm.profiled-publishing:opentoutatice-platform-profiled-publishing-ecm:jar:${ottc.profiledpublishing.version}
-                </include>
-				<include>opentoutatice-ecm.remote-publishing:opentoutatice-platform-remote-publishing-ecm:jar:${ottc.remotepublishing.version}
-                </include>
 				<include>opentoutatice-ecm.web-mode:opentoutatice-web-mode-ecm:jar:${ottc.webmode.version}
-                </include>
-				<include>opentoutatice-ecm.sharing:opentoutatice-sharing:jar:${ottc.sharing.version}</include>
-
-				<!-- Ac rennes -->
-				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-adaptor:jar:${acrennes.version}
-                </include>
-				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-automation:jar:${acrennes.version}
-                </include>
-				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-core:jar:${acrennes.version}
-                </include>
-				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-studio:jar:${acrennes.version}
-                </include>
-				<include>toutatice-ecm.acrennes:toutatice-ecm-acrennes-web:jar:${acrennes.version}
-                </include>
-
-				<include>toutatice-acrennes-addons.shortname:toutatice-acrennes-addons-shortname-ecm:jar:${shortname.version}
-                </include>
-				<include>toutatice-acrennes-addons.toutapad:toutatice-acrennes-addons-toutapad-ecm:jar:${toutapad.version}
-                </include>
-				<include>toutatice-services.climat:toutatice-climat-ecm:jar:${climat.version}
-                </include>
-				<include>toutatice-services.cst:toutatice-cst-ecm:jar:${cst.version}
-                </include>
-				<include>toutatice-services.depotConfidentiel:toutatice-dco-ecm:jar:${dco.version}
-                </include>
-				<include>toutatice-services.ficheslogiciels:toutatice-ficheslogiciels-ecm:jar:${ficheslogiciels.version}
-                </include>
-				<include>toutatice-services.listeemargement:toutatice-listeemargement-ecm:jar:${listeemargement.version}
-                </include>
-				<include>toutatice-services.merens:toutatice-merens-ecm:jar:${merens.version}
-                </include>
-				<include>toutatice-services.mpe:toutatice-mpe-ecm:jar:${mpe.version}
-                </include>
-				<include>toutatice-services.p1d:toutatice-p1d-ecm:jar:${p1d.version}
-                </include>
-				<include>toutatice-services.publidoc:toutatice-publidoc-ecm:jar:${publidoc.version}
-                </include>
-				<include>toutatice-services.uar:toutatice-uar-ecm:jar:${uar.version}
                 </include>
 
 				<!-- Studio -->
-				<include>acaren-nuxeo-studio:ACRENNES3:jar:${ACRENNES3.version}
+				<include>toutatice-services.dafpic:toutatice-dafpic-ecm:jar:${toutatice.dafpic.version}
                 </include>
-				<include>toutatice-services.acrennes-nuxeo-marketplaces:acrennes4:jar:${ACRENNES4.version}
+				<include>toutatice-services.dafpic:toutatice-dafpic-es:jar:${toutatice.dafpic.version}
                 </include>
-				<include>acaren-nuxeo-studio:ACRENNES6:jar:${ACRENNES6.version}
+				<include>acaren-nuxeo-studio:ACRENNES:jar:${studio.acrennes.version}
                 </include>
 
 				<!-- Login & SSO -->
@@ -240,6 +171,7 @@
 				<include>org:jaudiotagger:jar:2.0.3
 				</include>
 				<include>com.drewnoakes:metadata-extractor:jar:2.3.1
+			<!-- Surcharges -->
 				</include>
 				<include>net.java.dev.mistral:Operations:jar:0.9.5
 				</include>
@@ -290,14 +222,6 @@
 			<includes>
 				<include>**</include>
 			</includes>
-			<!-- Surcharges -->
-			<excludes>
-				<!-- log4j -->
-				<exclude>lib/log4j.xml</exclude>
-				<exclude>lib/log4j-1.2.17.jar</exclude>
-				<!-- Services Nx -->
-				<exclude>templates/common/config/blacklist.nxftl</exclude>
-			</excludes>
 		</fileSet>
 
 		<!-- Templates -->
