@@ -132,20 +132,6 @@
 				<include>org.nuxeo.ecm.webengine:nuxeo-webengine-ui:jar:${nuxeo.version}
 				</include>
 
-				<!-- Virtual navigation -->
-				<include>org.nuxeo.ecm.platform:nuxeo-platform-virtualnavigation-core-contrib:jar:${nuxeo.version}
-				</include>
-				<include>org.nuxeo.ecm.platform:nuxeo-platform-virtualnavigation-web:jar:${nuxeo.version}
-				</include>
-
-				<!-- Faceted search -->
-				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-api:jar:${nuxeo.version}
-				</include>
-				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-dm:jar:${nuxeo.version}
-				</include>
-				<include>org.nuxeo.ecm.platform:nuxeo-platform-faceted-search-jsf:jar:${nuxeo.version}
-				</include>
-
 				<!-- IMAP -->
 				<include>org.nuxeo.ecm.platform:nuxeo-platform-mail-core:jar:${nuxeo.version}
 				</include>
@@ -182,34 +168,9 @@
                 </include>
 				<include>org.jrobin:jrobin:jar:1.5.9
                 </include>
-				<!-- Dependencides for etherpad client -->
-				<include>org:etherpad_lite_client:jar:1.2.7
-                </include>
-				<include>com.googlecode.json-simple:json-simple:jar:1.1.1
-                </include>
-				<!-- Dependencides for jwt/onlyoffice -->
-				<include>com.auth0:java-jwt:jar:3.3.0</include>
-				<include>com.fasterxml.jackson.core:jackson-core:jar:2.9.2</include>
-				<include>com.fasterxml.jackson.core:jackson-databind:jar:2.9.2</include>
-				<include>com.fasterxml.jackson.core:jackson-annotations:jar:2.9.2</include>
 			</includes>
 		</dependencySet>
 
-		<!-- Tomcat libs -->
-		<dependencySet>
-			<outputDirectory>/${artifactId}-${project.version}/lib
-			</outputDirectory>
-			<unpack>false</unpack>
-			<scope>runtime</scope>
-			<includes>
-				<!-- Logs -->
-				<include>org.apache.logging.log4j:log4j-api:jar:${log4j.version}</include>
-				<include>org.apache.logging.log4j:log4j-core:jar:${log4j.version}</include>
-				<include>org.apache.logging.log4j:log4j-jcl:jar:${log4j.version}</include>
-				<include>org.apache.logging.log4j:log4j-1.2-api:jar:${log4j.version}</include>
-				<include>org.apache.logging.log4j:log4j-slf4j-impl:jar:${log4j.version}</include>
-			</includes>
-		</dependencySet>
 	</dependencySets>
 
 

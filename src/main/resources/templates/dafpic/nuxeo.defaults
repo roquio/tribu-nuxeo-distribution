@@ -1,0 +1,28 @@
+dafpic.target=.
+
+##------------------------------------
+## Activation of import compatibility
+##------------------------------------
+dafpic.import.compatibility=false
+
+##-------------------------
+## Timeout for imports
+##-------------------------
+org.nuxeo.dnd.upload.timeout=700000
+org.nuxeo.dnd.exec.timeout=700000
+
+##-------------------------
+## Notifications 
+##-------------------------
+nuxeo.permalink.service.portal.url=http://qualif-greta.osivia.com
+nuxeo.permalink.service.param1=portail
+nuxeo.permalink.service.param2=cms
+
+nuxeo.notification.eMailSubjectPrefix=[Greta] 
+mail.from=noreply@qualif-greta.osivia.com
+
+vignette.resize.width=1024
+vignette.resize.heidth=512
+vignette.resize.picture.width=256
+vignette.resize.picture.heidth=128
+vignette.resize.jpegMaxQuality=95

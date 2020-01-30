@@ -22,9 +22,6 @@
 		
 		<studio.acrennes.version>4.2.2</studio.acrennes.version>
 		<toutatice.dafpic.version>4.2.25</toutatice.dafpic.version>
-
-		<!-- Logs -->
-		<log4j.version>2.8</log4j.version>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>			
 	</properties>
@@ -354,35 +351,6 @@
 			<version>${nuxeo.version}</version>
 		</dependency>
 
-		<!-- Virtual navigation -->
-		<dependency>
-			<groupId>org.nuxeo.ecm.platform</groupId>
-			<artifactId>nuxeo-platform-virtualnavigation-core-contrib</artifactId>
-			<version>${nuxeo.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.nuxeo.ecm.platform</groupId>
-			<artifactId>nuxeo-platform-virtualnavigation-web</artifactId>
-			<version>${nuxeo.version}</version>
-		</dependency>
-
-		<!-- Faceted search -->
-		<dependency>
-			<groupId>org.nuxeo.ecm.platform</groupId>
-			<artifactId>nuxeo-platform-faceted-search-api</artifactId>
-			<version>${nuxeo.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.nuxeo.ecm.platform</groupId>
-			<artifactId>nuxeo-platform-faceted-search-dm</artifactId>
-			<version>${nuxeo.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.nuxeo.ecm.platform</groupId>
-			<artifactId>nuxeo-platform-faceted-search-jsf</artifactId>
-			<version>${nuxeo.version}</version>
-		</dependency>
-
 		<!-- IMAP -->
 		<dependency>
 			<groupId>org.nuxeo.ecm.platform</groupId>
@@ -448,66 +416,7 @@
 			<version>1.5.9</version>
 		</dependency>
 
-		<!-- Pad client -->
-		<dependency>
-			<groupId>org</groupId>
-			<artifactId>etherpad_lite_client</artifactId>
-			<version>1.2.7</version>
-		</dependency>
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1.1</version>
-		</dependency>
 
-		<!-- JWT lib -->
-		<dependency>
-			<groupId>com.auth0</groupId>
-			<artifactId>java-jwt</artifactId>
-			<version>3.3.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-annotations</artifactId>
-			<version>2.9.2</version>
-		</dependency>
-
-		<!-- Logs -->
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-api</artifactId>
-			<version>${log4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-			<version>${log4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-1.2-api</artifactId> <!-- redirect log4j to log4j2 -->
-			<version>${log4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-jcl</artifactId> <!-- redirect commons-logging to log4j2 -->
-			<version>${log4j.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-slf4j-impl</artifactId> 
-			<version>${log4j.version}</version>
-		</dependency>
 	</dependencies>
 
 
