@@ -30,9 +30,6 @@
 
       <searchBaseDn>${nuxeo.ldap.user.searchBaseDn}</searchBaseDn>
       <searchClass>${nuxeo.ldap.user.searchClass}</searchClass>
-<#if "${nuxeo.ldap.user.searchFilter}" != "">
-        <searchFilter>${nuxeo.ldap.user.searchFilter}</searchFilter>
-</#if>
 
       <searchScope>${nuxeo.ldap.user.searchScope}</searchScope>
       <substringMatchType>${nuxeo.ldap.user.searchBehavior}</substringMatchType>
@@ -74,9 +71,7 @@
 
       <searchBaseDn>${nuxeo.ldap.group.searchBaseDn}</searchBaseDn>
       <searchClass>${nuxeo.ldap.group.searchClass}</searchClass>
-<#if "${nuxeo.ldap.group.searchFilter}" != "">
-      <searchFilter>${nuxeo.ldap.group.searchFilter}</searchFilter>
-</#if>
+
       <searchScope>${nuxeo.ldap.group.searchScope}</searchScope>
       <substringMatchType>${nuxeo.ldap.group.searchBehavior}</substringMatchType>
 
