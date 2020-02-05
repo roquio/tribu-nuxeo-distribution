@@ -202,8 +202,25 @@ APPENDERS CONFIGURATION:
       <!-- No automatic deletions of archived logs; logs are kept and must be manually deleted -->
       <DefaultRolloverStrategy fileIndex="nomax" />
     </RollingFile>
-
+    
+	<RollingFile name="USERWORKSPACES" fileName="${sys:nuxeo.log.dir}/userworkspaces.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/userworkspaces-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="5" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/userworkspaces-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>    
   </Appenders>
+  
+  
   <Loggers>
     <Logger name="org.apache.catalina.loader" additivity="false">
       <AppenderRef ref="CLASSLOADER"/>
@@ -304,6 +321,11 @@ APPENDERS CONFIGURATION:
       <AppenderRef ref="ZDT-ES" />
     </Logger>
 <!-- ==== -->    
+
+<!-- Userworkspaces -->
+ 	<Logger name="fr.toutatice.userworkspaces" level="info" additivity="false">
+      <AppenderRef ref="USERWORKSPACES" />
+    </Logger>
 
     <Logger name="nuxeo-error-log" level="trace">
       <AppenderRef ref="ERROR-FILE" />
