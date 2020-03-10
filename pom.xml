@@ -22,7 +22,8 @@
 		
 		<toutatice.dafpic.version>4.2.26</toutatice.dafpic.version>
 		
-		<ottc.monitoring.version>2.1</ottc.monitoring.version>			
+		<ottc.monitoring.version>2.1</ottc.monitoring.version>
+		<javamelody.version>1.82.0</javamelody.version>	
 	</properties>
 
 	<build>
@@ -406,7 +407,7 @@
 		<dependency>
 			<groupId>net.bull.javamelody</groupId>
 			<artifactId>javamelody-core</artifactId>
-			<version>1.82.0</version>
+			<version>${javamelody.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jrobin</groupId>
