@@ -166,7 +166,7 @@
 				<include>org.jsoup:jsoup:jar:1.6.3
 				</include>
 				<!-- Dependencies for Java Melody monitoring -->
-				<include>net.bull.javamelody:javamelody-core:jar:{javamelody.version}
+				<include>net.bull.javamelody:javamelody-core:jar:${javamelody.version}
                 </include>
 				<include>org.jrobin:jrobin:jar:1.5.9
                 </include>
