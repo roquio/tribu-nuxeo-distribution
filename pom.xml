@@ -20,8 +20,7 @@
 
 		<ottc.webmode.version>4.2.25</ottc.webmode.version>
 		
-		<studio.acrennes.version>4.2.2</studio.acrennes.version>
-		<toutatice.dafpic.version>4.2.25</toutatice.dafpic.version>
+		<toutatice.dafpic.version>4.2.26</toutatice.dafpic.version>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>			
 	</properties>
@@ -165,12 +164,6 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>acaren-nuxeo-studio</groupId>
-			<artifactId>ACRENNES</artifactId>
-			<version>${studio.acrennes.version}</version>
-		</dependency>
-		
-		<dependency>
 			<groupId>toutatice-services.dafpic</groupId>
 			<artifactId>toutatice-dafpic-ecm</artifactId>
 			<version>${toutatice.dafpic.version}</version>
@@ -180,6 +173,11 @@
 			<artifactId>toutatice-dafpic-es</artifactId>
 			<version>${toutatice.dafpic.version}</version>
 		</dependency>		
+		<dependency>
+			<groupId>toutatice-services.dafpic</groupId>
+			<artifactId>toutatice-dafpic-studio</artifactId>
+			<version>${toutatice.dafpic.version}</version>
+		</dependency>
 
 		<!-- DAM -->
 		<dependency>
@@ -408,7 +406,7 @@
 		<dependency>
 			<groupId>net.bull.javamelody</groupId>
 			<artifactId>javamelody-core</artifactId>
-			<version>1.81.0</version>
+			<version>1.82.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jrobin</groupId>

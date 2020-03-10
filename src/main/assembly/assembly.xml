@@ -45,7 +45,7 @@
                 </include>
 				<include>toutatice-services.dafpic:toutatice-dafpic-es:jar:${toutatice.dafpic.version}
                 </include>
-				<include>acaren-nuxeo-studio:ACRENNES:jar:${studio.acrennes.version}
+				<include>toutatice-services.dafpic:toutatice-dafpic-studio:jar:${toutatice.dafpic.version}
                 </include>
 
 				<!-- Login & SSO -->
