@@ -10,8 +10,8 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.1.1</nuxeo.version>
-		<opentoutatice.version>4.7.26</opentoutatice.version>
+		<nuxeo.version>6.1.2</nuxeo.version>
+		<opentoutatice.version>4.7.27</opentoutatice.version>
 		<ottc.es.version>4.7.20</ottc.es.version>
 		<ottc.collab.version>4.7.17</ottc.collab.version>
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
@@ -38,7 +38,7 @@
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
 
 		<!-- Add-ons métier -->
-		<acrennes.version>4.1.6</acrennes.version>
+		<acrennes.version>4.1.7</acrennes.version>
 		<shortname.version>1.0.4</shortname.version>
 
 		<toutapad.version>4.7.17</toutapad.version>
@@ -692,6 +692,13 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
 			<version>2.9.2</version>
+		</dependency>
+		
+		<!-- Missing deps in nuxeo distrib -->
+		<dependency>
+			<groupId>com.phloc</groupId>
+    		<artifactId>phloc-commons</artifactId>
+  			<version>4.3.2</version>
 		</dependency>
 
 		<!-- Logs -->

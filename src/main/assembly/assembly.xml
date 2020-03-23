@@ -250,6 +250,11 @@
                 </include>
 				<include>org.jrobin:jrobin:jar:1.5.9
                 </include>
+                
+
+                <include>com.phloc:phloc-commons:jar:4.3.2
+                </include>                
+                
 				<!-- Dependencides for etherpad client -->
 				<include>org:etherpad_lite_client:jar:1.2.7
                 </include>
