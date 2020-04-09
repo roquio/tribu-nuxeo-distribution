@@ -569,6 +569,22 @@
     </layout>
   </appender>    
   
+  <!-- wf logging -->
+  <category name="nuxeo.wf.cleaner"  additivity="false">
+    <priority value="INFO" />
+	<appender-ref ref="WF_CLEAN_LOG" />
+  </category>
+  <appender name="WF_CLEAN_LOG" class="org.apache.log4j.DailyRollingFileAppender" additivity="false">
+    <errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
+    <param name="File" value="${nuxeo.log.dir}/wf_clean.log" />
+	<!-- Rollover at midnight every day -->
+    <param name="DatePattern" value="'.'yyyy-MM-dd" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d{ISO8601} %-5p [%t] [%c] %m%n" />                  
+    </layout>
+  </appender>    
+    
 
   <!-- See org.nuxeo.ecm.platform.ui.web.shield.ErrorPageForwarder and
   org.nuxeo.ecm.platform.web.common.exceptionhandling.service.ExceptionHandlingContrib in

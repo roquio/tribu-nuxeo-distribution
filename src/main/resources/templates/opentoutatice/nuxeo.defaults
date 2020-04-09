@@ -186,3 +186,9 @@ ottc.widget.filemaxSize.long=500000000
 ## Elastic search queries
 ## ---------------------------------------------------------------------------
 ottc.es.query.default.limit=2000
+
+##----------------------------------------------------------------------------
+## Clean-up workflows
+## ---------------------------------------------------------------------------
+# Disable default cleanup
+nuxeo.routing.disable.cleanup.workflow.instances=true
