@@ -6,6 +6,16 @@
     point="elasticSearchIndex">
     
     <elasticSearchIndex name="${elasticsearch.indexName}" type="doc" repository="default">
+      <fullTextFields>
+      	<field>dc:title.fulltext^2</field>
+      	<field>dc:description^1.5</field>
+      	<field>annonce:resume</field>
+      	<field>note:note</field>
+        <field>webp:content</field>
+        <field>webc:welcomeText</field>
+        <field>comment:comment</field>     
+      	<field>ecm:binarytext</field>
+      </fullTextFields>
     
     <fetchFromSource>
         <include>*</include>
@@ -39,20 +49,14 @@
             "type" : "stop"
          },
          "fr_elision_filter" : {
+            "articles_case": true,
             "articles" : [
-               "c",
-               "l",
-               "m",
-               "t",
-               "qu",
-               "n",
-               "s",
-               "j"
+               "l", "m", "t", "qu", "n", "s", "j", "d", "c", "jusqu", "quoiqu", "lorsqu", "puisqu"
             ],
             "type" : "elision"
          },
          "fr_stem_filter" : {
-            "name" : "minimal_french",
+            "name" : "light_french",
             "type" : "stemmer"
          },
          "fr_stop_filter" : {
@@ -82,16 +86,23 @@
          },
          "fr_analyzer" : {
             "alias" : "fulltext",
-            "filter" : [
-               "word_delimiter_filter",
-               "lowercase",
-               "fr_stop_filter",
-               "fr_stem_filter",
-               "asciifolding",
-               "fr_elision_filter"
-            ],
             "type" : "custom",
-            "tokenizer" : "standard"
+            "char_filter": ["html_strip"],
+            "tokenizer" : "icu_tokenizer",
+            "filter" : [
+               "fr_elision_filter",
+               "icu_folding",
+               "fr_stem_filter"
+            ]
+         },
+         "lit_fr_analyzer" : {
+            "alias" : "lit_fulltext",
+            "type" : "custom",
+            "tokenizer" : "icu_tokenizer",
+            "filter" : [
+               "fr_elision_filter",
+               "icu_folding"
+            ]
          },
          "path_analyzer" : {
             "type" : "custom",
@@ -99,7 +110,7 @@
          },
          "lowercase_analyzer" : {
             "type" : "custom",
-            "filter" : [ "truncate_filter", "lowercase", "asciifolding" ],
+            "filter" : [ "truncate_filter", "icu_folding" ],
             "tokenizer" : "keyword"
          },
          "default" : {
@@ -117,22 +128,20 @@
       "enabled" : true
    },
    "_all" : {
-      "analyzer" : "fulltext"
+      "enabled" : false
    },
    "dynamic_templates": [ {
       "no_thumbnail_template": {
          "path_match": "thumb:thumbnail.*",
          "mapping": {
-             "index": "no",
-             "include_in_all": false
+             "index": "no"
             }
          }
       }, {
       "no_picture_template": {
          "path_match": "picture:views.*",
          "mapping": {
-            "index": "no",
-            "include_in_all": false
+            "index": "no"
           }
        }
    },{
@@ -154,10 +163,10 @@
          "type" : "multi_field",
          "fields" : {
            "dc:title" : {
-             "type" : "string"
+	           	"type" : "string",
+				"index": "not_analyzed"
            },
            "fulltext" : {
-             "boost": 2,
              "type": "string",
              "analyzer" : "fulltext"
           },
@@ -168,38 +177,16 @@
         }
       },
       "dc:description" : {
-         "type" : "multi_field",
-         "fields" : {
-           "dc:description" : {
-             "index" : "no",
-             "include_in_all" : true,
-             "type" : "string"
+           		"type" : "string",
+           		"analyzer" : "fulltext"
            },
-           "fulltext" : {
-             "boost": 1.5,
-             "type": "string",
-             "analyzer" : "fulltext"
-          }
-        }
-      },
       "note:note" : {
-         "type" : "multi_field",
-         "fields" : {
-           "note:note" : {
-             "index" : "no",
-             "include_in_all" : true,
-             "type" : "string"
+	      "type": "string",
+	      "analyzer" : "fulltext"
            },
-           "fulltext" : {
-             "type": "string",
-             "analyzer" : "fulltext"
-          }
-        }
-      },
       "ecm:binarytext" : {
          "type" : "string",
-         "index" : "no",
-         "include_in_all" : true
+         "analyzer" : "fulltext"
       },
       "ecm:path" : {
          "type" : "multi_field",
@@ -213,11 +200,21 @@
                "index" : "not_analyzed",
                "type" : "string"
             }
-         },
-        "include_in_all": false
+         }
       },
       "ecm:pos": {
          "type": "integer"
+      },
+      "ttc:tabOrder": {
+         "type": "integer"
+      },
+      "ttc:spaceLdapId" : {
+      	"type" : "string",
+      	"index" : "not_analyzed"
+      },
+       "ttc:spaceTitle" : {
+      	"type" : "string",
+      	"index" : "not_analyzed"
       },
       "dc:created": {
          "format": "dateOptionalTime",
@@ -229,8 +226,7 @@
       },
       "common:icon": {
          "type": "string",
-         "index" : "no",
-         "include_in_all" : false
+         "index" : "no"
       },
       "ttc:webid" : {
         "type" : "string",

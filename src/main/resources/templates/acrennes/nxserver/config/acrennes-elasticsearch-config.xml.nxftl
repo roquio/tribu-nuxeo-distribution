@@ -7,12 +7,26 @@
     point="elasticSearchIndex">
     
     <elasticSearchIndex name="${elasticsearch.indexName}" type="doc" repository="default">
+      <fullTextFields>
+      	<field>dc:title.fulltext^2</field>
+      	<field>dc:description^1.5</field>
+      	<field>annonce:resume</field>
+      	<field>note:note</field>
+        <field>webp:content</field>
+        <field>webc:welcomeText</field>
+        <field>comment:comment</field>     
+        <field>ttcth:message</field>
+        <field>unum:scenario</field>
+        <field>mail:mail</field>
+      	<field>ecm:binarytext</field>
+      </fullTextFields>
+    
       <fetchFromSource>
         <include>*</include>
         <exclude>ecm:binarytext</exclude>
-	<exclude>p1d:pjDir</exclude>
-	<exclude>p1d:pjModele</exclude>
-	<exclude>p1d:pjValidation</exclude>
+		<exclude>p1d:pjDir</exclude>
+		<exclude>p1d:pjModele</exclude>
+		<exclude>p1d:pjValidation</exclude>
         <exclude>prm:ppms/*/fichier</exclude>
         <exclude>prm:planEvacuation/*/fichier</exclude>
       </fetchFromSource>
@@ -44,21 +58,14 @@
             "type" : "stop"
          },
          "fr_elision_filter" : {
+            "articles_case": true,
             "articles" : [
-               "c",
-               "l",
-               "m",
-               "t",
-               "qu",
-               "n",
-               "s",
-               "j",
-               "d"
+               "l", "m", "t", "qu", "n", "s", "j", "d", "c", "jusqu", "quoiqu", "lorsqu", "puisqu"
             ],
             "type" : "elision"
          },
          "fr_stem_filter" : {
-            "name" : "minimal_french",
+            "name" : "light_french",
             "type" : "stemmer"
          },
          "fr_stop_filter" : {
@@ -88,16 +95,23 @@
          },
          "fr_analyzer" : {
             "alias" : "fulltext",
-            "filter" : [
-               "word_delimiter_filter",
-               "lowercase",
-               "fr_stop_filter",
-               "fr_stem_filter",
-               "asciifolding",
-               "fr_elision_filter"
-            ],
             "type" : "custom",
-            "tokenizer" : "standard"
+            "char_filter": ["html_strip"],
+            "tokenizer" : "icu_tokenizer",
+            "filter" : [
+               "fr_elision_filter",
+               "icu_folding",
+               "fr_stem_filter"
+            ]
+         },
+         "lit_fr_analyzer" : {
+            "alias" : "lit_fulltext",
+            "type" : "custom",
+            "tokenizer" : "icu_tokenizer",
+            "filter" : [
+               "fr_elision_filter",
+               "icu_folding"
+            ]
          },
          "path_analyzer" : {
             "type" : "custom",
@@ -105,7 +119,7 @@
          },
          "lowercase_analyzer" : {
             "type" : "custom",
-            "filter" : [ "truncate_filter", "lowercase", "asciifolding" ],
+            "filter" : [ "truncate_filter", "icu_folding" ],
             "tokenizer" : "keyword"
          },
          "default" : {
@@ -123,25 +137,23 @@
       "enabled" : true
    },
    "_all" : {
-      "analyzer" : "fulltext"
+      "enabled" : false
    },
    "dynamic_templates": [ {
       "no_thumbnail_template": {
          "path_match": "thumb:thumbnail.*",
          "mapping": {
-             "index": "no",
-             "include_in_all": false
+             "index": "no"
             }
          }
       }, {
       "no_picture_template": {
          "path_match": "picture:views.*",
          "mapping": {
-            "index": "no",
-            "include_in_all": false
+            "index": "no"
           }
        }
-   },{
+      },{
       "rcd_variables": {
          "path_match": "rcd:globalVariablesValues.*",
          "mapping": {
@@ -160,114 +172,58 @@
          "type" : "multi_field",
          "fields" : {
            "dc:title" : {
-					"index": "analyzed",
-             "type" : "string"
+	           	"type" : "string",
+				"index": "not_analyzed"
            },
            "fulltext" : {
-             "boost": 2,
-             "type": "string",
-             "analyzer" : "fulltext"
+	             "type": "string",
+	             "analyzer" : "fulltext"
           },
-        "lowercase" : {
-            "type":"string",
-            "analyzer" : "lowercase_analyzer"       
-        }
+          "lowercase" : {
+	            "type":"string",
+	            "analyzer" : "lowercase_analyzer"       
+          }
         }
       },
       "dc:description" : {
-         "type" : "multi_field",
-         "fields" : {
-           "dc:description" : {
-             "index" : "analyzed",
-             "include_in_all" : true,
-             "type" : "string"
-           },
-           "fulltext" : {
-             "boost": 1.5,
-             "type": "string",
-             "analyzer" : "fulltext"
-          }
-        }
+           		"type" : "string",
+           		"analyzer" : "fulltext"
+      },
+      "annonce:resume" : {
+	      "type": "string",
+	      "analyzer" : "fulltext"
       },
       "note:note" : {
-         "type" : "multi_field",
-         "fields" : {
-           "note:note" : {
-					"index": "no",
-					"include_in_all": true,
-             "type" : "string"
-           },
-           "fulltext" : {
-             "type": "string",
-             "analyzer" : "fulltext"
-          }
-        }
+	      "type": "string",
+	      "analyzer" : "fulltext"
       },
       "webp:content" : {
-         "type" : "multi_field",
-         "fields" : {
-           "webp:content" : {
-					"index": "no",
-					"include_in_all": true,
-             "type" : "string"
-           },
-           "fulltext" : {
-             "type": "string",
-             "analyzer" : "fulltext"
-          } 
-        }
+          "type": "string",
+          "analyzer" : "fulltext"
       },
       "webc:welcomeText" : {
-         "type" : "multi_field",
-         "fields" : {
-           "webc:welcomeText" : {
-             "index" : "no",
-             "include_in_all" : true,
-             "type" : "string"
-           },
-           "fulltext" : {
-             "type": "string",
-             "analyzer" : "fulltext"
-          } 
-        }
+           "type": "string",
+           "analyzer" : "fulltext"
       },
       "comment:comment" : {
-         "type" : "multi_field",
-         "fields" : {
-           "comment:comment" : {
-             "index" : "analyzed",
-             "include_in_all" : true,
-             "type" : "string"
-           },
-           "fulltext" : {
-             "type": "string",
-             "analyzer" : "fulltext"
-          } 
-        }
+          "type": "string",
+          "analyzer" : "fulltext"
       },
       "mail:mail" : {
-         "type" : "multi_field",
-         "fields" : {
-           "mail:mail" : {
-             "index" : "no",
-             "include_in_all" : true,
-             "type" : "string"
-           },
-           "fulltext" : {
-             "type": "string",
-             "analyzer" : "fulltext"
-          } 
-        }
+          "type": "string",
+          "analyzer" : "fulltext"
+      },
+      "ttcth:message" : {
+          "type": "string",
+          "analyzer" : "fulltext"
       },
       "ecm:binarytext" : {
-         "type" : "string",
-         "index" : "no",
-         "include_in_all" : true
+		   "type" : "string",
+		   "analyzer" : "fulltext"
       },
       "unum:scenario" : {
          "type" : "string",
-         "index" : "no",
-         "include_in_all" : true
+		 "analyzer" : "fulltext"
       },
       "ecm:path" : {
          "type" : "multi_field",
@@ -281,14 +237,21 @@
                "index" : "not_analyzed",
                "type" : "string"
             }
-         },
-        "include_in_all": false
+         }
       },
       "ecm:pos": {
          "type": "integer"
       },
       "ttc:tabOrder": {
          "type": "integer"
+      },
+      "ttc:spaceLdapId" : {
+      	"type" : "string",
+      	"index" : "not_analyzed"
+      },
+       "ttc:spaceTitle" : {
+      	"type" : "string",
+      	"index" : "not_analyzed"
       },
       "dc:created": {
         "format": "dateOptionalTime",
@@ -595,7 +558,7 @@
 					"index": "not_analyzed"
 				},
 				"psc1": {
-         "type" : "boolean"
+         			"type" : "boolean"
 				}
 			}
       },
@@ -620,7 +583,7 @@
 					"type": "string"
 				},
 				"apiAdresseIndisponible": {
-         "type" : "boolean"
+         			"type" : "boolean"
 				}
 			}
       },
@@ -652,10 +615,10 @@
 							"type": "string"
 						},
 						"apiAdresseIndisponible": {
-         "type" : "boolean"
+         					"type" : "boolean"
 						}
 					}
-      },
+      			},
 				"typeTransport": {
 					"type": "string"
 				},
@@ -687,12 +650,12 @@
 							"type": "string"
 						},
 						"apiAdresseIndisponible": {
-         "type" : "boolean"
+         					"type" : "boolean"
 						}
 					}
 				}
 			}
-      },
+      	},
 		"voy:hebergements": {
 			"type": "nested",
 			"properties": {
@@ -724,10 +687,10 @@
 							"type": "string"
 						},
 						"apiAdresseIndisponible": {
-         "type" : "boolean"
+         					"type" : "boolean"
 						}
 					}
-      },
+      			},
 				"departDate": {
 					"type": "date",
 					"format": "dateOptionalTime"
@@ -761,9 +724,9 @@
 			"type": "nested",
 			"properties": {
 				"anneeScolaire": {
-         "type" : "string",
-         "index" : "not_analyzed"
-      },
+			         "type" : "string",
+			         "index" : "not_analyzed"
+			      },
 				"date": {
 					"type": "date",
 					"format": "dateOptionalTime"
@@ -774,22 +737,22 @@
 			"type": "nested",
 			"properties": {
 				"anneeScolaire": {
-         "type" : "string",
-         "index" : "not_analyzed"
-      },
+			         "type" : "string",
+			         "index" : "not_analyzed"
+			      },
 				"date": {
 					"type": "date",
 					"format": "dateOptionalTime"
 				}
 			}
-      },
+      	},
 		"prm:ppms": {
 			"type": "nested",
 			"properties": {
 				"anneeScolaire": {
-         "type": "string",
+         			"type": "string",
 					"index": "not_analyzed"
-      },
+      			},
 				"date": {
 					"type": "date",
 					"format": "dateOptionalTime"
@@ -799,10 +762,10 @@
 		"prm:planEvacuation": {
 			"type": "nested",
 			"properties": {
-				"anneeScolaire": {
-        "type" : "string",
-        "index" : "not_analyzed"
-      },
+			    "anneeScolaire": {
+			        "type" : "string",
+			        "index" : "not_analyzed"
+			      },
 				"date": {
 					"type": "date",
 					"format": "dateOptionalTime"
@@ -874,11 +837,11 @@
 					"type": "nested",
 					"properties": {
 						"date": {
-            "type" : "date",
-            "format" : "dateOptionalTime"
+				            "type" : "date",
+				            "format" : "dateOptionalTime"
+							}
 						}
-					}
-          },
+				 },
 				"pointsVigilance": {
 					"type": "string"
 				},
@@ -897,15 +860,15 @@
 					"type": "nested",
 					"properties": {
 						"date": {
-            "type" : "date",
-            "format" : "dateOptionalTime"
-						}
-					}
-          },
+				            "type" : "date",
+				            "format" : "dateOptionalTime"
+									}
+							}
+          		},
 				"infosComplementaires": {
-            "type" : "string"
-				}
-          },
+	            "type" : "string"
+					}
+	          },
 			"type": "object"
 		},
 		"cobj:objectifs": {

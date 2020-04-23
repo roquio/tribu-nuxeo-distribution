@@ -314,7 +314,7 @@ APPENDERS CONFIGURATION:
 
 <!-- == Zero Down Time Elasticsearch Re-indexing == -->
 <!-- Both packages (es & work) must be activated -->
- 	<Logger name="org.nuxeo.elasticsearch" level="info" additivity="false">
+ 	<Logger name="org.opentoutatice.elasticsearch" level="info" additivity="false">
       <AppenderRef ref="ZDT-ES" />
     </Logger>
     <Logger name="org.nuxeo.ecm.core.work.AbstractWork" level="info" additivity="false">
