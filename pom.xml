@@ -12,7 +12,7 @@
 	<properties>
 		<nuxeo.version>6.1.3</nuxeo.version>
 		<opentoutatice.version>4.7.28</opentoutatice.version>
-		<ottc.es.version>4.8-SNAPSHOT</ottc.es.version>
+		<ottc.es.version>4.8-RC01</ottc.es.version>
 		<ottc.collab.version>4.7.17</ottc.collab.version>
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
