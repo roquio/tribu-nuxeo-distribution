@@ -181,13 +181,17 @@
 				<include>org.jsoup:jsoup:jar:1.6.3
 				</include>
 				<!-- Dependencies for Java Melody monitoring -->
-				<include>net.bull.javamelody:javamelody-core:jar:1.62.0
+				<include>net.bull.javamelody:javamelody-core:jar:${javamelody.version}
                 </include>
                 <include>org.jrobin:jrobin:jar:1.5.9
                 </include>
                 <!--  Dependencides for etherpad client -->
                 <include>org:etherpad_lite_client:jar:1.2.7
                 </include>
+                
+                <include>com.phloc:phloc-commons:jar:4.3.2
+                </include>                 
+                
                 <include>com.googlecode.json-simple:json-simple:jar:1.1.1
                 </include>
                 <!--  Dependencides for jwt/onlyoffice -->

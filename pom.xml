@@ -10,16 +10,16 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<nuxeo.version>6.1.1</nuxeo.version>
-		<nuxeodrive.version>6.1.1</nuxeodrive.version>
+		<nuxeo.version>6.1.3</nuxeo.version>
+		<nuxeodrive.version>6.1.3</nuxeodrive.version>
 		
-		<opentoutatice.version>4.4.19.5</opentoutatice.version>
+		<opentoutatice.version>4.4.21</opentoutatice.version>
 		<ottc.es.version>4.4.19-alias</ottc.es.version>
 		<ottc.collab.version>4.4.18.5</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.4.18</ottc.file.versioning.version>
 		<ottc.wf.version>4.4.18.5</ottc.wf.version>
-		<ottc.notif.version>4.4.18.5</ottc.notif.version>
+		<ottc.notif.version>4.4.21</ottc.notif.version>
 		<ottc.ui.version>2.1</ottc.ui.version>
 		<ottc.drive.version>4.4.19.4</ottc.drive.version>
 		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
@@ -35,6 +35,7 @@
 		<foad.custom.nx>4.4.19.11</foad.custom.nx>
 		
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
+		<javamelody.version>1.82.0</javamelody.version>		
 		
 		<!-- <nuxeo.reindex.fulltext.version>6.1.0</nuxeo.reindex.fulltext.version> -->	
 	</properties>
@@ -462,7 +463,7 @@
         <dependency>
             <groupId>net.bull.javamelody</groupId>
             <artifactId>javamelody-core</artifactId>
-            <version>1.62.0</version>
+			<version>${javamelody.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jrobin</groupId>
@@ -481,6 +482,13 @@
     		<artifactId>json-simple</artifactId>
         	<version>1.1.1</version>
 		</dependency>
+		
+		<!-- Missing deps in nuxeo distrib -->
+		<dependency>
+			<groupId>com.phloc</groupId>
+    		<artifactId>phloc-commons</artifactId>
+  			<version>4.3.2</version>
+		</dependency>		
 		
 		<!-- JWT lib -->
 		<dependency>
