@@ -15,4 +15,4 @@ nuxeo.template.includes=opentoutatice
 #nuxeo.vcs.optimizations.acl.enabled=false
 
 ## Index space information on each document
-ottc.es.space.indexation=/
+#ottc.es.space.indexation=/
