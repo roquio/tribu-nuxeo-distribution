@@ -21,6 +21,7 @@ nuxeo.ldap.user.mapping.firstname=givenName
 nuxeo.ldap.user.mapping.lastname=sn
 nuxeo.ldap.user.mapping.company=rne
 nuxeo.ldap.user.mapping.email=mail
+nuxeo.ldap.user.mapping.groups=ENTPersonProfils
 nuxeo.ldap.group.searchBaseDn=ou=groupes,dc=ent-bretagne,dc=fr
 #nuxeo.ldap.group.searchScope
 #nuxeo.ldap.group.searchFilter=(|(objectClass=ENTProfil)(objectClass=ENTRoleAppli))
@@ -35,6 +36,11 @@ nuxeo.ldap.group.mapping.description=description
 nuxeo.ldap.group.mapping.subGroups=subGroups
 nuxeo.ldap.group.searchBehavior=subinitial
 nuxeo.ldap.group.searchClass=ENTProfil
+nuxeo.ldap.group.mapping.type=ENTProfilType
+nuxeo.ldap.group.mapping.workspaceId=ENTWorkspaceId
+nuxeo.ldap.group.mapping.role=ENTProfilRole
+nuxeo.ldap.group.mapping.displayname=ENTDisplayName
+
 
 #(acrennes-authentification-config.xml.nxftl)
 nuxeo.auth.secret.key=none
@@ -89,3 +95,6 @@ nuxeo.ldap.cache.user.maxSize=10000
 nuxeo.ldap.cache.user.withoutRef.maxSize=10000
 nuxeo.ldap.cache.group.maxSize=10000
 nuxeo.ldap.cache.group.withoutRef.maxSize=10000
+
+# Pour identifier les espaces collaboratifs (actions email spécifiques)
+ottc.collab.workspacepath=/espaces-collaboratifs
