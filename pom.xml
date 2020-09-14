@@ -36,9 +36,10 @@
 		<ottc.webmode.version>4.7.17.1</ottc.webmode.version>
         <ottc.sharing.version>4.7.17</ottc.sharing.version>
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
+		<ottc.migration.version>4.7-RC01</ottc.migration.version>
 
 		<!-- Add-ons métier -->
-		<acrennes.version>4.1.13</acrennes.version>
+		<acrennes.version>4.1.14-RC01</acrennes.version>
 		<shortname.version>1.0.4</shortname.version>
 
 		<toutapad.version>4.7.17</toutapad.version>
@@ -255,6 +256,12 @@
 			<groupId>opentoutatice-ecm.monitoring</groupId>
 			<artifactId>opentoutatice-monitoring-ecm</artifactId>
 			<version>${ottc.monitoring.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>opentoutatice-ecm.migrations</groupId>
+			<artifactId>opentoutatice-addon-migration</artifactId>
+			<version>${ottc.migration.version}</version>
 		</dependency>
 
 		<dependency>

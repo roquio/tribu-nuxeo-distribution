@@ -1,6 +1,10 @@
 opentoutatice-es-alias.target=.
 nuxeo.template.includes=common,opentoutatice,opentoutatice-es
 
+## NOTE: you do not need this template in nuxeo.conf
+##       it is just kept here to remember following 
+##       configuration parameter
+
 ##----------------------------------------------------------------------------
 ## Loop timeout for re-indexing waiting in seconds
 ##----------------------------------------------------------------------------

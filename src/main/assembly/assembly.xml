@@ -63,6 +63,8 @@
 					</include> -->
 				<include>opentoutatice-ecm.news:opentoutatice-addon-news-ecm:jar:${ottc.news.version}
                 </include>
+                <include>opentoutatice-ecm.migrations:opentoutatice-addon-migration:jar:${ottc.migration.version}
+                </include>
 
 				<include>opentoutatice-ecm.profiled-publishing:opentoutatice-platform-profiled-publishing-ecm:jar:${ottc.profiledpublishing.version}
                 </include>
