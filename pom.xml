@@ -39,7 +39,7 @@
 		<ottc.migration.version>4.7-RC01</ottc.migration.version>
 
 		<!-- Add-ons métier -->
-		<acrennes.version>4.1.14-RC01</acrennes.version>
+		<acrennes.version>4.1.14</acrennes.version>
 		<shortname.version>1.0.4</shortname.version>
 
 		<toutapad.version>4.7.17</toutapad.version>

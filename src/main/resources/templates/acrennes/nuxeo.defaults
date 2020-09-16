@@ -89,3 +89,7 @@ nuxeo.ldap.cache.user.maxSize=10000
 nuxeo.ldap.cache.user.withoutRef.maxSize=10000
 nuxeo.ldap.cache.group.maxSize=10000
 nuxeo.ldap.cache.group.withoutRef.maxSize=10000
+
+# Espaces école
+acrennes.salledeclasses.keyword=ecole
+acrennes.salledeclasses.template=/default/templates/espace-ecole-salle
