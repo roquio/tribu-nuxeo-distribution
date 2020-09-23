@@ -30,7 +30,7 @@ nuxeo.ldap.group.readonly=true
 #nuxeo.ldap.query.timeLimit
 nuxeo.ldap.group.mapping.rdn=cn
 nuxeo.ldap.group.mapping.name=cn
-nuxeo.ldap.group.mapping.label=cn
+nuxeo.ldap.group.mapping.label=ENTDisplayName
 nuxeo.ldap.group.mapping.description=description
 #nuxeo.ldap.group.mapping.members.staticAttributeId=uniqueMember
 nuxeo.ldap.group.mapping.subGroups=subGroups
