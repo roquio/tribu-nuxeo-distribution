@@ -96,5 +96,10 @@ nuxeo.ldap.cache.user.withoutRef.maxSize=10000
 nuxeo.ldap.cache.group.maxSize=10000
 nuxeo.ldap.cache.group.withoutRef.maxSize=10000
 
+
 # Pour identifier les espaces collaboratifs (actions email spécifiques)
 ottc.collab.workspacepath=/espaces-collaboratifs
+
+# Espaces école
+acrennes.salledeclasses.keyword=ecole
+acrennes.salledeclasses.template=/default/templates/espace-ecole-salle
