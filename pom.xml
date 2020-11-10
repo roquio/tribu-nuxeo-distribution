@@ -11,13 +11,13 @@
 
 	<properties>
 		<nuxeo.version>6.1.3</nuxeo.version>
-		<opentoutatice.version>4.7.31-RC01</opentoutatice.version>
+		<opentoutatice.version>4.7.31</opentoutatice.version>
 		<ottc.es.version>4.7.22</ottc.es.version>
-		<ottc.collab.version>4.7.31-RC01</ottc.collab.version>
+		<ottc.collab.version>4.7.31</ottc.collab.version>
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
 		<!-- <ottc.wf.version>4.6</ottc.wf.version> -->
-		<ottc.notif.version>4.7.17</ottc.notif.version>
+		<ottc.notif.version>4.7.31</ottc.notif.version>
 		<!-- <ottc.ui.version>4.6.1</ottc.ui.version> -->
 		<!-- <ottc.drive.version>4.6.2</ottc.drive.version> -->
 		<ottc.generic-ui.version>4.7.17</ottc.generic-ui.version>
@@ -32,14 +32,14 @@
 		<ottc.onlyoffice.version>4.7.17</ottc.onlyoffice.version>
 
 		<ottc.profiledpublishing.version>4.7.17</ottc.profiledpublishing.version>
-		<ottc.remotepublishing.version>4.7.18</ottc.remotepublishing.version>
+		<ottc.remotepublishing.version>4.7.31</ottc.remotepublishing.version>
 		<ottc.webmode.version>4.7.17.1</ottc.webmode.version>
         <ottc.sharing.version>4.7.17</ottc.sharing.version>
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
 		<ottc.migration.version>4.7-RC01</ottc.migration.version>
 
 		<!-- Add-ons métier -->
-		<acrennes.version>4.1.15-RC01</acrennes.version>
+		<acrennes.version>4.1.15</acrennes.version>
 
 		<shortname.version>1.0.4</shortname.version>
 
