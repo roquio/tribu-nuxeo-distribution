@@ -5,7 +5,7 @@
 
 	<groupId>toutatice-ecm.acrennes</groupId>
 	<artifactId>acrennes-nx-distrib</artifactId>
-	<version>4.7.41</version>
+	<version>4.7-SNAPSHOT</version>
 	<name>Ac-rennes nuxeo distribution</name>
 	<packaging>pom</packaging>
 
@@ -17,7 +17,7 @@
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
 		<!-- <ottc.wf.version>4.6</ottc.wf.version> -->
-		<ottc.notif.version>4.7.33</ottc.notif.version>
+		<ottc.notif.version>4.7.34</ottc.notif.version>
 		<!-- <ottc.ui.version>4.6.1</ottc.ui.version> -->
 		<!-- <ottc.drive.version>4.6.2</ottc.drive.version> -->
 		<ottc.generic-ui.version>4.7.17</ottc.generic-ui.version>

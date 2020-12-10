@@ -6,3 +6,8 @@ nuxeo.template.includes=opentoutatice
 ## Do not notify user if he has not Read permission
 ##----------------------------------------------------------------------------
 notification.check.read.permission=true
+
+##----------------------------------------------------------------------------
+## Exclude notifications for other system users
+##----------------------------------------------------------------------------
+notification.veto.users=Toutatice
