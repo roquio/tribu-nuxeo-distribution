@@ -36,7 +36,7 @@
 		<ottc.webmode.version>4.7.17.1</ottc.webmode.version>
         <ottc.sharing.version>4.7.17</ottc.sharing.version>
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
-		<ottc.migration.version>4.7-RC01</ottc.migration.version>
+		<ottc.migration.version>4.7.1</ottc.migration.version>
 
 		<!-- Add-ons métier -->
 		<acrennes.version>4.1.15</acrennes.version>

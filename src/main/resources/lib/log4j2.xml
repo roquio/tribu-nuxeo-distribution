@@ -41,12 +41,8 @@ APPENDERS CONFIGURATION:
 - Purpose: appender to gather logs from Opentoutatice's model and/or features migration
 - Max log volume : 500 MB
 - Max aged logs: 7 days
-
-[ZDT-ES]
-- Purpose: appender to gather logs from Zero DownTime Elasticsearch Re-indexing
-- Max log volume : no max (logs are kept and must be manually deleted)
-- Max aged logs: no max 
  -->
+ 
 <Configuration status="trace" name="Nuxeo" packages="" monitorInterval="30">
   <Appenders>
     <Console name="CONSOLE" target="SYSTEM_OUT">
@@ -191,18 +187,6 @@ APPENDERS CONFIGURATION:
       </DefaultRolloverStrategy>
     </RollingFile>
     
-    <RollingFile name="ZDT-ES" fileName="${sys:nuxeo.log.dir}/zero-down-time-elasticsearch-reindexing.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/zero-down-time-elasticsearch-reindexing-%d{dd-MM-yyyy}-%i.log.zip">
-      <PatternLayout>
-        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
-      </PatternLayout>
-      <Policies>
-        <TimeBasedTriggeringPolicy/>
-        <SizeBasedTriggeringPolicy size="20 MB" />
-      </Policies>
-      <!-- No automatic deletions of archived logs; logs are kept and must be manually deleted -->
-      <DefaultRolloverStrategy fileIndex="nomax" />
-    </RollingFile>
-    
 	<RollingFile name="USERWORKSPACES" fileName="${sys:nuxeo.log.dir}/userworkspaces.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/userworkspaces-%d{dd-MM-yyyy}-%i.log.zip">
       <PatternLayout>
         <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
@@ -305,21 +289,18 @@ APPENDERS CONFIGURATION:
       <AppenderRef ref="STORAGE" />
     </Logger> -->
   
-<!-- Elasticsearch logging -->
-<!--
-    <Logger name="org.nuxeo.elasticsearch" level="trace" additivity="false">
+<!-- ==== Elasticsearch logging ===== -->
+<!-- == Set trace level on the first two to see search requests, index requests, ... == -->
+    <Logger name="org.nuxeo.elasticsearch" level="info" additivity="false">
       <AppenderRef ref="ELASTIC" />
     </Logger>
--->
-
-<!-- == Zero Down Time Elasticsearch Re-indexing == -->
-<!-- Both packages (es & work) must be activated -->
- 	<Logger name="org.nuxeo.elasticsearch" level="info" additivity="false">
-      <AppenderRef ref="ZDT-ES" />
+    <Logger name="org.opentoutatice.elasticsearch" level="info" additivity="false">
+      <AppenderRef ref="ELASTIC" />
     </Logger>
-    <Logger name="org.nuxeo.ecm.core.work.AbstractWork" level="info" additivity="false">
-      <AppenderRef ref="ZDT-ES" />
+     <Logger name="org.nuxeo.ecm.core.work.AbstractWork" level="info" additivity="true">
+      <AppenderRef ref="ELASTIC" />
     </Logger>
+   
 <!-- ==== -->    
 
 <!-- Userworkspaces -->
