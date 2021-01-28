@@ -34,7 +34,7 @@
 		<ottc.profiledpublishing.version>4.7.17</ottc.profiledpublishing.version>
 		<ottc.remotepublishing.version>4.7.31</ottc.remotepublishing.version>
 		<ottc.webmode.version>4.7.17.1</ottc.webmode.version>
-        <ottc.sharing.version>4.7.17</ottc.sharing.version>
+        <ottc.sharing.version>4.7.18</ottc.sharing.version>
 		<ottc.monitoring.version>2.1</ottc.monitoring.version>
 		<ottc.migration.version>4.7.1</ottc.migration.version>
 
@@ -258,7 +258,7 @@
 			<artifactId>opentoutatice-monitoring-ecm</artifactId>
 			<version>${ottc.monitoring.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>opentoutatice-ecm.migrations</groupId>
 			<artifactId>opentoutatice-addon-migration</artifactId>
@@ -364,11 +364,11 @@
 			<artifactId>toutatice-mpe-ecm</artifactId>
 			<version>${mpe.version}</version>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>toutatice-services.p1d</groupId>
 			<artifactId>toutatice-p1d-ecm</artifactId>
 			<version>${p1d.version}</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>toutatice-services.publidoc</groupId>
 			<artifactId>toutatice-publidoc-ecm</artifactId>
