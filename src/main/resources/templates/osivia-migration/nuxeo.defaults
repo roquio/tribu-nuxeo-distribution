@@ -13,5 +13,5 @@ ottc.migration.posts.force=true
 ottc.migration.forums.force=false
 ottc.migration.annonces.force=true
 
-ottc.migration.ps.thumbnail.force=false
+ottc.migration.ps.thumbnail.force=true
 ottc.migration.ps.thumbnail.enabled=true
