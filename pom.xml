@@ -364,11 +364,11 @@
 			<artifactId>toutatice-mpe-ecm</artifactId>
 			<version>${mpe.version}</version>
 		</dependency>
-		<!--<dependency>
+		<dependency>
 			<groupId>toutatice-services.p1d</groupId>
 			<artifactId>toutatice-p1d-ecm</artifactId>
 			<version>${p1d.version}</version>
-		</dependency>-->
+		</dependency>
 		<dependency>
 			<groupId>toutatice-services.publidoc</groupId>
 			<artifactId>toutatice-publidoc-ecm</artifactId>
