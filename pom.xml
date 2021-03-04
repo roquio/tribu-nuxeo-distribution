@@ -17,7 +17,7 @@
 		<ottc.filenaming.version>4.7.17</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.7.17</ottc.file.versioning.version>
 		<!-- <ottc.wf.version>4.6</ottc.wf.version> -->
-		<ottc.notif.version>4.7.33</ottc.notif.version>
+		<ottc.notif.version>4.7.34</ottc.notif.version>
 		<!-- <ottc.ui.version>4.6.1</ottc.ui.version> -->
 		<!-- <ottc.drive.version>4.6.2</ottc.drive.version> -->
 		<ottc.generic-ui.version>4.7.17</ottc.generic-ui.version>
