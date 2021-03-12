@@ -5,7 +5,7 @@
 
 	<groupId>toutatice-ecm.acrennes</groupId>
 	<artifactId>acrennes-nx-distrib</artifactId>
-	<version>4.7.45</version>
+	<version>4.7-SNAPSHOT</version>
 	<name>Ac-rennes nuxeo distribution</name>
 	<packaging>pom</packaging>
 
