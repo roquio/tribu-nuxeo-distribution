@@ -103,3 +103,4 @@ ottc.collab.workspacepath=/espaces-collaboratifs
 # Espaces école
 acrennes.salledeclasses.keyword=ecole
 acrennes.salledeclasses.template=/default/templates/espace-ecole-salle
+#acrennes.espacesecole.creator=adminespaceecole
