@@ -5,7 +5,7 @@
 
 	<groupId>fr.acrennes.greta</groupId>
 	<artifactId>greta-nx-distrib</artifactId>
-	<version>4.2-SNAPSHOT</version>
+	<version>4.2.6</version>
 	<name>Greta nuxeo distribution</name>
 	<packaging>pom</packaging>
 
