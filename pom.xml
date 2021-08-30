@@ -57,6 +57,7 @@
 		<ACRENNES3.version>2.5.1</ACRENNES3.version>
 		<ACRENNES4.version>2.5.5</ACRENNES4.version>
 		<ACRENNES6.version>2.2.1</ACRENNES6.version>
+		<simpleblog.version>1.0.0</simpleblog.version>
 
 		<!-- Logs -->
 		<log4j.version>2.8</log4j.version>
@@ -378,6 +379,12 @@
 			<groupId>toutatice-services.uar</groupId>
 			<artifactId>toutatice-uar-ecm</artifactId>
 			<version>${uar.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>fr.toutatice.simpleblog.ecm</groupId>
+    		<artifactId>toutatice-simpleblog-ecm</artifactId>
+    	    <version>${simpleblog.version}</version>
 		</dependency>
 
 		<dependency>

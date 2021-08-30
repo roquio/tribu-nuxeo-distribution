@@ -110,6 +110,9 @@
                 </include>
 				<include>toutatice-services.uar:toutatice-uar-ecm:jar:${uar.version}
                 </include>
+				
+				<include>fr.toutatice.simpleblog.ecm:toutatice-simpleblog-ecm:jar:${simpleblog.version}
+				</include>
 
 				<!-- Studio -->
 				<include>acaren-nuxeo-studio:ACRENNES3:jar:${ACRENNES3.version}
