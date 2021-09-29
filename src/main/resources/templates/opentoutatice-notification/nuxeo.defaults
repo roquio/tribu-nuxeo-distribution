@@ -10,4 +10,4 @@ notification.check.read.permission=true
 ##----------------------------------------------------------------------------
 ## Exclude notifications for other system users
 ##----------------------------------------------------------------------------
-notification.veto.users=Toutatice
+notification.veto.users=Toutatice,adminespaceecole
