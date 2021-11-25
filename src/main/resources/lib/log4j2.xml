@@ -201,7 +201,23 @@ APPENDERS CONFIGURATION:
           <IfLastModified age="P7D" />
         </Delete>
       </DefaultRolloverStrategy>
-    </RollingFile>    
+    </RollingFile>  
+    
+    <RollingFile name="ESvsVCS" fileName="${sys:nuxeo.log.dir}/esVcs.log" filePattern="${sys:nuxeo.log.dir}/$${date:yyyy-MM}/esVcs-%d{dd-MM-yyyy}-%i.log.zip">
+      <PatternLayout>
+        <Pattern>%d{ISO8601} %-5p [%t] [%c] %m%n</Pattern>
+      </PatternLayout>
+      <Policies>
+        <TimeBasedTriggeringPolicy/>
+        <SizeBasedTriggeringPolicy size="20 MB" />
+      </Policies>
+      <DefaultRolloverStrategy min="1" max="5" fileIndex="max">
+        <Delete basePath="${sys:nuxeo.log.dir}" maxDepth="2">
+          <IfFileName glob="*/esVcs-*.log.zip" />
+          <IfLastModified age="P7D" />
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingFile>   
   </Appenders>
   
   
@@ -301,7 +317,15 @@ APPENDERS CONFIGURATION:
       <AppenderRef ref="ELASTIC" />
     </Logger>
    
-<!-- ==== -->    
+<!-- ==== -->   
+	
+	<!-- Trace Query Es vs Query VCS -->
+	<Logger name="fr.toutatice.ecm.elasticsearch.servlet.VcsToEsQueryFilter" level="trace" additivity="false">
+      <AppenderRef ref="ESvsVCS" />
+    </Logger> 
+    <Logger name="fr.toutatice.ecm.elasticsearch.automation.QueryES" level="trace" additivity="false">
+      <AppenderRef ref="ESvsVCS" />
+    </Logger> 
 
 <!-- Userworkspaces -->
  	<Logger name="fr.toutatice.userworkspaces" level="info" additivity="false">
