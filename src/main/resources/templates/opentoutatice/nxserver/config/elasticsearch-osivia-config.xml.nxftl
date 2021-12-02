@@ -148,10 +148,10 @@
              "type": "string",
              "analyzer" : "fulltext"
           },
-        "lowercase" : {
+          "lowercase" : {
             "type":"string",
             "analyzer" : "lowercase_analyzer"       
-        }
+          }
         }
       },
       "dc:description" : {
@@ -166,7 +166,11 @@
              "boost": 1.5,
              "type": "string",
              "analyzer" : "fulltext"
-          }
+          },
+          "lowercase" : {
+            "type":"string",
+            "analyzer" : "lowercase_analyzer"       
+          }          
         }
       },
       "file:content" : {
@@ -255,6 +259,59 @@
         "type" : "string",
         "index" : "not_analyzed"
       },
+      
+      "ttc_userprofile:login" : {
+         "type" : "multi_field",
+         "fields" : {
+           "ttc_userprofile:login" : {
+             "type" : "string"
+           },
+           "fulltext" : {
+             "boost": 2,
+             "type": "string",
+             "analyzer" : "fulltext"
+          },
+          "lowercase" : {
+            "type":"string",
+            "analyzer" : "lowercase_analyzer"       
+          }
+        }
+      },  
+      "ttc_userprofile:mail" : {
+         "type" : "multi_field",
+         "fields" : {
+           "ttc_userprofile:mail" : {
+             "type" : "string"
+           },
+           "fulltext" : {
+             "boost": 2,
+             "type": "string",
+             "analyzer" : "fulltext"
+          },
+          "lowercase" : {
+            "type":"string",
+            "analyzer" : "lowercase_analyzer"       
+          }
+        }
+      },    
+	  "ttc_userprofile:mailaca" : {
+         "type" : "multi_field",
+         "fields" : {
+           "ttc_userprofile:mailaca" : {
+             "type" : "string"
+           },
+           "fulltext" : {
+             "boost": 2,
+             "type": "string",
+             "analyzer" : "fulltext"
+          },
+          "lowercase" : {
+            "type":"string",
+            "analyzer" : "lowercase_analyzer"       
+          }
+        }
+      },               
+      
           "vevent:allDay" : {
             "type" : "boolean"
           },

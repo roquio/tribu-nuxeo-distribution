@@ -31,7 +31,13 @@
       <fieldMapping name="password">userPassword</fieldMapping>
       <fieldMapping name="firstName">givenName</fieldMapping>
       <fieldMapping name="lastName">sn</fieldMapping>
+      
       <fieldMapping name="email">mail</fieldMapping>
+      <fieldMapping name="emailaca">portalPersonMailAca</fieldMapping>
+      
+      <fieldMapping name="displayName">displayName</fieldMapping>
+      <fieldMapping name="cn">cn</fieldMapping>
+      
       <fieldMapping name="groups">portalPersonProfile</fieldMapping>
       <searchFilter>(&amp;((objectClass=inetOrgPerson)))</searchFilter>
 
