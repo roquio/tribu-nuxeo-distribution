@@ -9,6 +9,8 @@
 		<repository name="default"
 			factory="org.nuxeo.ecm.core.storage.sql.ra.PoolingRepositoryFactory">
 			
+			<softDelete enabled="${nuxeo.soft.delete.enabled}" />
+			
 			<!-- Always redefine pool to be taken into account when merging Repository contributions -->
 			<pool minPoolSize="${nuxeo.vcs["min-pool-size"]}" maxPoolSize="${nuxeo.vcs["max-pool-size"]}"
         		blockingTimeoutMillis="${nuxeo.vcs["blocking-timeout-millis"]}" idleTimeoutMinutes="${nuxeo.vcs["idle-timeout-minutes"]}" />

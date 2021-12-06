@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<component name="acrennes.softdelete.scheduler.config">
+  <require>org.nuxeo.ecm.platform.scheduler.core.service.SchedulerRegistryService</require>
+  <require>org.nuxeo.ecm.core.storage.sql.softdelete</require>
+
+  <extension target="org.nuxeo.ecm.platform.scheduler.core.service.SchedulerRegistryService" point="schedule">
+
+    <schedule id="softDeleteCleanup" enabled="false" />
+
+  </extension>
+
+</component>

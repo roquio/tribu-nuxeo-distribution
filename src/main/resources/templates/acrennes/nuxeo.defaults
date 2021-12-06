@@ -104,3 +104,6 @@ ottc.collab.workspacepath=/espaces-collaboratifs
 acrennes.salledeclasses.keyword=ecole
 acrennes.salledeclasses.template=/default/templates/espace-ecole-salle
 #acrennes.espacesecole.creator=adminespaceecole
+
+# Soft delete
+nuxeo.soft.delete.enabled=false
