@@ -13,8 +13,8 @@
 		<nuxeo.version>6.1.3</nuxeo.version>
 		<nuxeodrive.version>6.1.3</nuxeodrive.version>
 		
-		<opentoutatice.version>4.4.23</opentoutatice.version>
-		<ottc.es.version>4.4.19-alias</ottc.es.version>
+		<opentoutatice.version>4.4.26</opentoutatice.version>
+		<ottc.es.version>4.4.26</ottc.es.version>
 		<ottc.collab.version>4.4.24.4</ottc.collab.version>
 		<ottc.filenaming.version>1.4</ottc.filenaming.version>
 		<ottc.file.versioning.version>4.4.18</ottc.file.versioning.version>
@@ -24,7 +24,7 @@
 		<ottc.drive.version>4.4.19.4</ottc.drive.version>
 		<ottc.generic-ui.version>3.1.1</ottc.generic-ui.version>
 
-		<ottc.es.custom.version>4.4.18</ottc.es.custom.version>
+		<ottc.es.custom.version>4.4.26</ottc.es.custom.version>
 		<ottc.procedure.version>4.4.18</ottc.procedure.version>
 		<ottc.checkin.version>4.4.18</ottc.checkin.version> 
 		<ottc.pad.version>4.4.18</ottc.pad.version>
