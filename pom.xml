@@ -60,7 +60,7 @@
 		<simpleblog.version>1.0.0</simpleblog.version>
 
 		<!-- Logs -->
-		<log4j.version>2.8</log4j.version>
+		<log4j.version>2.16.0</log4j.version>
 		<javamelody.version>1.82.0</javamelody.version>
 	</properties>
 
