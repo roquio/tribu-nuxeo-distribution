@@ -57,7 +57,10 @@
 		<ACRENNES3.version>2.5.1</ACRENNES3.version>
 		<ACRENNES4.version>2.5.5</ACRENNES4.version>
 		<ACRENNES6.version>2.2.1</ACRENNES6.version>
-		<simpleblog.version>1.0.0</simpleblog.version>
+		
+		<!-- Espaces modulo -->
+		<simpleblog.version>1.0.2</simpleblog.version>
+		<videoconference.version>1.0.3</videoconference.version>
 
 		<!-- Logs -->
 		<log4j.version>2.16.0</log4j.version>
@@ -386,6 +389,12 @@
     		<artifactId>toutatice-simpleblog-ecm</artifactId>
     	    <version>${simpleblog.version}</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>fr.toutatice.videoconference.ecm</groupId>
+    		<artifactId>toutatice-videoconference-ecm</artifactId>
+    	    <version>${videoconference.version}</version>
+		</dependency>		
 
 		<dependency>
 			<groupId>acaren-nuxeo-studio</groupId>
