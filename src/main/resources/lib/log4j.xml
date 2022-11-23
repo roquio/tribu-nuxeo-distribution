@@ -600,6 +600,21 @@
     <appender-ref ref="STDERR-FILE" />
   </category>
 
+  <category name="onlyoffice" additivity="false">
+    <priority value="INFO" />
+    <appender-ref ref="OO_LOG" />
+  </category>
+  <appender name="OO_LOG" class="org.apache.log4j.DailyRollingFileAppender" additivity="false">
+    <errorHandler class="org.apache.log4j.helpers.OnlyOnceErrorHandler" />
+    <param name="File" value="${nuxeo.log.dir}/onlyoffice.log" />
+    <!-- Rollover at midnight every day -->
+    <param name="DatePattern" value="'.'yyyy-MM-dd" />
+    <param name="Append" value="true" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" value="%d{ISO8601} %-5p [%t] [%c] %m%n" />
+    </layout>
+  </appender>
+
   <!-- ======================= -->
   <!-- Setup the Root category -->
   <!-- ======================= -->
