@@ -34,7 +34,7 @@
 		<ottc.quota.version>4.4.19.2</ottc.quota.version>		
 		<foad.custom.nx>4.4.30.3</foad.custom.nx>
 		
-		<ottc.monitoring.version>2.1</ottc.monitoring.version>	
+		<ottc.monitoring.version>4.4</ottc.monitoring.version>
 		<javamelody.version>1.82.0</javamelody.version>		
 		
 		<!-- <nuxeo.reindex.fulltext.version>6.1.0</nuxeo.reindex.fulltext.version> -->	
