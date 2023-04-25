@@ -194,6 +194,11 @@
                 
                 <include>com.googlecode.json-simple:json-simple:jar:1.1.1
                 </include>
+
+				<!-- unzip -->
+				<include>org.apache.commons:commons-compress:jar:1.23.0
+				</include>
+
                 <!--  Dependencides for jwt/onlyoffice -->
                 <include>com.auth0:java-jwt:jar:3.3.0</include>
                 <include>com.fasterxml.jackson.core:jackson-core:jar:2.9.2</include>
