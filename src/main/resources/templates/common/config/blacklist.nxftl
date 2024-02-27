@@ -6,4 +6,5 @@ org.nuxeo.elasticsearch.audit.contrib
 org.nuxeo.ecm.platform.audit.PageProviderservice.es.contrib
 org.nuxeo.admin.audit.es.contentView.contrib
 </#if>
+org.nuxeo.ecm.collections.api.FavoritesManager
 </#escape>
