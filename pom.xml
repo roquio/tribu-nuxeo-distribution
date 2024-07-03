@@ -25,14 +25,14 @@
 		<ottc.generic-ui.version>4.7.17</ottc.generic-ui.version>
 
 		<ottc.es.custom.version>4.4.26</ottc.es.custom.version>
-		<ottc.procedure.version>4.4.18</ottc.procedure.version>
+		<ottc.procedure.version>4.4.33</ottc.procedure.version>
 		<ottc.checkin.version>4.4.18</ottc.checkin.version> 
 		<ottc.pad.version>4.4.18</ottc.pad.version>
 		<ottc.news.version>4.4.18</ottc.news.version>
 		<ottc.jwt.version>4.4.18</ottc.jwt.version>
 		<ottc.onlyoffice.version>4.4.31</ottc.onlyoffice.version>
 		<ottc.quota.version>4.4.19.2</ottc.quota.version>		
-		<foad.custom.nx>4.4.33.4</foad.custom.nx>
+		<foad.custom.nx>4.4.33.5</foad.custom.nx>
 		
 		<ottc.monitoring.version>4.4</ottc.monitoring.version>
 		<javamelody.version>1.82.0</javamelody.version>		
