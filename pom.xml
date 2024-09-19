@@ -488,30 +488,24 @@
 		
 	</dependencies>
 
-    <scm>
-		<url>https://github.com/osivia/nuxeo-collab-distrib</url>
-		<connection>scm:git:ssh://git@github.com/osivia/nuxeo-collab-distrib.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com/osivia/nuxeo-collab-distrib.git</developerConnection>     
-		<tag>HEAD</tag> 
-	</scm>
-    
-    
+    <repositories>
+        <repository>
+            <id>roquio-maven-public</id>
+            <name>Roquio Maven public</name>
+            <url>https://packages.roqu.io/repository/maven-public</url>
+        </repository>
+    </repositories>
+
+
     <distributionManagement>
         <repository>
-            <id>osivia-releases</id>
-            <url>http://www.osivia.org/nexus/content/repositories/osivia-releases</url>
+            <id>roquio-maven-releases</id>
+            <name>Roquio Maven releases</name>
+            <url>https://packages.roqu.io/repository/maven-releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
         </repository>
-        <snapshotRepository>
-            <id>osivia-snapshots</id>
-            <url>http://www.osivia.org/nexus/content/repositories/osivia-snapshots</url>
-        </snapshotRepository>
     </distributionManagement>
-    
-    
-    <organization>
-        <name>OSIVIA</name>
-        <url>http://www.osivia.org/</url>
-    </organization>
-    
 
 </project>
