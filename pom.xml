@@ -6,7 +6,7 @@
 
     <groupId>opentoutatice-ecm.distribtion</groupId>
     <artifactId>ottc-collab-nx-distrib</artifactId>
-    <version>4.5.4</version>
+    <version>4.5.5</version>
     <name>Open toutatice + collab modules nuxeo distribution</name>
     <packaging>pom</packaging>
 
@@ -33,7 +33,7 @@
         <ottc.jwt.version>4.4.18</ottc.jwt.version>
         <ottc.onlyoffice.version>4.4.31</ottc.onlyoffice.version>
         <ottc.quota.version>4.4.19.2</ottc.quota.version>
-        <foad.custom.nx>4.5.4</foad.custom.nx>
+        <foad.custom.nx>4.5.5</foad.custom.nx>
 
         <ottc.monitoring.version>4.4</ottc.monitoring.version>
         <javamelody.version>1.82.0</javamelody.version>
